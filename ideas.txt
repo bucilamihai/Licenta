@@ -1,0 +1,10 @@
+
+
+
+Aplicatia are scopul de a ajuta persoanele sa se cunoasca bazat pe interese / hobby-uri comune
+
+Key features
+- autentificare, selectare hobby-uri (un numar de X, predefinite sau altele) si gasire persoane cu hobby-uri comune (bazat pe locatie, varsta, #hobby-uri comune)
+- posibilitate de a comunica cu persoanele gasite
+- creare grupuri / intalniri bazate pe un hobby anume
+- feed ce poate contine intalniri publice sau postari adecvate hobby-urilor userului
