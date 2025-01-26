@@ -19,7 +19,7 @@
         "types": [
         	"Health"
         ]
-        	  
+        
         "name": "Yoga",
         "types": [
         	"Physical"
