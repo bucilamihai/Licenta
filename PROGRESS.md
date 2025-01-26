@@ -28,7 +28,7 @@
         "name": "Yoga",
         "types": [
           "Relaxation",
-        	"Fitness",
+          "Fitness",
         	"Flexibility"
         ]
 
