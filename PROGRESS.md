@@ -17,17 +17,17 @@
         # Before:
         "name": "Yoga",
         "types": [
-        	"Health"
+          "Health"
         ]
         
         "name": "Yoga",
         "types": [
-        	"Physical"
+          "Physical"
         ]
 
         "name": "Yoga",
         "types": [
-        	"Relaxation",
+          "Relaxation",
         	"Fitness",
         	"Flexibility"
         ]
