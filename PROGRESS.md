@@ -29,7 +29,7 @@
         "types": [
           "Relaxation",
           "Fitness",
-        	"Flexibility"
+          "Flexibility"
         ]
 
         # After
