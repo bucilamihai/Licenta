@@ -1,4 +1,4 @@
-# Week 1
+# Week 0 #
 - **21.01.2025**
     - created Github repository and project
     - added resources to repository and ideas to the backlog
@@ -46,4 +46,9 @@
     - *the dataset could be processed even further, since there are still duplicate hobbies (e.g. dance - dancing, volunteer - volunteering, video games - video gaming, jump roping - jumping rope)
     
 
-# Week 2    
+# Week 1
+- **01.03.2025**
+    - added datasets links: 
+      - [alperugurcan/Hobbies](https://huggingface.co/datasets/alperugurcan/Hobbies)
+      - [mrhell/list-of-hobbies](https://www.kaggle.com/datasets/mrhell/list-of-hobbies)
+      - [dawid9632/hobbies-interests-with-categories](https://www.kaggle.com/datasets/dawid9632/hobbies-interests-with-categories)
