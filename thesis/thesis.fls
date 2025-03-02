@@ -218,11 +218,11 @@ INPUT .\chapters\chapter4.tex
 INPUT chapters\chapter4.tex
 INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro7t.vf
 INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8r.tfm
-INPUT .\chapters\chapter6_conclusions.tex
-INPUT .\chapters\chapter6_conclusions.tex
-INPUT .\chapters\chapter6_conclusions.tex
-INPUT .\chapters\chapter6_conclusions.tex
-INPUT chapters\chapter6_conclusions.tex
+INPUT .\chapters\chapter5_conclusions.tex
+INPUT .\chapters\chapter5_conclusions.tex
+INPUT .\chapters\chapter5_conclusions.tex
+INPUT .\chapters\chapter5_conclusions.tex
+INPUT chapters\chapter5_conclusions.tex
 INPUT .\thesis.bbl
 INPUT .\thesis.bbl
 INPUT thesis.bbl

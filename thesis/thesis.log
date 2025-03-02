@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  1 MAR 2025 20:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  2 MAR 2025 19:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,12 +343,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] (chapters/chapter1_introduction.tex
 Capitolul 1.
-)
-Overfull \hbox (4.24855pt too wide) in paragraph at lines 6--53
-\OT1/ppl/m/n/12 mei, pre-zen-ta-rea contribu[]iei pro-prii, res-pec-tiv a re-zul-ta-te-lor ori-gi-nale []i men[]ionarea
- []
-
-(chapters/chapter2.tex
+) (chapters/chapter2.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -377,7 +372,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 Capitolul 4.
-) (chapters/chapter6_conclusions.tex [5
+) (chapters/chapter5_conclusions.tex [5
 
 ]
 Capitolul 5.
@@ -391,20 +386,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8A4182C8DEEF1A0E37C4E3FFCBB6810A;1125.
+(rerunfilecheck)             Checksum: 056F7F67749AC53030E8A674A673BD2F;1479.
  ) 
 Here is how much of TeX's memory you used:
- 10675 strings out of 474486
- 173626 string characters out of 5743755
+ 10684 strings out of 474486
+ 173749 string characters out of 5743755
  1930542 words of memory out of 5000000
- 32772 multiletter control sequences out of 15000+600000
+ 32778 multiletter control sequences out of 15000+600000
  576933 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,11n,93p,551b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,11n,93p,640b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (11 pages, 91433 bytes).
+Output written on thesis.pdf (11 pages, 94809 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
