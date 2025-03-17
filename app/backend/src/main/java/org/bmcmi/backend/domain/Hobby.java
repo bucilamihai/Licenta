@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = " hobbies")
+@Table(name = "hobbies")
 public class Hobby {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @OneToMany
+    @ManyToMany
     private List<HobbyType> types;
 
     public Hobby() {}
