@@ -1,15 +1,27 @@
 package org.bmcmi.backend.domain;
 
+import jakarta.persistence.*;
+
 import java.util.List;
 import java.util.Objects;
 
+@Entity
+@Table(name = "users")
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
+    @ManyToMany
     private List<Hobby> hobbies;
+
+
+    public User() {}
+
 
     public User(Long id, String firstName, String lastName, String email, String password, List<Hobby> hobbies) {
         this.id = id;

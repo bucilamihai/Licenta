@@ -1,10 +1,19 @@
 package org.bmcmi.backend.domain;
 
+import jakarta.persistence.*;
+
 import java.util.Objects;
 
+@Entity
+@Table(name = "hobby_types")
 public class HobbyType {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+
+    public HobbyType() {}
 
     public HobbyType(Long id, String name) {
         this.id = id;
