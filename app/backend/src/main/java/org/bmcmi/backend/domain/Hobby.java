@@ -12,14 +12,14 @@ public class Hobby {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true)
     private String name;
     @ManyToMany
     private List<HobbyType> types;
 
     public Hobby() {}
 
-    public Hobby(Long id, String name, List<HobbyType> types) {
-        this.id = id;
+    public Hobby(String name, List<HobbyType> types) {
         this.name = name;
         this.types = types;
     }

@@ -14,6 +14,7 @@ public class User {
     private Long id;
     private String firstName;
     private String lastName;
+    @Column(unique = true)
     private String email;
     private String password;
     @ManyToMany
@@ -23,8 +24,7 @@ public class User {
     public User() {}
 
 
-    public User(Long id, String firstName, String lastName, String email, String password, List<Hobby> hobbies) {
-        this.id = id;
+    public User(String firstName, String lastName, String email, String password, List<Hobby> hobbies) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
