@@ -11,12 +11,12 @@ public class HobbyType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(unique = true)
     private String name;
 
     public HobbyType() {}
 
-    public HobbyType(Long id, String name) {
-        this.id = id;
+    public HobbyType(String name) {
         this.name = name;
     }
 

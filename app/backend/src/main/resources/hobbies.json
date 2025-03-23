@@ -1,0 +1,5018 @@
+[
+  {
+    "name": "3d printing",
+    "types": [
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Abseiling (rappelling)",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Acrobatics",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Acroyoga",
+    "types": [
+      "Fitness",
+      "Flexibility",
+      "Partner",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Acting",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Action figure",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Aerial silks",
+    "types": [
+      "Physical"
+    ]
+  },
+  {
+    "name": "Aeromodeling",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Aerophyte (air plant) growing",
+    "types": [
+      "Plant care"
+    ]
+  },
+  {
+    "name": "Aerospace",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Air hockey",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Aircraft spotting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Airsoft",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Amateur astronomy",
+    "types": [
+      "Educational",
+      "Outdoors",
+      "Scientific"
+    ]
+  },
+  {
+    "name": "Amateur geology",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Amateur radio",
+    "types": [
+      "Communication",
+      "Fun",
+      "Technical",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Amateur theater",
+    "types": [
+      "Acting",
+      "Creative",
+      "Performing"
+    ]
+  },
+  {
+    "name": "Amusement park visiting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Animal fancy",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Animation",
+    "types": [
+      "Arts",
+      "Crafts",
+      "Educational"
+    ]
+  },
+  {
+    "name": "Ant farming",
+    "types": [
+      "Animal care",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Ant-keeping",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Antique collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Antique restoration",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Antiquing",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Antiquities",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Apiculture (beekeeping)",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Aquascaping",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Archaeology",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Archery",
+    "types": [
+      "Focus",
+      "Outdoors",
+      "Precision",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Architecture",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Art collecting",
+    "types": [
+      "Collecting",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Association football",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Astronomy",
+    "types": [
+      "Educational",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Astrophotography",
+    "types": [
+      "Creative",
+      "Photography",
+      "Scientific",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Audiophile",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Australian rules football",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Auto audiophilia",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Auto detailing",
+    "types": [
+      "Automobile",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Auto racing",
+    "types": [
+      "Extreme",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Auto restoration",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Automobilism",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Aviation",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Axe throwing",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Backgammon",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Backpacking",
+    "types": [
+      "Adventure",
+      "Exploration",
+      "Outdoors",
+      "Sports",
+      "Travel"
+    ]
+  },
+  {
+    "name": "Badminton",
+    "types": [
+      "Indoors",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Baking",
+    "types": [
+      "Cooking",
+      "Creative",
+      "Culinary",
+      "Delicious",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Ballet dancing",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Ballroom dancing",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Base jumping",
+    "types": [
+      "Extreme",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Baseball",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Basketball",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Baton twirling",
+    "types": [
+      "Arts",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Beach volleyball",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Beachcombing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Beatboxing",
+    "types": [
+      "Music",
+      "Musical"
+    ]
+  },
+  {
+    "name": "Beauty pageants",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Beekeeping",
+    "types": [
+      "Ecological",
+      "Nature",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Beer tasting",
+    "types": [
+      "Tasting"
+    ]
+  },
+  {
+    "name": "Belly dancing",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Benchmarking",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Biking",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Billiards",
+    "types": [
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Biology",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Bird watching",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Birding",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Birdwatching",
+    "types": [
+      "Nature",
+      "Outdoors",
+      "Relaxing",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Blacksmithing",
+    "types": [
+      "Arts",
+      "Crafts",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Blogging",
+    "types": [
+      "Writing"
+    ]
+  },
+  {
+    "name": "Bmx",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Board games",
+    "types": [
+      "Fun",
+      "Social",
+      "Strategic"
+    ]
+  },
+  {
+    "name": "Board gaming",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Board sports",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Boating",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Bocce ball",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Body painting",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Bodybuilding",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Bonsai tree cultivation",
+    "types": [
+      "Plant care"
+    ]
+  },
+  {
+    "name": "Book collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Book folding",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Bookbinding",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Bookkeeping",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Botany",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Bowling",
+    "types": [
+      "Indoors",
+      "Recreational",
+      "Social",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Boxing",
+    "types": [
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Bread baking",
+    "types": [
+      "Cooking"
+    ]
+  },
+  {
+    "name": "Breakdancing",
+    "types": [
+      "Arts",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Brewing beer",
+    "types": [
+      "Cooking"
+    ]
+  },
+  {
+    "name": "Bridge",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Bridge building",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "British bulldogs",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Bubble blowing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Building dollhouses",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Building model houses",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Bungee jumping",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Bus riding",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Bus spotting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Business",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Butterfly collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Butterfly watching",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Button collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Calligraphy",
+    "types": [
+      "Artistic",
+      "Arts",
+      "Craft",
+      "Crafts",
+      "Creative",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Camping",
+    "types": [
+      "Nature",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Candle making",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Canoeing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Canyoning",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Capoeira",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Car collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Car restoration",
+    "types": [
+      "Creative",
+      "Engineering",
+      "Mechanical"
+    ]
+  },
+  {
+    "name": "Car riding",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Car tuning",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Card collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Card games",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Card gaming",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Carpentry",
+    "types": [
+      "Arts",
+      "Construction",
+      "Crafting",
+      "Crafts",
+      "Handicraft"
+    ]
+  },
+  {
+    "name": "Carrier pigeons",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Cartooning",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Cartophily (card collecting)",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Casino gambling",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Cave diving",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Caving",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Ceramics",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Charity work",
+    "types": [
+      "Volunteering"
+    ]
+  },
+  {
+    "name": "Checkers (draughts)",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Cheerleading",
+    "types": [
+      "Arts",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Chemistry",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Chess",
+    "types": [
+      "Game",
+      "Games",
+      "Indoors",
+      "Intellectual",
+      "Strategic"
+    ]
+  },
+  {
+    "name": "Church activities",
+    "types": [
+      "Religious"
+    ]
+  },
+  {
+    "name": "Cigar smoking",
+    "types": [
+      "Tasting"
+    ]
+  },
+  {
+    "name": "City trip",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Classic car restoration",
+    "types": [
+      "Automobile"
+    ]
+  },
+  {
+    "name": "Climbing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Cloud watching",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Coin collecting",
+    "types": [
+      "Collecting",
+      "Educational",
+      "Historical",
+      "Hobby",
+      "Indoors",
+      "Relaxing"
+    ]
+  },
+  {
+    "name": "Color guard",
+    "types": [
+      "Arts",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Coloring",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Comedying",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Comic book collecting",
+    "types": [
+      "Collecting",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Compact discs",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Composting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Computer programming",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Conlanging",
+    "types": [
+      "Writing"
+    ]
+  },
+  {
+    "name": "Cooking",
+    "types": [
+      "Cooking",
+      "Creative",
+      "Culinary",
+      "Indoors",
+      "Practical"
+    ]
+  },
+  {
+    "name": "Cornhole",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Cosplaying",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Crafting",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Cribbage",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Cricket",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Crocheting",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Croquet",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Crossfit",
+    "types": [
+      "Cardio",
+      "Fitness",
+      "Strength"
+    ]
+  },
+  {
+    "name": "Crossword puzzles",
+    "types": [
+      "Games",
+      "Intellectual",
+      "Puzzle",
+      "Solitary"
+    ]
+  },
+  {
+    "name": "Cruise travel",
+    "types": [
+      "Adventure",
+      "Travel"
+    ]
+  },
+  {
+    "name": "Cryptography",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Crystals",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Curling",
+    "types": [
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Cycling",
+    "types": [
+      "Cardio",
+      "Fitness",
+      "Outdoors",
+      "Physical",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Dairy farming",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Dance",
+    "types": [
+      "Arts",
+      "Physical"
+    ]
+  },
+  {
+    "name": "Dancing",
+    "types": [
+      "Artistic",
+      "Expressive",
+      "Fitness",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Dandyism",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Darts",
+    "types": [
+      "Indoors",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Debate",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Deltiology (postcard collecting)",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Die-cast toy",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Digital art",
+    "types": [
+      "Artistic",
+      "Arts",
+      "Crafts",
+      "Creative",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Digital audio workstation (daw) usage",
+    "types": [
+      "Musical"
+    ]
+  },
+  {
+    "name": "Digital hoarding",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Digital nomadism",
+    "types": [
+      "Adventure",
+      "Travel"
+    ]
+  },
+  {
+    "name": "Diorama making",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Disc golf",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Diving",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Diy",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Djing",
+    "types": [
+      "Creative",
+      "Music",
+      "Musical",
+      "Performing"
+    ]
+  },
+  {
+    "name": "Dodgeball",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Dog breeding",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Dog sport",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Dog training",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Dog walking",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Doll collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Dolls",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Dominoes",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Dowsing",
+    "types": [
+      "Mystical",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Drawing",
+    "types": [
+      "Artistic",
+      "Arts",
+      "Crafts",
+      "Creative",
+      "Visual"
+    ]
+  },
+  {
+    "name": "Dressmaking",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Driving",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Drone flying",
+    "types": [
+      "Outdoors",
+      "Remote control",
+      "Technical",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Dumpster diving",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Eating",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Eating out",
+    "types": [
+      "Tasting"
+    ]
+  },
+  {
+    "name": "Educational courses",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Element collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Embroidery",
+    "types": [
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative",
+      "Decorative"
+    ]
+  },
+  {
+    "name": "Engineering",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Engraving",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Entertaining",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Entrepreneurship",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Ephemera collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Equestrianism",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Escape room design",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Escape rooms",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Esports",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Etching",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Event planning",
+    "types": [
+      "Organizational"
+    ]
+  },
+  {
+    "name": "Exercising",
+    "types": [
+      "Health"
+    ]
+  },
+  {
+    "name": "Exhibition drill",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Exotic animal care",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Extreme ironing",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Falconry",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Farming",
+    "types": [
+      "Outdoors",
+      "Plant care",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Fashion",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Felting",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Fencing",
+    "types": [
+      "Competitive",
+      "Fitness",
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Fer arranging",
+    "types": [
+      "Artistic",
+      "Craft",
+      "Decorative"
+    ]
+  },
+  {
+    "name": "Ferret racing",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Field hockey",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Figure skating",
+    "types": [
+      "Indoors",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Film making",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Films",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Finance",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Fingerprint collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Fishing",
+    "types": [
+      "Nature",
+      "Outdoors",
+      "Patient",
+      "Relaxing",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Fishkeeping",
+    "types": [
+      "Animal care",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Fitness",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Fitness gaming",
+    "types": [
+      "Fitness",
+      "Gaming",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Flag football",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Floral arranging",
+    "types": [
+      "Plant care"
+    ]
+  },
+  {
+    "name": "Flower arranging",
+    "types": [
+      "Plant care"
+    ]
+  },
+  {
+    "name": "Flower collecting and pressing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Flower growing",
+    "types": [
+      "Outdoors",
+      "Plant care",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Flute playing",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Fly tying",
+    "types": [
+      "Crafting",
+      "Creative",
+      "Fishing"
+    ]
+  },
+  {
+    "name": "Flying",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Flying disc",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Flying model planes",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Folk dancing",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Footbag",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Foraging",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Fossicking",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Fossil hunting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Four wheeling",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Freestyle football",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Frisbee",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Frisbee golf",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Fruit picking",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Furniture building",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Furniture restoration",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Fusilately\u00a0(phonecard collecting)",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Gaming",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Garage sale hunting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Gardening",
+    "types": [
+      "Nature",
+      "Outdoors",
+      "Plant care",
+      "Relaxing",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Genealogy",
+    "types": [
+      "Educational",
+      "Historical",
+      "Research"
+    ]
+  },
+  {
+    "name": "Geocaching",
+    "types": [
+      "Adventure",
+      "Exploring",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Geography",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Geology",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Ghost hunting",
+    "types": [
+      "Mystical",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Gingerbread house making",
+    "types": [
+      "Cooking"
+    ]
+  },
+  {
+    "name": "Glassbing",
+    "types": [
+      "Artistic",
+      "Crafting",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Glassblowing",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Go",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Go kart racing",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Gold panning",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Gold prospecting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Golf",
+    "types": [
+      "Outdoors",
+      "Relaxing",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Golfing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Gongoozling",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Graffiti",
+    "types": [
+      "Arts",
+      "Crafts",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Groundhopping",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Guerrilla gardening",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Guitar",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Gymnastics",
+    "types": [
+      "Indoors",
+      "Outdoors",
+      "Physical",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Gyotaku",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Hammer throw",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Hand lettering",
+    "types": [
+      "Artistic",
+      "Creative",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Handball",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Hang gliding",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Hapkido",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Harmonica playing",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Hat making",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Hawaiian culture",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Herbalism",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Herping",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "High-power rocketry",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Hiking",
+    "types": [
+      "Adventure",
+      "Fitness",
+      "Nature",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Hiking/backpacking",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "History",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Hobby horsing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Hobby tunneling",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Hockey",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Home brewing",
+    "types": [
+      "Cooking",
+      "Creative",
+      "Culinary",
+      "Fun"
+    ]
+  },
+  {
+    "name": "Home improvement",
+    "types": [
+      "Arts",
+      "Crafts",
+      "Creative",
+      "Diy",
+      "Practical"
+    ]
+  },
+  {
+    "name": "Home theater",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Hooping",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Horse riding",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Horseback riding",
+    "types": [
+      "Outdoors",
+      "Physical",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Horsemanship",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Horseshoes",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Hot air ballooning",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Hula hooping",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Humor",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Hunting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Hydroponics",
+    "types": [
+      "Plant care"
+    ]
+  },
+  {
+    "name": "Ice climbing",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Ice hockey",
+    "types": [
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Ice skating",
+    "types": [
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Iceboat racing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Iceskating",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Ikebana",
+    "types": [
+      "Plant care"
+    ]
+  },
+  {
+    "name": "Illusion",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Indoor skydiving",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Inline skating",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Insect collecting",
+    "types": [
+      "Animal care",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Inventing",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Jet skiing",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Jewelry making",
+    "types": [
+      "Art",
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Jigsaw puzzles",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Jiu-jitsu",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Jogging",
+    "types": [
+      "Cardio",
+      "Fitness",
+      "Health",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Journaling",
+    "types": [
+      "Creative",
+      "Reflective",
+      "Writing"
+    ]
+  },
+  {
+    "name": "Judo",
+    "types": [
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Juggling",
+    "types": [
+      "Arts",
+      "Circus",
+      "Fun",
+      "Performing"
+    ]
+  },
+  {
+    "name": "Jujitsu",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Jukskei",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Jump roping",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Jumping rope",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Jurisprudential",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Kabaddi",
+    "types": [
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Kaiju movies",
+    "types": [
+      "Movies"
+    ]
+  },
+  {
+    "name": "Kaleidoscope making",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Karaoke",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Karate",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Kart racing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Karting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Kayaking",
+    "types": [
+      "Adventure",
+      "Outdoors",
+      "Sports",
+      "Water"
+    ]
+  },
+  {
+    "name": "Kickboxing",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Kite flying",
+    "types": [
+      "Fun",
+      "Outdoors",
+      "Sports",
+      "Wind"
+    ]
+  },
+  {
+    "name": "Kiteboarding",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Kitesurfing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Kitten care",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Knapping",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Knife collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Knife throwing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Knitting",
+    "types": [
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative",
+      "Relaxing"
+    ]
+  },
+  {
+    "name": "Knotting",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Knowledge/word games",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Krav maga",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Kung fu",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Lace making",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Lacrosse",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Lapel pins",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Lapidary",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Larping",
+    "types": [
+      "Games",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Laser tag",
+    "types": [
+      "Games",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Learning",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Leathercrafting",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Leatherworking",
+    "types": [
+      "Art",
+      "Crafting",
+      "Creative",
+      "Detailed"
+    ]
+  },
+  {
+    "name": "Leaves",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Legos",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Letterboxing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Life science",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Linguistics",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Listening to music",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Literature",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Locksport",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Lomography",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Long-distance running",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Longboarding",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Looming",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Lotology (lottery ticket collecting)",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Lucid dreaming",
+    "types": [
+      "Mystical"
+    ]
+  },
+  {
+    "name": "Luge",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Macrame",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Magic",
+    "types": [
+      "Arts",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Magnet fishing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Mah jong",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Mahjong",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Makeup",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Marathons",
+    "types": [
+      "Health"
+    ]
+  },
+  {
+    "name": "Marbles",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Marching band",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Martial arts",
+    "types": [
+      "Discipline",
+      "Fitness",
+      "Indoors",
+      "Outdoors",
+      "Physical",
+      "Self-defense",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Matchstick modeling",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Mathematics",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Medical science",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Meditation",
+    "types": [
+      "Indoors",
+      "Mystical"
+    ]
+  },
+  {
+    "name": "Metal detecting",
+    "types": [
+      "Adventure",
+      "Hobby",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Metalwork",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Meteorology",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Microbiology",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Microscopy",
+    "types": [
+      "Educational",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Mimicry",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Mindfulness meditation",
+    "types": [
+      "Mental health",
+      "Relaxation",
+      "Solitary"
+    ]
+  },
+  {
+    "name": "Mineral collecting",
+    "types": [
+      "Collecting",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Mini golf",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Miniature golf",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Mixing drinks",
+    "types": [
+      "Tasting"
+    ]
+  },
+  {
+    "name": "Model aircraft",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Model building",
+    "types": [
+      "Crafting",
+      "Creative",
+      "Detailed"
+    ]
+  },
+  {
+    "name": "Model racing",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Model railroading",
+    "types": [
+      "Crafting",
+      "Creative",
+      "Detailed",
+      "Technical"
+    ]
+  },
+  {
+    "name": "Model rockets",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Model ship building",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Model united nations",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Modeling ships",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Modern arnis",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Molecular gastronomy",
+    "types": [
+      "Cooking"
+    ]
+  },
+  {
+    "name": "Motor sports",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Motorcycle restoration",
+    "types": [
+      "Creative",
+      "Detailed",
+      "Mechanical"
+    ]
+  },
+  {
+    "name": "Motorcycle riding",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Motorcycling",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Mountain biking",
+    "types": [
+      "Adventure",
+      "Fitness",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Mountain climbing",
+    "types": [
+      "Adventure",
+      "Travel"
+    ]
+  },
+  {
+    "name": "Mountaineering",
+    "types": [
+      "Extreme",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Movie memorabilia collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Movie watching",
+    "types": [
+      "Movies"
+    ]
+  },
+  {
+    "name": "Museum visiting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Mushroom foraging",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Mushroom hunting/mycology",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Music composition",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Music production",
+    "types": [
+      "Musical"
+    ]
+  },
+  {
+    "name": "Musical instruments",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Mycology",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Myrmecology",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Nail art",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Name horsing",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Nascar",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Needlepoint",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Netball",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Neuroscience",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Noodling",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Nordic skating",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Nordic walking",
+    "types": [
+      "Health"
+    ]
+  },
+  {
+    "name": "Notaphily\u00a0(banknote collecting)",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Numerology",
+    "types": [
+      "Mystical"
+    ]
+  },
+  {
+    "name": "Nunchaku do",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Nutrition",
+    "types": [
+      "Health"
+    ]
+  },
+  {
+    "name": "Olympic lifting",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Opera",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Orienteering",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Origami",
+    "types": [
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative",
+      "Paper",
+      "Relaxing"
+    ]
+  },
+  {
+    "name": "Outdoor grill",
+    "types": [
+      "Cooking"
+    ]
+  },
+  {
+    "name": "Paddleboarding",
+    "types": [
+      "Physical"
+    ]
+  },
+  {
+    "name": "Paintball",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Painting",
+    "types": [
+      "Artistic",
+      "Arts",
+      "Crafts",
+      "Creative",
+      "Visual"
+    ]
+  },
+  {
+    "name": "Palmistry",
+    "types": [
+      "Mystical"
+    ]
+  },
+  {
+    "name": "Papermache",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Parachuting",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Paragliding",
+    "types": [
+      "Extreme",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Parkour",
+    "types": [
+      "Adventure",
+      "Agility",
+      "Fitness",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Partying",
+    "types": [
+      "Social"
+    ]
+  },
+  {
+    "name": "Pencil drawing",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "People watching",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "People-watching",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Perfume",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Pet adoption",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Philately",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Phillumeny",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Philosophy",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Photography",
+    "types": [
+      "Artistic",
+      "Arts",
+      "Crafts",
+      "Creative",
+      "Outdoors",
+      "Sports",
+      "Technical",
+      "Visual"
+    ]
+  },
+  {
+    "name": "Physics",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Piano",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Pickleball",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Pickup sticks",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Picnicking",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Pilates",
+    "types": [
+      "Health"
+    ]
+  },
+  {
+    "name": "Pinball",
+    "types": [
+      "Games",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Ping pong",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Pinochle",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Pirate",
+    "types": [
+      "Fantasy"
+    ]
+  },
+  {
+    "name": "Planking",
+    "types": [
+      "Trendy"
+    ]
+  },
+  {
+    "name": "Plants",
+    "types": [
+      "Nature"
+    ]
+  },
+  {
+    "name": "Plastering",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Play dough",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Playing a musical instrument",
+    "types": [
+      "Musical"
+    ]
+  },
+  {
+    "name": "Playing music",
+    "types": [
+      "Music"
+    ]
+  },
+  {
+    "name": "Podcast hosting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Podcasting",
+    "types": [
+      "Creative",
+      "Educational",
+      "Entertainment"
+    ]
+  },
+  {
+    "name": "Podcasts",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Poi",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Poker",
+    "types": [
+      "Games",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Pole dancing",
+    "types": [
+      "Arts",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Polo",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Pool",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Pottery",
+    "types": [
+      "Artistic",
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Pottery making",
+    "types": [
+      "Crafting",
+      "Creative",
+      "Handicraft"
+    ]
+  },
+  {
+    "name": "Powerboat racing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Powerboking",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Powerlifting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Pro wrestling",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Protesting",
+    "types": [
+      "Social"
+    ]
+  },
+  {
+    "name": "Psychology",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Public transport riding",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Publishing",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Puppetry",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Puzzle solving",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Puzzles",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Pyrography",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Qigong",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Quidditch",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Quilting",
+    "types": [
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative",
+      "Sewing"
+    ]
+  },
+  {
+    "name": "Race walking",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Racing drones",
+    "types": [
+      "Competitive",
+      "Sports",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Racquetball",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Radio-controlled car racing",
+    "types": [
+      "Outdoors",
+      "Technical"
+    ]
+  },
+  {
+    "name": "Radio-controlled model collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Radio-controlled model playing",
+    "types": [
+      "Indoors",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Rafting",
+    "types": [
+      "Extreme",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Rail transport modelling",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Railfans",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Railway journeys",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Railway modelling",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Railway studies",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Rappelling",
+    "types": [
+      "Extreme",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Rc car racing",
+    "types": [
+      "Hobby",
+      "Remote control",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Rc planes",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Reading",
+    "types": [
+      "Educational",
+      "Indoors",
+      "Relaxing"
+    ]
+  },
+  {
+    "name": "Record collecting",
+    "types": [
+      "Collecting",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Religious studies",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Renaissance fair",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Renaissance faire",
+    "types": [
+      "Fantasy"
+    ]
+  },
+  {
+    "name": "Renovating",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Renting movies",
+    "types": [
+      "Movies"
+    ]
+  },
+  {
+    "name": "Research",
+    "types": [
+      "Educational",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Restoring cars",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Riddles",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Road biking",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Road tripping",
+    "types": [
+      "Adventure",
+      "Travel"
+    ]
+  },
+  {
+    "name": "Robotics",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Rock balancing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Rock climbing",
+    "types": [
+      "Adventure",
+      "Extreme",
+      "Fitness",
+      "Outdoors",
+      "Physical",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Rock collecting",
+    "types": [
+      "Exploration",
+      "Geology",
+      "Nature",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Rock painting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Rock tumbling",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Role-playing games",
+    "types": [
+      "Games",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Roleplaying",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Roller derby",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Roller skating",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Rope climbing",
+    "types": [
+      "Adventure",
+      "Fitness",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Roundnet",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Rubber stamping",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Rugby",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Rugby league football",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Rughooking",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Running",
+    "types": [
+      "Cardio",
+      "Fitness",
+      "Health",
+      "Outdoors",
+      "Physical",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Safari",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Sailing",
+    "types": [
+      "Adventure",
+      "Outdoors",
+      "Sports",
+      "Water"
+    ]
+  },
+  {
+    "name": "Sand art",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Sand castle building",
+    "types": [
+      "Beach"
+    ]
+  },
+  {
+    "name": "Sandboarding",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Satellite watching",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Science and technology studies",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Scouting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Scrabble",
+    "types": [
+      "Fun",
+      "Intellectual",
+      "Word game"
+    ]
+  },
+  {
+    "name": "Scrapbooking",
+    "types": [
+      "Art",
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Scuba diving",
+    "types": [
+      "Adventure",
+      "Outdoors",
+      "Sports",
+      "Travel",
+      "Water"
+    ]
+  },
+  {
+    "name": "Sculling/rowing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Sculling\u00a0or\u00a0rowing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Sculpting",
+    "types": [
+      "Artistic",
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Scutelliphily",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Sea glass collecting",
+    "types": [
+      "Beach",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Seashell collecting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Sewing",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Shark fishing",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Shoes",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Shogi",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Shooting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Shooting sports",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Shopping",
+    "types": [
+      "Outdoors",
+      "Social",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Shortwave listening",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Shuffleboard",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Singing",
+    "types": [
+      "Art",
+      "Expressive",
+      "Music",
+      "Musical"
+    ]
+  },
+  {
+    "name": "Skateboarding",
+    "types": [
+      "Adventure",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Skeet shooting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Sketching",
+    "types": [
+      "Artistic",
+      "Arts",
+      "Crafts",
+      "Creative",
+      "Visual"
+    ]
+  },
+  {
+    "name": "Skiing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Skimboarding",
+    "types": [
+      "Beach",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Sky diving",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Skydiving",
+    "types": [
+      "Adventure",
+      "Outdoors",
+      "Sports",
+      "Thrill"
+    ]
+  },
+  {
+    "name": "Slack lining",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Slacklining",
+    "types": [
+      "Balance",
+      "Fitness",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Sled dog racing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Sledding",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Slingshots",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Slot car",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Slot car racing",
+    "types": [
+      "Indoors",
+      "Technical"
+    ]
+  },
+  {
+    "name": "Snorkeling",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Snowboarding",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Snowmobiling",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Snowshoeing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Soap making",
+    "types": [
+      "Arts",
+      "Chemical",
+      "Crafting",
+      "Crafts",
+      "Creative",
+      "Relaxing"
+    ]
+  },
+  {
+    "name": "Soapmaking",
+    "types": [
+      "Artistic",
+      "Crafting",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Soccer",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Social media",
+    "types": [
+      "Online"
+    ]
+  },
+  {
+    "name": "Social studies",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Sociology",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Softball",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Songwriting",
+    "types": [
+      "Musical"
+    ]
+  },
+  {
+    "name": "Spa",
+    "types": [
+      "Relaxation"
+    ]
+  },
+  {
+    "name": "Space tourism preparation",
+    "types": [
+      "Adventure",
+      "Travel"
+    ]
+  },
+  {
+    "name": "Speed cubing",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Speed skating",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Speedcubing",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Spelunkering",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Spinning",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Sport shooting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Sport stacking",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Sports cards collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Sports memorabilia",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Sports science",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Squash",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Stamp collecting",
+    "types": [
+      "Collecting",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Stand-up comedy",
+    "types": [
+      "Arts",
+      "Creative",
+      "Entertaining",
+      "Performing"
+    ]
+  },
+  {
+    "name": "Stargazing",
+    "types": [
+      "Nature"
+    ]
+  },
+  {
+    "name": "Stickers",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Stingray",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Stock market",
+    "types": [
+      "Investment"
+    ]
+  },
+  {
+    "name": "Stone collecting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Stone skipping",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Storm chasing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Story writing",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Storytelling",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Stratego",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Street hockey",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Street racing",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "String figures",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Stuffed animals",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Stuffed toy collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Sun bathing",
+    "types": [
+      "Beach",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Surf fishing",
+    "types": [
+      "Beach"
+    ]
+  },
+  {
+    "name": "Surfing",
+    "types": [
+      "Beach",
+      "Outdoors",
+      "Sports",
+      "Water"
+    ]
+  },
+  {
+    "name": "Survival",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Survivalism",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Swimming",
+    "types": [
+      "Fitness",
+      "Health",
+      "Outdoors",
+      "Physical",
+      "Sports",
+      "Water"
+    ]
+  },
+  {
+    "name": "Table football",
+    "types": [
+      "Games",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Table tennis",
+    "types": [
+      "Competitive",
+      "Indoors",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Table tennis playing",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Taekwondo",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Tai chi",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Tango",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Tanning",
+    "types": [
+      "Beach"
+    ]
+  },
+  {
+    "name": "Tarot",
+    "types": [
+      "Mystical"
+    ]
+  },
+  {
+    "name": "Tatting",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Taxidermy",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Tea bag collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Tea tasting",
+    "types": [
+      "Drink",
+      "Food"
+    ]
+  },
+  {
+    "name": "Teaching",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Team penning",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Tennis",
+    "types": [
+      "Competitive",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Tennis polo",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Tether car",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Tetris",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Texting",
+    "types": [
+      "Online"
+    ]
+  },
+  {
+    "name": "Theater",
+    "types": [
+      "Arts"
+    ]
+  },
+  {
+    "name": "Threading",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Thru-hiking",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Ticket collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Tie dyeing",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Tombstone rubbing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Tool collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Topiary",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Tour skating",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Tourism",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Toy collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Trade fair visiting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Train collecting",
+    "types": [
+      "Collecting"
+    ]
+  },
+  {
+    "name": "Train spotting",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "Trainspotting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Transit map collecting",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Trapshooting",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Travel",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Traveling",
+    "types": [
+      "Adventure"
+    ]
+  },
+  {
+    "name": "Treasure hunting",
+    "types": [
+      "Adventure"
+    ]
+  },
+  {
+    "name": "Tree climbing",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Triathlon",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Tutoring",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Tv",
+    "types": [
+      "Relaxation"
+    ]
+  },
+  {
+    "name": "Ukulele",
+    "types": [
+      "Creative",
+      "Instrument",
+      "Musical"
+    ]
+  },
+  {
+    "name": "Ultimate frisbee",
+    "types": [
+      "Outdoors",
+      "Social",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Unicycling",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Urban exploration",
+    "types": [
+      "Adventure",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Uv resin crafting",
+    "types": [
+      "Arts",
+      "Crafts"
+    ]
+  },
+  {
+    "name": "Vacation",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Vegetable farming",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Vehicle restoration",
+    "types": [
+      "Outdoors",
+      "Sports",
+      "Technical"
+    ]
+  },
+  {
+    "name": "Video game collecting",
+    "types": [
+      "Collecting",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Video games",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Video gaming",
+    "types": [
+      "Games",
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Videography",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Vintage cars",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Vintage clothing",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Vinyl records",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Violin",
+    "types": [
+      "Creative",
+      "Instrument",
+      "Music",
+      "Musical"
+    ]
+  },
+  {
+    "name": "Virtual reality fitness",
+    "types": [
+      "Fitness",
+      "Gaming",
+      "Interactive",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Virtual reality gaming",
+    "types": [
+      "Fun",
+      "Games",
+      "Gaming",
+      "Technology"
+    ]
+  },
+  {
+    "name": "Volleyball",
+    "types": [
+      "Indoors",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Volunteer",
+    "types": [
+      "Social"
+    ]
+  },
+  {
+    "name": "Volunteering",
+    "types": [
+      "Community",
+      "Helping",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Vr gaming",
+    "types": [
+      "Indoors"
+    ]
+  },
+  {
+    "name": "Wakeboarding",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Walking",
+    "types": [
+      "Health",
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Warhammer",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Watching movies",
+    "types": [
+      "Movies"
+    ]
+  },
+  {
+    "name": "Watching sporting events",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Water polo",
+    "types": [
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Water skiing",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Water sports",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Watercolor painting",
+    "types": [
+      "Artistic",
+      "Creative",
+      "Visual"
+    ]
+  },
+  {
+    "name": "Weather watching",
+    "types": [
+      "Nature"
+    ]
+  },
+  {
+    "name": "Web design",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Web surfing",
+    "types": [
+      "Online"
+    ]
+  },
+  {
+    "name": "Weightlifting",
+    "types": [
+      "Exercise",
+      "Fitness",
+      "Health",
+      "Indoors",
+      "Strength"
+    ]
+  },
+  {
+    "name": "Whale watching",
+    "types": [
+      "Nature",
+      "Outdoors"
+    ]
+  },
+  {
+    "name": "Whittling",
+    "types": [
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative",
+      "Wood"
+    ]
+  },
+  {
+    "name": "Wikipedia editing",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Wild foraging",
+    "types": [
+      "Nature"
+    ]
+  },
+  {
+    "name": "Wine making",
+    "types": [
+      "Drink",
+      "Food"
+    ]
+  },
+  {
+    "name": "Wine tasting",
+    "types": [
+      "Culinary",
+      "Relaxing",
+      "Social"
+    ]
+  },
+  {
+    "name": "Wingsuit flying",
+    "types": [
+      "Extreme"
+    ]
+  },
+  {
+    "name": "Wood carving",
+    "types": [
+      "Art",
+      "Crafting",
+      "Creative"
+    ]
+  },
+  {
+    "name": "Woodworking",
+    "types": [
+      "Arts",
+      "Crafting",
+      "Crafts",
+      "Creative",
+      "Handicraft"
+    ]
+  },
+  {
+    "name": "Word searches",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Working on cars",
+    "types": [
+      "Technical"
+    ]
+  },
+  {
+    "name": "World exploration",
+    "types": [
+      "Adventure",
+      "Travel"
+    ]
+  },
+  {
+    "name": "World records",
+    "types": [
+      "Adventure"
+    ]
+  },
+  {
+    "name": "Wrestling",
+    "types": [
+      "Indoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Writing",
+    "types": [
+      "Educational"
+    ]
+  },
+  {
+    "name": "Writing short stories",
+    "types": [
+      "Creative",
+      "Literary",
+      "Solitary"
+    ]
+  },
+  {
+    "name": "Yacht racing",
+    "types": [
+      "Sports"
+    ]
+  },
+  {
+    "name": "Yoga",
+    "types": [
+      "Fitness",
+      "Flexibility",
+      "Health",
+      "Physical",
+      "Relaxation"
+    ]
+  },
+  {
+    "name": "Yoyo",
+    "types": [
+      "Games"
+    ]
+  },
+  {
+    "name": "Ziplining",
+    "types": [
+      "Adventure"
+    ]
+  },
+  {
+    "name": "Zoo",
+    "types": [
+      "Animal care"
+    ]
+  },
+  {
+    "name": "Zoo visiting",
+    "types": [
+      "Outdoors",
+      "Sports"
+    ]
+  },
+  {
+    "name": "Zumba",
+    "types": [
+      "Health"
+    ]
+  }
+]
