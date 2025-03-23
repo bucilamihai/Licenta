@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface HobbyTypeRepository extends JpaRepository<HobbyType, Long> {
+
+    HobbyType findByName(String name);
 }

@@ -14,4 +14,8 @@ public class HobbyTypeService {
     public HobbyType saveHobbyType(HobbyType hobbyType) {
         return hobbyTypeRepository.save(hobbyType);
     }
+
+    public HobbyType findHobbyTypeByName(String name) {
+        return hobbyTypeRepository.findByName(name);
+    }
 }

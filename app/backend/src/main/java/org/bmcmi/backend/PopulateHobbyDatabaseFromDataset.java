@@ -4,44 +4,41 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.bmcmi.backend.domain.Hobby;
 import org.bmcmi.backend.domain.HobbyType;
+import org.bmcmi.backend.service.HobbyService;
+import org.bmcmi.backend.service.HobbyTypeService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
+@Component
 public class PopulateHobbyDatabaseFromDataset {
 
-    public static void run(String jsonFilePath) throws IOException {
+    @Autowired
+    private HobbyTypeService hobbyTypeService;
+    @Autowired
+    private HobbyService hobbyService;
+
+    public void run(String jsonFilePath) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode jsonNode = objectMapper.readTree(new File(jsonFilePath));
 
-        Set<String> hobbyTypeNames = new HashSet<>();
-        List<Hobby> hobbies = new ArrayList<>();
         for(JsonNode hobby: jsonNode) {
-            System.out.println(hobby);
-            List<HobbyType> hobbyTypesForCurrentHobby = new ArrayList<>();
-            String name = hobby.get("name").toString();
+            String name = hobby.get("name").asText();
+            List<HobbyType> hobbyTypes = new ArrayList<>();
             for(JsonNode type: hobby.get("types")) {
-                System.out.println(type.toString());
-                HobbyType hobbyType = new HobbyType(type.toString());
-                hobbyTypeNames.add(type.toString());
-                hobbyTypesForCurrentHobby.add(hobbyType);
+                String hobbyTypeName = type.asText();
+                var hobbyType = hobbyTypeService.findHobbyTypeByName(hobbyTypeName);
+                if(hobbyType == null) {
+                    hobbyTypes.add(hobbyTypeService.saveHobbyType(new HobbyType(hobbyTypeName)));
+                }
+                else {
+                    hobbyTypes.add(hobbyType);
+                }
             }
-            hobbies.add(new Hobby(name, hobbyTypesForCurrentHobby));
+            hobbyService.saveHobby(new Hobby(name, hobbyTypes));
         }
-        List<HobbyType> hobbyTypes = new ArrayList<>();
-        hobbyTypeNames.forEach(hobbyType ->
-                hobbyTypes.add(new HobbyType(hobbyType))
-        );
-
-        System.out.println(hobbies.size());
-        System.out.println(hobbyTypes.size());
-
-        hobbyTypes.forEach(hobbyType ->
-
-        );
     }
 }
