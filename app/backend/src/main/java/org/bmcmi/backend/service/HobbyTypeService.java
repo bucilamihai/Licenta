@@ -11,11 +11,11 @@ public class HobbyTypeService {
     @Autowired
     private HobbyTypeRepository hobbyTypeRepository;
 
-    public HobbyType saveHobbyType(HobbyType hobbyType) {
+    public HobbyType save(HobbyType hobbyType) {
         return hobbyTypeRepository.save(hobbyType);
     }
 
-    public HobbyType findHobbyTypeByName(String name) {
+    public HobbyType findByName(String name) {
         return hobbyTypeRepository.findByName(name);
     }
 }

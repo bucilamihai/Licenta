@@ -11,7 +11,7 @@ public class HobbyService {
     @Autowired
     private HobbyRepository hobbyRepository;
 
-    public Hobby saveHobby(Hobby hobby) {
+    public Hobby save(Hobby hobby) {
         return hobbyRepository.save(hobby);
     }
 }

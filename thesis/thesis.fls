@@ -207,17 +207,11 @@ INPUT .\chapters\chapter3.tex
 INPUT .\chapters\chapter3.tex
 INPUT .\chapters\chapter3.tex
 INPUT chapters\chapter3.tex
-INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplr7t.tfm
-INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb7t.tfm
-INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplb7t.vf
-INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplb8r.tfm
 INPUT .\chapters\chapter4.tex
 INPUT .\chapters\chapter4.tex
 INPUT .\chapters\chapter4.tex
 INPUT .\chapters\chapter4.tex
 INPUT chapters\chapter4.tex
-INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\palatino\pplro7t.vf
-INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\palatino\pplro8r.tfm
 INPUT .\chapters\chapter5_conclusions.tex
 INPUT .\chapters\chapter5_conclusions.tex
 INPUT .\chapters\chapter5_conclusions.tex
@@ -234,8 +228,6 @@ INPUT .\thesis.out
 INPUT .\thesis.out
 INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplb8a.pfb
 INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplb8a.pfb
-INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
-INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
 INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
 INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplr8a.pfb
 INPUT C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\fonts\type1\urw\palatino\uplri8a.pfb
