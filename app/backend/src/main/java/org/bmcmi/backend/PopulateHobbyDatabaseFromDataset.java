@@ -30,15 +30,15 @@ public class PopulateHobbyDatabaseFromDataset {
             List<HobbyType> hobbyTypes = new ArrayList<>();
             for(JsonNode type: hobby.get("types")) {
                 String hobbyTypeName = type.asText();
-                var hobbyType = hobbyTypeService.findHobbyTypeByName(hobbyTypeName);
+                var hobbyType = hobbyTypeService.findByName(hobbyTypeName);
                 if(hobbyType == null) {
-                    hobbyTypes.add(hobbyTypeService.saveHobbyType(new HobbyType(hobbyTypeName)));
+                    hobbyTypes.add(hobbyTypeService.save(new HobbyType(hobbyTypeName)));
                 }
                 else {
                     hobbyTypes.add(hobbyType);
                 }
             }
-            hobbyService.saveHobby(new Hobby(name, hobbyTypes));
+            hobbyService.save(new Hobby(name, hobbyTypes));
         }
     }
 }

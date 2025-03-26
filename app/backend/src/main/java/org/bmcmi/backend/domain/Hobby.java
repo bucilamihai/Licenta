@@ -1,6 +1,7 @@
 package org.bmcmi.backend.domain;
 
 import jakarta.persistence.*;
+import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.List;
 import java.util.Objects;
@@ -12,7 +13,7 @@ public class Hobby {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String name;
     @ManyToMany
     private List<HobbyType> types;
