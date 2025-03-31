@@ -16,6 +16,6 @@ public class HobbyController {
 
     @PostMapping("")
     public Hobby saveHobby(Hobby hobby) {
-        return hobbyService.saveHobby(hobby);
+        return hobbyService.save(hobby);
     }
 }
