@@ -16,11 +16,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("")
-    public User save(User user) {
-        return userService.save(user);
-    }
-
     @GetMapping("")
     public ResponseEntity<User> findByEmail(String email) {
         User foundUser = userService.findByEmail(email);
