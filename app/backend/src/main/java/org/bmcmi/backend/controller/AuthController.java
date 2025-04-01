@@ -1,9 +1,10 @@
 package org.bmcmi.backend.controller;
 
 
-import org.bmcmi.backend.domain.User;
 import org.bmcmi.backend.dto.UserDTO;
+import org.bmcmi.backend.exception.EmailAlreadyExists;
 import org.bmcmi.backend.service.AuthService;
+import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +18,19 @@ public class AuthController {
     private AuthService authService;
 
     @PostMapping("/register")
-    public ResponseEntity<UserDTO> register(@RequestBody UserDTO userDTO) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(authService.register(userDTO));
+    public ResponseEntity<?> register(@RequestBody UserDTO userDTO) {
+        try {
+            return ResponseEntity.status(HttpStatus.CREATED).body(authService.register(userDTO));
+        }
+        catch (EmailAlreadyExists e) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(
+                Map.of("error", e.getMessage())
+            );
+        }
+        catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(
+                Map.of("error", "An unexpected error occurred: " + e.getMessage())
+            );
+        }
     }
 }
