@@ -2,7 +2,8 @@ package org.bmcmi.backend.controller;
 
 
 import org.bmcmi.backend.dto.UserDTO;
-import org.bmcmi.backend.exception.EmailAlreadyExists;
+import org.bmcmi.backend.exception.DuplicateResourceException;
+import org.bmcmi.backend.exception.ValidationException;
 import org.bmcmi.backend.service.AuthService;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,13 @@ public class AuthController {
         try {
             return ResponseEntity.status(HttpStatus.CREATED).body(authService.register(userDTO));
         }
-        catch (EmailAlreadyExists e) {
+        catch (DuplicateResourceException e) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body(
+                Map.of("error", e.getMessage())
+            );
+        }
+        catch (ValidationException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(
                 Map.of("error", e.getMessage())
             );
         }
