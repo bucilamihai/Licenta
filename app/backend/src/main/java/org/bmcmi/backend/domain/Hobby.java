@@ -1,7 +1,6 @@
 package org.bmcmi.backend.domain;
 
 import jakarta.persistence.*;
-import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.List;
 import java.util.Objects;

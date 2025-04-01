@@ -24,11 +24,11 @@ export interface UserData {
 const Register: React.FC = () => {
   const handleRegister = () => {
     if (!firstName || !lastName || !email || !password) {
-      alert("Please fill in all fields");
+      alert("Please fill in all fields!");
       return;
     }
     if (password !== confirmPassword) {
-      alert("Passwords do not match");
+      alert("Passwords do not match!");
       return;
     }
     const user: UserData = {
