@@ -28,6 +28,7 @@ const Login: React.FC = () => {
     login(user).then((response) => {
       if (response.ok) {
         alert("Login successful");
+        console.log("Login successful", response.data);
       } else {
         alert(`Error: ${response.error}`);
       }

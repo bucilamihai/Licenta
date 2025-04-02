@@ -53,7 +53,7 @@ public class LoginDTO {
 
     @Override
     public String toString() {
-        return "UserDTO{" +
+        return "LoginDTO{" +
                 "email='" + email + '\'' +
                 '}';
     }
