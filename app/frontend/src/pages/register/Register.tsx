@@ -12,14 +12,9 @@ import {
   IonButton,
 } from "@ionic/react";
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { register } from "../../services/api";
-
-export interface UserData {
-  firstName: string;
-  lastName: string;
-  email: string;
-  password: string;
-}
+import { UserData } from "../../types/userTypes";
 
 const Register: React.FC = () => {
   const handleRegister = () => {
@@ -40,12 +35,14 @@ const Register: React.FC = () => {
     register(user).then((response) => {
       if (response.ok) {
         alert("Registration successful");
+        history.push("/login");
       } else {
         alert(`Error: ${response.error}`);
       }
     });
   };
 
+  const history = useHistory();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
