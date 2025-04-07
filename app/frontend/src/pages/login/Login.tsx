@@ -10,6 +10,7 @@ import {
   IonCard,
   IonCardContent,
   IonButton,
+  IonRouterLink,
 } from "@ionic/react";
 import React, { useState } from "react";
 import { login } from "../../services/api";
@@ -70,6 +71,9 @@ const Login: React.FC = () => {
               </IonButton>
             </IonCardContent>
           </IonCard>
+          <IonRouterLink routerLink="/register">
+            Don't have an account? Register here.
+          </IonRouterLink>
         </IonContent>
       </IonContent>
     </IonPage>
