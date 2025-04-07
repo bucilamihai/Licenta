@@ -14,6 +14,7 @@ import {
 import React, { useState } from "react";
 import { login } from "../../services/api";
 import { LoginData } from "../../types/userTypes";
+import { Link } from "react-router-dom";
 
 const Login: React.FC = () => {
   const handleLogin = () => {
@@ -70,6 +71,7 @@ const Login: React.FC = () => {
               </IonButton>
             </IonCardContent>
           </IonCard>
+          <Link to="/register">Don't have an account? Register here.</Link>
         </IonContent>
       </IonContent>
     </IonPage>
