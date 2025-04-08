@@ -6,6 +6,7 @@ import org.bmcmi.backend.dto.UserWithTokenDTO;
 import org.bmcmi.backend.dto.LoginDTO;
 import org.bmcmi.backend.exception.DuplicateResourceException;
 import org.bmcmi.backend.exception.ValidationException;
+import org.bmcmi.backend.mapper.HobbyMapper;
 import org.bmcmi.backend.repository.UserRepository;
 import org.bmcmi.backend.security.Jwt;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,6 @@ public class AuthService {
             throw new ValidationException("Invalid password!");
         }
         String token = jwt.generateToken(user.getEmail());
-        return new UserWithTokenDTO(user.getFirstName(), user.getLastName(), user.getEmail(), token);
+        return new UserWithTokenDTO(user.getFirstName(), user.getLastName(), user.getEmail(), HobbyMapper.toDTOList(user.getHobbies()), token);
     }
 }
