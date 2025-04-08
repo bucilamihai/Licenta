@@ -42,7 +42,7 @@ public class UserService {
             Hobby hobby = allHobbies.stream()
                     .filter(h -> h.getName().equals(hobbyDTO.getName()))
                     .findFirst()
-                    .orElseThrow(() -> new ValidationException("Hobby not found!"));
+                    .orElseThrow(() -> new ValidationException("Hobby " + hobbyDTO.getName() + " not found!"));
             userHobbies.add(hobby);
         }
         user.setHobbies(userHobbies);
