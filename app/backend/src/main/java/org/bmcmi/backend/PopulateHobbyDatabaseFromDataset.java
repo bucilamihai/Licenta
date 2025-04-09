@@ -39,7 +39,6 @@ public class PopulateHobbyDatabaseFromDataset {
                 }
             }
             Hobby addedHobby = hobbyRepository.save(new Hobby(name, hobbyTypes));
-            System.out.println(addedHobby);
         }
     }
 }
