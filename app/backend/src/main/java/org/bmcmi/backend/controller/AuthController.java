@@ -1,8 +1,8 @@
 package org.bmcmi.backend.controller;
 
 
-import org.bmcmi.backend.dto.UserDTO;
 import org.bmcmi.backend.dto.LoginDTO;
+import org.bmcmi.backend.dto.RegisterDTO;
 import org.bmcmi.backend.exception.DuplicateResourceException;
 import org.bmcmi.backend.exception.ValidationException;
 import org.bmcmi.backend.service.AuthService;
@@ -21,9 +21,9 @@ public class AuthController {
     private AuthService authService;
 
     @PostMapping("/register")
-    public ResponseEntity<?> register(@Valid @RequestBody UserDTO userDTO) {
+    public ResponseEntity<?> register(@Valid @RequestBody RegisterDTO registerDTO) {
         try {
-            return ResponseEntity.status(HttpStatus.CREATED).body(authService.register(userDTO));
+            return ResponseEntity.status(HttpStatus.CREATED).body(authService.register(registerDTO));
         }
         catch (DuplicateResourceException e) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body(

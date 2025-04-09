@@ -14,22 +14,40 @@ import {
 } from "@ionic/react";
 import React, { useState } from "react";
 import { login } from "../../services/api";
-import { LoginData } from "../../types/userTypes";
+import { UserLogin } from "../../types/userTypes";
+import { setCredentials } from "../../slices/authSlice";
+import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 
 const Login: React.FC = () => {
+  const dispatch = useDispatch();
+  const history = useHistory();
+
   const handleLogin = () => {
     if (!email || !password) {
       alert("Please fill in all fields!");
       return;
     }
-    const user: LoginData = {
+    const user: UserLogin = {
       email,
       password,
     };
     login(user).then((response) => {
       if (response.ok) {
         alert("Login successful");
-        console.log("Login successful", response.data);
+        console.log(response.data);
+        dispatch(
+          setCredentials({
+            user: {
+              firstName: response.data.firstName,
+              lastName: response.data.lastName,
+              email: response.data.email,
+              hobbies: response.data.hobbies,
+            },
+            token: response.data.token,
+          }),
+        );
+        history.push("/onboarding");
       } else {
         alert(`Error: ${response.error}`);
       }
