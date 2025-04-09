@@ -14,7 +14,7 @@ import {
 } from "@ionic/react";
 import React, { useState } from "react";
 import { login } from "../../services/api";
-import { LoginData } from "../../types/userTypes";
+import { UserLogin } from "../../types/userTypes";
 import { setCredentials } from "../../slices/authSlice";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -28,7 +28,7 @@ const Login: React.FC = () => {
       alert("Please fill in all fields!");
       return;
     }
-    const user: LoginData = {
+    const user: UserLogin = {
       email,
       password,
     };

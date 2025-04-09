@@ -36,6 +36,8 @@ public class UserService {
         if (user == null) {
             throw new ValidationException("There's no user with this email!");
         }
+        System.out.println(userDTO.getHobbies());
+        System.out.println(user.getHobbies());
         List<Hobby> allHobbies = hobbyRepository.findAll();
         List<Hobby> userHobbies = new ArrayList<>();
         for (HobbyDTO hobbyDTO : userDTO.getHobbies()) {

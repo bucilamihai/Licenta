@@ -15,7 +15,7 @@ import {
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { register } from "../../services/api";
-import { UserData } from "../../types/userTypes";
+import { UserRegistration } from "../../types/userTypes";
 
 const Register: React.FC = () => {
   const handleRegister = () => {
@@ -27,7 +27,7 @@ const Register: React.FC = () => {
       alert("Passwords do not match!");
       return;
     }
-    const user: UserData = {
+    const user: UserRegistration = {
       firstName,
       lastName,
       email,

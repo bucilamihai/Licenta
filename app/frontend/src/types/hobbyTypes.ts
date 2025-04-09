@@ -1,8 +1,8 @@
-export interface HobbyTypesData {
+export interface HobbyTypes {
   name: string;
 }
 
-export interface HobbyData {
+export interface Hobby {
   name: string;
-  types: HobbyTypesData[];
+  types: HobbyTypes[];
 }

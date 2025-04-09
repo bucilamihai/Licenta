@@ -14,18 +14,30 @@ import {
 } from "@ionic/react";
 import React, { useEffect, useState } from "react";
 
-import Hobby from "../../components/Hobby";
-import { HobbyData } from "../../types/hobbyTypes";
+import HobbyComponent from "../../components/Hobby";
+import { Hobby } from "../../types/hobbyTypes";
 import { findAllHobbies } from "../../services/api";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store";
+import { useHistory } from "react-router-dom";
+import { saveHobbies } from "../../services/api";
+import { useDispatch } from "react-redux";
+import { setUser } from "../../slices/authSlice";
 
 const Onboarding: React.FC = () => {
+  const history = useHistory();
+  const dispatch = useDispatch();
   const user = useSelector((state: RootState) => state.auth.user);
   const token = useSelector((state: RootState) => state.auth.token);
 
-  const [hobbies, setHobbies] = useState<HobbyData[]>([]);
-  const [filteredHobbies, setFilteredHobbies] = useState<HobbyData[]>([]);
+  if (!user || !token) {
+    history.push("/login");
+    return null;
+  }
+
+  const [hobbies, setHobbies] = useState<Hobby[]>([]);
+  const [filteredHobbies, setFilteredHobbies] = useState<Hobby[]>([]);
+  const [selectedHobbies, setSelectedHobbies] = useState<Hobby[]>([]);
 
   useEffect(() => {
     findAllHobbies().then((response) => {
@@ -38,8 +50,44 @@ const Onboarding: React.FC = () => {
     });
   }, []);
 
+  const handleSelectHobby = (name: string, checked: boolean) => {
+    if (checked) {
+      setSelectedHobbies((prev) => {
+        const hobby = hobbies.find((hobby) => hobby.name === name);
+        if (hobby) {
+          return [...prev, hobby];
+        }
+        return prev;
+      });
+    } else {
+      setSelectedHobbies((prev) => {
+        const hobby = hobbies.find((hobby) => hobby.name === name);
+        if (hobby) {
+          return prev.filter((hobby) => hobby.name !== name);
+        }
+        return prev;
+      });
+    }
+  };
+
   const handleSaveHobbies = () => {
-    alert("Hobbies saved successfully!");
+    if (selectedHobbies.length === 0) {
+      alert("Please select at least one hobby");
+      return;
+    }
+    const userWithHobbies = {
+      ...user,
+      hobbies: selectedHobbies,
+    };
+    saveHobbies(userWithHobbies).then((response) => {
+      if (response.ok) {
+        alert("Hobbies saved successfully");
+        dispatch(setUser(userWithHobbies));
+        history.push("/home");
+      } else {
+        alert(`Error: ${response.error}`);
+      }
+    });
   };
 
   const handleSearch = (event: Event) => {
@@ -77,11 +125,6 @@ const Onboarding: React.FC = () => {
                 Complete your profile by selecting your hobbies
               </IonCardTitle>
             </IonCardHeader>
-            <div>
-              <p>Welcome {user.firstName + " " + user.lastName}</p>
-              <p>Your email: {user.email}</p>
-              <p>Your token: {token}</p>
-            </div>
             <IonSearchbar
               debounce={500}
               onIonInput={(event) => handleSearch(event)}
@@ -89,7 +132,12 @@ const Onboarding: React.FC = () => {
             <IonCardContent>
               <IonList>
                 {filteredHobbies.map((value, index) => (
-                  <Hobby key={index} name={value.name} types={value.types} />
+                  <HobbyComponent
+                    key={index}
+                    name={value.name}
+                    types={value.types}
+                    onChange={handleSelectHobby}
+                  />
                 ))}
               </IonList>
               <IonButton onClick={handleSaveHobbies}>Save</IonButton>

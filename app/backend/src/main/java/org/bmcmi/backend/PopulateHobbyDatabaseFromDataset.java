@@ -2,14 +2,10 @@ package org.bmcmi.backend;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.bmcmi.backend.mapper.HobbyMapper;
-import org.bmcmi.backend.mapper.HobbyTypeMapper;
 import org.bmcmi.backend.repository.HobbyRepository;
 import org.bmcmi.backend.repository.HobbyTypeRepository;
 import org.bmcmi.backend.domain.Hobby;
 import org.bmcmi.backend.domain.HobbyType;
-import org.bmcmi.backend.service.HobbyService;
-import org.bmcmi.backend.service.HobbyTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
