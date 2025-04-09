@@ -6,9 +6,9 @@ const Hobby: React.FC<HobbyData> = ({ name, types }) => {
   return (
     <>
       <IonCheckbox slot="start" />
-      <IonText>{name}</IonText>
+      <h1>{name}</h1>
       {types.map((type, index) => (
-        <h2 key={index}>{type.name}</h2>
+        <p key={index}>{type.name}</p>
       ))}
     </>
   );

@@ -12,12 +12,27 @@ import {
   IonCardTitle,
   IonSearchbar,
 } from "@ionic/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Hobby from "../../components/Hobby";
 import { HobbyData } from "../../types/hobbyTypes";
+import { findAllHobbies } from "../../services/api";
 
 const Onboarding: React.FC = () => {
+	const [hobbies, setHobbies] = useState<HobbyData[]>([]);
+	const [filteredHobbies, setFilteredHobbies] = useState<HobbyData[]>([]);
+
+	useEffect(() => {
+		findAllHobbies().then((response) => {
+			if (response.ok) {
+				setHobbies(response.data);
+				setFilteredHobbies(response.data);
+			} else {
+				alert(`Error: ${response.error}`);
+			}
+		});
+	}, []);
+
   const handleSaveHobbies = () => {
     alert("Hobbies saved successfully!");
   };
@@ -31,33 +46,14 @@ const Onboarding: React.FC = () => {
         searchValue === undefined ||
         searchValue === ""
       ) {
-        filteredHobbies = hobbies;
+        setFilteredHobbies(hobbies);
       } else {
-        filteredHobbies = hobbies.filter((hobby) =>
+        setFilteredHobbies(hobbies.filter((hobby) =>
           hobby.name.toLowerCase().includes(searchValue.toLowerCase()),
-        );
+        ));
       }
-      console.log(filteredHobbies);
     }
   };
-
-  const hobbies: HobbyData[] = [];
-  hobbies.push(
-    {
-      name: "abc",
-      types: [{ name: "a" }, { name: "b" }],
-    },
-    {
-      name: "xyz",
-      types: [{ name: "a" }, { name: "b" }],
-    },
-    {
-      name: "abcde",
-      types: [{ name: "a" }, { name: "b" }],
-    },
-  );
-
-  var filteredHobbies = hobbies;
 
   return (
     <IonPage>
@@ -75,7 +71,7 @@ const Onboarding: React.FC = () => {
               </IonCardTitle>
             </IonCardHeader>
             <IonSearchbar
-              debounce={1000}
+              debounce={500}
               onIonInput={(event) => handleSearch(event)}
             ></IonSearchbar>
             <IonCardContent>

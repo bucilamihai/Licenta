@@ -4,6 +4,7 @@ import org.bmcmi.backend.domain.User;
 import org.bmcmi.backend.dto.UserDTO;
 import org.bmcmi.backend.dto.UserWithTokenDTO;
 import org.bmcmi.backend.dto.LoginDTO;
+import org.bmcmi.backend.dto.RegisterDTO;
 import org.bmcmi.backend.exception.DuplicateResourceException;
 import org.bmcmi.backend.exception.ValidationException;
 import org.bmcmi.backend.mapper.HobbyMapper;
@@ -19,12 +20,12 @@ public class AuthService {
     @Autowired
     private Jwt jwt;
 
-    public UserDTO register(UserDTO userDTO) throws ValidationException, DuplicateResourceException {
-        User existingUser = userRepository.findByEmail(userDTO.getEmail());
+    public UserDTO register(RegisterDTO registerDTO) throws ValidationException, DuplicateResourceException {
+        User existingUser = userRepository.findByEmail(registerDTO.getEmail());
         if (existingUser != null) {
             throw new DuplicateResourceException("Email already exists!");
         }
-        User user = new User(userDTO.getFirstName(), userDTO.getLastName(), userDTO.getEmail(), userDTO.getPassword());
+        User user = new User(registerDTO.getFirstName(), registerDTO.getLastName(), registerDTO.getEmail(), registerDTO.getPassword());
         user = userRepository.save(user);
         return new UserDTO(user.getFirstName(), user.getLastName(), user.getEmail());
     }

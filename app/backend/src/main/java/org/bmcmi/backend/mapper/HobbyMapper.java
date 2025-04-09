@@ -26,4 +26,14 @@ public class HobbyMapper {
         }
         return hobbyDTOs;
     }
+
+    public static Hobby toEntity(HobbyDTO hobbyDTO) {
+        if (hobbyDTO == null) {
+            return null;
+        }
+        Hobby hobby = new Hobby();
+        hobby.setName(hobbyDTO.getName());
+        hobby.setTypes(HobbyTypeMapper.toEntityList(hobbyDTO.getTypes()));
+        return hobby;
+    }
 }

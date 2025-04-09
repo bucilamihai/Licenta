@@ -38,3 +38,17 @@ export const login = async (user: LoginData) => {
     }
   }
 };
+
+export const findAllHobbies = async () => {
+  try {
+    const response = await api.get("/hobbies");
+    return { ok: true, data: response.data };
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      const messageError = error.response?.data?.error || "An error occurred";
+      return { ok: false, error: messageError };
+    } else {
+      return { ok: false, error: "An unexpected error occurred" };
+    }
+  }
+};

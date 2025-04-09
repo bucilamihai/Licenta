@@ -14,8 +14,8 @@ public class HobbyService {
     @Autowired
     private HobbyRepository hobbyRepository;
 
-    public HobbyDTO save(Hobby hobby) {
-        return HobbyMapper.toDTO(hobbyRepository.save(hobby));
+    public HobbyDTO save(HobbyDTO hobby) {
+        return HobbyMapper.toDTO(hobbyRepository.save(HobbyMapper.toEntity(hobby)));
     }
    
     public List<HobbyDTO> findAll() {

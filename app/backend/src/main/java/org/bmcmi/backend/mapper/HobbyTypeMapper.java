@@ -25,4 +25,24 @@ public class HobbyTypeMapper {
         }
         return hobbyTypeDTOs;
     }
+
+    public static HobbyType toEntity(HobbyTypeDTO hobbyTypeDTO) {
+        if (hobbyTypeDTO == null) {
+            return null;
+        }
+        HobbyType hobbyType = new HobbyType();
+        hobbyType.setName(hobbyTypeDTO.getName());
+        return hobbyType;
+    }
+
+    public static List<HobbyType> toEntityList(List<HobbyTypeDTO> hobbyTypeDTOs) {
+        if (hobbyTypeDTOs == null || hobbyTypeDTOs.isEmpty()) {
+            return new ArrayList<>();
+        }
+        List<HobbyType> hobbyTypes = new ArrayList<>();
+        for (HobbyTypeDTO hobbyTypeDTO: hobbyTypeDTOs) {
+            hobbyTypes.add(toEntity(hobbyTypeDTO));
+        }
+        return hobbyTypes;
+    }
 }
