@@ -17,21 +17,26 @@ import React, { useEffect, useState } from "react";
 import Hobby from "../../components/Hobby";
 import { HobbyData } from "../../types/hobbyTypes";
 import { findAllHobbies } from "../../services/api";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store";
 
 const Onboarding: React.FC = () => {
-	const [hobbies, setHobbies] = useState<HobbyData[]>([]);
-	const [filteredHobbies, setFilteredHobbies] = useState<HobbyData[]>([]);
+  const user = useSelector((state: RootState) => state.auth.user);
+  const token = useSelector((state: RootState) => state.auth.token);
 
-	useEffect(() => {
-		findAllHobbies().then((response) => {
-			if (response.ok) {
-				setHobbies(response.data);
-				setFilteredHobbies(response.data);
-			} else {
-				alert(`Error: ${response.error}`);
-			}
-		});
-	}, []);
+  const [hobbies, setHobbies] = useState<HobbyData[]>([]);
+  const [filteredHobbies, setFilteredHobbies] = useState<HobbyData[]>([]);
+
+  useEffect(() => {
+    findAllHobbies().then((response) => {
+      if (response.ok) {
+        setHobbies(response.data);
+        setFilteredHobbies(response.data);
+      } else {
+        alert(`Error: ${response.error}`);
+      }
+    });
+  }, []);
 
   const handleSaveHobbies = () => {
     alert("Hobbies saved successfully!");
@@ -48,9 +53,11 @@ const Onboarding: React.FC = () => {
       ) {
         setFilteredHobbies(hobbies);
       } else {
-        setFilteredHobbies(hobbies.filter((hobby) =>
-          hobby.name.toLowerCase().includes(searchValue.toLowerCase()),
-        ));
+        setFilteredHobbies(
+          hobbies.filter((hobby) =>
+            hobby.name.toLowerCase().includes(searchValue.toLowerCase()),
+          ),
+        );
       }
     }
   };
@@ -70,6 +77,11 @@ const Onboarding: React.FC = () => {
                 Complete your profile by selecting your hobbies
               </IonCardTitle>
             </IonCardHeader>
+            <div>
+              <p>Welcome {user.firstName + " " + user.lastName}</p>
+              <p>Your email: {user.email}</p>
+              <p>Your token: {token}</p>
+            </div>
             <IonSearchbar
               debounce={500}
               onIonInput={(event) => handleSearch(event)}

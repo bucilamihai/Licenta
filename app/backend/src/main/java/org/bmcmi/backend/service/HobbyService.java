@@ -1,6 +1,5 @@
 package org.bmcmi.backend.service;
 
-import org.bmcmi.backend.domain.Hobby;
 import org.bmcmi.backend.dto.HobbyDTO;
 import org.bmcmi.backend.mapper.HobbyMapper;
 import org.bmcmi.backend.repository.HobbyRepository;
