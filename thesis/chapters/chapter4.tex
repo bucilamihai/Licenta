@@ -4,14 +4,38 @@
 \section{Arhitectura}
 \label{sec:ch4sec1}
 
-\section{Backend}
+Aplicația este alcătuită din 3 componente: interfața utilizator (frontend), partea de server (backend) și sistemul de recomandare. 
+Partea de frontend este dezvoltată în Ionic React, tehnologie ce îmbină librăria React, scrisă în limbajul de programare JavaScript, 
+utilizată pentru a construi interfețe utilizator și Ionic, un instrument ce ajută la dezvoltarea aplicațiilor cross-platform. 
+Folosind Ionic, aplicația poate fi instalată pe mai multe platforme --- web, mobile (Android, iOS), desktop --- utilizând același cod sursă. 
+Această abordare eficientizează dezvoltarea și întreținerea aplicațiilor, permițând o experiență de utilizare uniformă, indiferent de dispozitiv folosit. 
+
+\subsection{Frontend}
+\label{subsec:ch4sec1sub1}
+Interfața utilizator a aplicației este compusă din rute, pagini și componente. 
+Paginile corespund unor ecrane complete din aplicație, iar componentele sunt părți reutilizabile ale aplicației, precum un formular sau buton personalizat.
+Componentele primesc proprietăți și returnează elemente de interfață utilizator.
+Rutele definesc ce pagină trebuie afișată atunci când utilizatorul accesează o anumită adresă (URL). 
+De exemplu, ruta \texttt{/login} afișează pagina de autentificare, ruta \texttt{/register} afișează pagina de înregistrare ș.a.m.d.
+
+\par
+Frontend-ul comunică cu serverul prin apeluri HTTP, datele fiind transmise în formatul JSON.
+În cadrul aplicației a fost creat fișierul \texttt{api.ts} care grupează toate cererile care sunt trimise către backend. 
+Acest serviciu oferă funcții precum \texttt{register}, \texttt{login} și \texttt{saveHobbies}.
+Aplicația folosește biblioteca Axios, o soluție populară și eficientă pentru manipularea cererilor HTTP.
+
+
+\subsection{Backend}
+\label{subsec:ch4sec1sub2}
+
+\subsection{Sistemul de recomandare}
+\label{subsec:ch4sec1sub3}
+
+\section{Funcționalități}
 \label{sec:ch4sec2}
 
-\section{Frontend}
-\label{sec:ch4sec3}
-
 \section{Testare}
-\label{sec:ch4sec4}
+\label{sec:ch4sec3}
 
 \section{Manual de utilizare}
 \label{sec:ch4sec4}

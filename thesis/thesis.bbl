@@ -21,10 +21,9 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{1}
-H.~Brito, A.~Gomes, {\'A}.~Santos, and J.~Bernardino, ``Javascript in mobile
-  applications: React native vs ionic vs nativescript vs native development,''
-  in \emph{2018 13th Iberian conference on information systems and technologies
-  (CISTI)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2018, pp. 1--6.
+\bibitem{kumar2018recommendation}
+P.~Kumar and R.~S. Thakur, ``Recommendation system techniques and related
+  issues: a survey,'' \emph{International Journal of Information Technology},
+  vol.~10, pp. 495--501, 2018.
 
 \end{thebibliography}
