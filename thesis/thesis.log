@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  29 APR 2025 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  1 MAY 2025 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -367,17 +367,20 @@ Capitolul 3.
 
 ]
 Capitolul 4.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 19.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 20.
 (C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \hbox (13.21341pt too wide) in paragraph at lines 22--26
-\OT1/ppl/m/n/12 ce-re-rile care sunt tri-mise c[]atre ba-c-kend. Acest ser-vi-ciu ofer[]a func[]ii pre-cum \OT1/pcr/m/n/12 register\OT1/ppl/m/n/12 ,
- []
-
-) (chapters/chapter5_conclusions.tex [4
+) [4
 
 ]
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 39.
+ (C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Underfull \hbox (badness 4479) in paragraph at lines 56--58
+\OT1/ppl/m/n/12 Conectarea la baza de date se face cu aju-to-rul fi[]ierului de con-fi-gu-rare
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -386,10 +389,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-Capitolul 5.
-) (thesis.bbl [6
 
-]) [7
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]) (chapters/chapter5_conclusions.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+Capitolul 5.
+) (thesis.bbl [8
+
+]) [9
 
 ] (thesis.aux)
  ***********
@@ -401,20 +420,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: BE40FDA9528EC3C7AC0EA6958AA4254D;2502.
+(rerunfilecheck)             Checksum: CF7A40AFE7209F5DFEF478FCC006B163;3136.
  ) 
 Here is how much of TeX's memory you used:
- 10740 strings out of 474486
- 174617 string characters out of 5743755
- 1939542 words of memory out of 5000000
- 32822 multiletter control sequences out of 15000+600000
- 578610 words of font info for 84 fonts, out of 8000000 for 9000
+ 10784 strings out of 474486
+ 175314 string characters out of 5743755
+ 1943542 words of memory out of 5000000
+ 32852 multiletter control sequences out of 15000+600000
+ 579164 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,17n,93p,640b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (11 pages, 110628 bytes).
+Output written on thesis.pdf (13 pages, 124873 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
