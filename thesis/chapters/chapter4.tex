@@ -1,7 +1,8 @@
+\sloppy
 \chapter{Aplicație software}
 \label{chap:ch4}
 
-\section{Arhitectura}
+\section{Arhitectura aplicației}
 \label{sec:ch4sec1}
 
 Aplicația este alcătuită din 3 componente: interfața utilizator (frontend), partea de server (backend) și sistemul de recomandare. 
@@ -27,6 +28,37 @@ Aplicația folosește biblioteca Axios, o soluție populară și eficientă pent
 
 \subsection{Backend}
 \label{subsec:ch4sec1sub2}
+Partea de server este scrisă în Java utilizând Spring Boot, un instrument care ajută la simplificarea procesului de dezvoltare al aplicațiilor.
+Acest framework permite crearea rapidă de API-uri REST, o integrare facilă cu baza de date și o organizare logică a codului în componente. Alegerea
+acestei tehnologii a fost motivată de ecosistemul extins pe care îl oferă, configurarea redusă și structura modulară. 
+
+\par
+Proiectul este organizat conform principiilor arhitecturii stratificate, adaptate pentru o aplicație REST. 
+Așadar, codul sursă este împărțit în mai multe directoare (pachete) care separă responsabilitățile logice: 
+\begin{itemize}
+    \item controller: include clase care gestionează cererile HTTP venite de la frontend. Acestea definesc rutele API și interacționează direct cu serviciile.
+    \item service: conține implementările operațiilor specifice fiecărei funcționalități (înregistrare utilizator, adăugare hobby etc.). Acest strat realizează legătura între controller și repository. 
+    \item repository: definește interfețe care extind \texttt{JpaRepository}. Acestea se concentrează asupra operațiilor CRUD (Create, Read, Update, Delete) cu efect direct asupra bazei de date.
+    \item domain: conține entitățile din domeniul aplicației. Acestea sunt adnotate cu specificații precum \texttt{@Entity}, \texttt{@Table} etc. pentru a le mapa în tabele din baza de date.
+\end{itemize}  
+Pe lângă aceste pachete clasice, proiectul include și alte componente utile:
+\begin{itemize} 
+    \item dto (Data Transfer Object): conține clase care precizează formatul datelor transmise între client și server.
+    \item mapper: cuprinde clase cu metode statice folosite la conversia obiectelor de tip domeniu în obiecte de tip DTO și vice-versa.
+    \item exception: definește clase care se ocupă de tratarea erorilor. Acestea extind clasa \texttt{Exception} cu scopul de a crea excepții personalizate.
+    \item security: gestionează autentificarea și autorizarea. Oferă implementare pentru JWT (Json Web Token).
+\end{itemize}
+\subsubsection*{Model de date}
+Entitățile de bază ale aplicației sunt User, Hobby și HobbyType. Fiecare dintre acestea sunt reprezentate printr-o clasă Java, mapată la o tabelă din baza de date.
+Sunt definite clar relațiile între obiecte: un hobby are mai multe tipuri, un utilizator are mai multe hobby-uri etc.
+
+\subsubsection*{Baza de date}
+Conectarea la baza de date se face cu ajutorul fișierului de configurare \texttt{application.properties}, unde sunt specificate datele de acces precum URL, utilizator și parolă.
+Baza de date folosită este PostgreSQL, consacrată pentru fiabilitate și performanță. Pentru maparea obiectelor s-a utilizat Java Persistence API împreună cu framework-ul Hibernate, permițând manipularea entităților Java ca tabele din baza de date.
+
+\subsubsection*{Comunicare cu sistemul de recomandare}
+
+\subsubsection*{Securitate}
 
 \subsection{Sistemul de recomandare}
 \label{subsec:ch4sec1sub3}
@@ -34,8 +66,44 @@ Aplicația folosește biblioteca Axios, o soluție populară și eficientă pent
 \section{Funcționalități}
 \label{sec:ch4sec2}
 
+
+\subsection{Înregistarea utilizatorului}
+\label{subsec:ch4sec2sub1}
+Această funcționalitate permite unui user nou să își creeze cont în aplicație. Pagina conține un formular cu câmpurile: nume, prenume, email sau parolă.
+La acționarea butonului Register, aplicația validează datele scrise de utilizator, iar în cazul în care
+nu există erori, trimite o cerere HTTP de tip POST către endpoint-ul \texttt{/auth/register} expus de backend. În caz contrar, programul oferă user-ului feedback imediat prin mesaje de eroare sugestive.
+Pe backend, datele se revalidează pentru a asigura securitatea și integritatea acestora. 
+Contul utilizatorul se salvează în baza de date doar dacă nu există deja unul cu aceeași adresă de email, altfel se aruncă o excepție corespunzătoare.
+Serverul trimite răspuns, după caz, fie datele user-ului creat, fie un mesaj de eroare.
+
+\subsection{Autentificarea utilizatorul}
+\label{subsec:ch4sec2sub2}
+Pentru a accesa restul funcționalităților, utilizatorul trebuie să se autentifice. Pagina dedicată logării cuprinde un formular cu două câmpuri: adresa de email și parolă.
+În urma apăsării butonului Login, aplicația validează local datele introduse. În lipsa erorilor, se inițiază o cerere HTTP POST către endpoint-ul \texttt{/auth/login}.
+Pe partea de server, datele se verifică din nou, iar dacă acestea sunt corecte și corespund unui cont existent, se trimite un răspuns ce conține datele utilizatorului logat și un token JWT generat.
+În cazul unor date invalide (parolă incorectă, email inexistent), sistemul oferă un mesaj de eroare specific. După autentificare, token-ul JWT este stocat, iar utilizatorul este redirecționat către pagina principală.
+
+
+\subsection{Alegerea hobby-urilor}
+\label{subsec:ch4sec2sub3}
+După ce utilizatorul este autentificat, aplicația verifică dacă acesta are hobby-uri. Dacă nu sunt identificate hobby-uri pentru user-ul logat, programul prezintă
+ecranul de alegere a hobby-urilor. Acesta conține un buton pentru salvare, o bară de căutare și listă de componente ce afișează numele și tipul fiecărui hobby, alături de un checkbox.
+Lista hobby-urilor este primită de la server prin intermediul unui apel HTTP de tip GET către endpoint-ul \texttt{/hobbies}. 
+Utilizatorul poate filtra lista după numele hobby-urilor folosind bara de căutare. 
+După ce user-ul selectează hobby-urile dorite și apasă butonul Save, se trimite o cerere HTTP de tip POST pentru a salva hobby-urile selectate.
+
 \section{Testare}
 \label{sec:ch4sec3}
 
 \section{Manual de utilizare}
 \label{sec:ch4sec4}
+
+La prima interacțiune cu aplicația, utilizatorul are acces la două ecrane, la cel de logare și la cel de înregistrare. 
+În funcție de calitatea user-ului (nou sau înregistrat) poate alege să se înregistreze sau să se autentifice.
+\par
+Pentru a se loga, utilizatorul trebuie să introducă email-ul și parola cu care s-a înregistrat în prealabil. După ce a introdus aceste câmpuri
+\par
+În cazul în care utilizatorul logat nu are adăugate hobby-uri, un ecran dedicat acestei acțiuni va fi afișat imediat după logare.
+Aici user-ul poate alege din lista de hobby-uri existente, prin intermediul unui Checkbox. 
+De asemenea, hobby-urile pot fi filtrate după nume, folosind bara de căutare.
+După selectare, aceastea pot fi salvate prin apăsarea butonului Save.
