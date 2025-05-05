@@ -26,4 +26,12 @@ P.~Kumar and R.~S. Thakur, ``Recommendation system techniques and related
   issues: a survey,'' \emph{International Journal of Information Technology},
   vol.~10, pp. 495--501, 2018.
 
+\bibitem{ISINKAYE2015261}
+\BIBentryALTinterwordspacing
+F.~Isinkaye, Y.~Folajimi, and B.~Ojokoh, ``Recommendation systems: Principles,
+  methods and evaluation,'' \emph{Egyptian Informatics Journal}, vol.~16,
+  no.~3, pp. 261--273, 2015. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S1110866515000341}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  1 MAY 2025 23:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  5 MAY 2025 13:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,20 +335,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1
 
-] (thesis.toc)
+] (thesis.toc [2
+
+])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [2
 
-] (chapters/chapter1_introduction.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3] (chapters/chapter1_introduction.tex
 Capitolul 1.
 ) (chapters/chapter2.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Soluții similare} [1
+            {Soluții similare în domeniul sistemelor de recomandare} [1
 
 ]
 Capitolul 2.
@@ -356,21 +364,63 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <24.88> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <20.74> on input line 1.
-
-LaTeX Warning: Citation `1' on page 2 undefined on input line 4.
-
-) (chapters/chapter3.tex [2
+[2
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 29.79388pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.79388pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-17.79388pt}.
+
+[3]) (chapters/chapter3.tex
+Overfull \hbox (6.08456pt too wide) in paragraph at lines 45--1
+\OT1/ppl/m/n/12 "bule informa[]ionale", unde uti-li-za-to-rii sunt expu[]i doar la un anu-mit tip de con[]inut,
+ []
+
+
+Overfull \hbox (1.70428pt too wide) in paragraph at lines 45--1
+\OT1/ppl/m/n/12 ce le con-firm[]a con-vin-ge-rile exis-tente, li-mit[]and di-ver-si-ta-tea opi-ni-i-lor []i a informa[]iilor
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 29.79388pt, for example:
+(fancyhdr)                \setlength{\headheight}{29.79388pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-17.79388pt}.
+
+[4]
 Capitolul 3.
-) (chapters/chapter4.tex [3
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 20.
+[5
 
-]
+]) (chapters/chapter4.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.29388pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.29388pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.29388pt}.
+
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.29388pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.29388pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-3.29388pt}.
+
+[7]
 Capitolul 4.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 20.
 (C:\Users\bmcmi\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [4
+) [8
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 39.
@@ -388,7 +438,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5]
+[9]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -396,7 +446,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6]) (chapters/chapter5_conclusions.tex
+[10]) (chapters/chapter5_conclusions.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -404,36 +454,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[11]
 Capitolul 5.
-) (thesis.bbl [8
+) (thesis.bbl [12
 
-]) [9
+]) [13
 
 ] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CF7A40AFE7209F5DFEF478FCC006B163;3136.
+(rerunfilecheck)             Checksum: B73D0CE8BF50D0B0C4AEAE23E6D58025;4627.
  ) 
 Here is how much of TeX's memory you used:
- 10784 strings out of 474486
- 175314 string characters out of 5743755
- 1943542 words of memory out of 5000000
- 32852 multiletter control sequences out of 15000+600000
- 579164 words of font info for 86 fonts, out of 8000000 for 9000
+ 10820 strings out of 474486
+ 175802 string characters out of 5743755
+ 1947542 words of memory out of 5000000
+ 32871 multiletter control sequences out of 15000+600000
+ 581066 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,17n,93p,640b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,93p,640b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (13 pages, 124873 bytes).
+Output written on thesis.pdf (18 pages, 148050 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
