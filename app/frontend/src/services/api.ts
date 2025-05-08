@@ -1,6 +1,7 @@
 import axios, { AxiosResponse } from "axios";
 import { UserRegistration, User } from "../types/userTypes";
 import { UserLogin } from "../types/userTypes";
+import { useSelector } from "react-redux";
 
 const api = axios.create({
   baseURL: "http://localhost:8080",
@@ -39,9 +40,13 @@ export const login = async (user: UserLogin) => {
   }
 };
 
-export const findAllHobbies = async () => {
+export const findAllHobbies = async (token: string) => {
   try {
-    const response = await api.get("/hobbies");
+    const response = await api.get("/hobbies", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
     return { ok: true, data: response.data };
   } catch (error) {
     if (axios.isAxiosError(error)) {
@@ -53,9 +58,13 @@ export const findAllHobbies = async () => {
   }
 };
 
-export const saveHobbies = async (user: User) => {
+export const saveHobbies = async (user: User, token: String) => {
   try {
-    const response = await api.post("users/hobbies", user);
+    const response = await api.post("users/hobbies", user, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
     return { ok: true, data: response.data };
   } catch (error) {
     if (axios.isAxiosError(error)) {

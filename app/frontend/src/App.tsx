@@ -36,7 +36,7 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Onboarding from "./pages/onboarding/Onboarding";
 import Home from "./pages/home/Home";
-import ProtectedRoute from "./components/ProtectedRoute"
+import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
 import OnboardingRoute from "./components/OnboardingRoute";
 import { useSelector } from "react-redux";
@@ -44,26 +44,27 @@ import { useSelector } from "react-redux";
 setupIonicReact();
 
 const App: React.FC = () => {
-	const user = useSelector((state: any) => state.auth.user);
+  const user = useSelector((state: any) => state.auth.user);
 
-	return (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-				<Route
-				  exact
-				  path="/"
-				  render={() =>
-				    user ? <Redirect to="/home" /> : <Redirect to="/login" />
-				  }
-				/>
-	      <PublicRoute path="/register" component={Register} exact={true} />
-	      <PublicRoute path="/login" component={Login} exact={true} />
-				<OnboardingRoute path="/onboarding" component={Onboarding} exact />
-      	<ProtectedRoute path="/home" component={Home} exact={true} />
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-)};
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <IonRouterOutlet>
+          <Route
+            exact
+            path="/"
+            render={() =>
+              user ? <Redirect to="/home" /> : <Redirect to="/login" />
+            }
+          />
+          <PublicRoute path="/register" component={Register} exact={true} />
+          <PublicRoute path="/login" component={Login} exact={true} />
+          <OnboardingRoute path="/onboarding" component={Onboarding} exact />
+          <ProtectedRoute path="/home" component={Home} exact={true} />
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;

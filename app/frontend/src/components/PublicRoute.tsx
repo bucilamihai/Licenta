@@ -9,7 +9,10 @@ interface PublicRouteProps {
   exact?: boolean;
 }
 
-const PublicRoute: React.FC<PublicRouteProps> = ({ component: Component, ...rest }) => {
+const PublicRoute: React.FC<PublicRouteProps> = ({
+  component: Component,
+  ...rest
+}) => {
   const user = useSelector((state: RootState) => state.auth.user);
 
   return (

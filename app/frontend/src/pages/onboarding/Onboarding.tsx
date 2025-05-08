@@ -40,7 +40,7 @@ const Onboarding: React.FC = () => {
   const [selectedHobbies, setSelectedHobbies] = useState<Hobby[]>([]);
 
   useEffect(() => {
-    findAllHobbies().then((response) => {
+    findAllHobbies(token).then((response) => {
       if (response.ok) {
         setHobbies(response.data);
         setFilteredHobbies(response.data);
@@ -79,7 +79,7 @@ const Onboarding: React.FC = () => {
       ...user,
       hobbies: selectedHobbies,
     };
-    saveHobbies(userWithHobbies).then((response) => {
+    saveHobbies(userWithHobbies, token).then((response) => {
       if (response.ok) {
         alert("Hobbies saved successfully");
         dispatch(setUser(userWithHobbies));
