@@ -40,7 +40,7 @@ export const login = async (user: UserLogin) => {
   }
 };
 
-export const findAllHobbies = async (token: String) => {
+export const findAllHobbies = async (token: string) => {
   try {
     const response = await api.get("/hobbies", {
       headers: {
