@@ -13,19 +13,26 @@ import org.bmcmi.backend.security.Jwt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import jakarta.annotation.PostConstruct;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 @Service
 public class AuthService {
     @Autowired
     private UserRepository userRepository;
     @Autowired
     private Jwt jwt;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public UserDTO register(RegisterDTO registerDTO) throws ValidationException, DuplicateResourceException {
         User existingUser = userRepository.findByEmail(registerDTO.getEmail());
         if (existingUser != null) {
             throw new DuplicateResourceException("Email already exists!");
         }
-        User user = new User(registerDTO.getFirstName(), registerDTO.getLastName(), registerDTO.getEmail(), registerDTO.getPassword());
+        User user = new User(registerDTO.getFirstName(), registerDTO.getLastName(), registerDTO.getEmail(), passwordEncoder.encode(registerDTO.getPassword()));
         user = userRepository.save(user);
         return new UserDTO(user.getFirstName(), user.getLastName(), user.getEmail());
     }
@@ -35,7 +42,8 @@ public class AuthService {
         if (user == null) {
             throw new ValidationException("There's no user with this email!");
         }
-        if(!user.getPassword().equals(loginDTO.getPassword())) {
+        if(!passwordEncoder.matches(loginDTO.getPassword(), user.getPassword())) {
+            System.out.println("Passwords do not match!");
             throw new ValidationException("Invalid password!");
         }
         String token = jwt.generateToken(user.getEmail());

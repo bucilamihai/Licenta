@@ -8,11 +8,11 @@ import { store, persistor } from "./store";
 const container = document.getElementById("root");
 const root = createRoot(container!);
 root.render(
-	<Provider store={store}>
+  <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-	    <React.StrictMode>
-	      <App />
-	    </React.StrictMode>
-		</PersistGate>
-	</Provider>,
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </PersistGate>
+  </Provider>,
 );

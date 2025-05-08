@@ -4,16 +4,19 @@ import { useSelector } from "react-redux";
 import { RootState } from "../store";
 
 interface ProtectedRouteProps {
-	component: React.ComponentType<any>;
-	exact: boolean;
-	path: string;
+  component: React.ComponentType<any>;
+  exact: boolean;
+  path: string;
 }
 
-const OnboardingRoute: React.FC<ProtectedRouteProps> = ({ component: Component, ...rest}) => {
-	const user = useSelector((state: RootState) => state.auth.user);
+const OnboardingRoute: React.FC<ProtectedRouteProps> = ({
+  component: Component,
+  ...rest
+}) => {
+  const user = useSelector((state: RootState) => state.auth.user);
 
-	return (
-		<Route
+  return (
+    <Route
       {...rest}
       render={(props) => {
         if (!user) {
@@ -27,7 +30,7 @@ const OnboardingRoute: React.FC<ProtectedRouteProps> = ({ component: Component, 
         return <Component {...props} />;
       }}
     />
-	)
-}
+  );
+};
 
 export default OnboardingRoute;
