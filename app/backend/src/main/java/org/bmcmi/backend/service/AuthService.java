@@ -43,7 +43,6 @@ public class AuthService {
             throw new ValidationException("There's no user with this email!");
         }
         if(!passwordEncoder.matches(loginDTO.getPassword(), user.getPassword())) {
-            System.out.println("Passwords do not match!");
             throw new ValidationException("Invalid password!");
         }
         String token = jwt.generateToken(user.getEmail());
