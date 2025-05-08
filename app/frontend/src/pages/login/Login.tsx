@@ -47,7 +47,12 @@ const Login: React.FC = () => {
             token: response.data.token,
           }),
         );
-        history.push("/onboarding");
+        if(response.data.hobbies.length > 0) {
+        	history.push("/home");
+				}
+				else {
+        	history.push("/onboarding");
+				}
       } else {
         alert(`Error: ${response.error}`);
       }
@@ -89,9 +94,9 @@ const Login: React.FC = () => {
               </IonButton>
             </IonCardContent>
           </IonCard>
-          <IonRouterLink routerLink="/register">
-            Don't have an account? Register here.
-          </IonRouterLink>
+          <IonRouterLink routerLink="/register" routerDirection="forward">
+					  Don't have an account? Register here.
+					</IonRouterLink>
         </IonContent>
       </IonContent>
     </IonPage>

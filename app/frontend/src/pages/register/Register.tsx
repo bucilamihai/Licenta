@@ -36,7 +36,10 @@ const Register: React.FC = () => {
     register(user).then((response) => {
       if (response.ok) {
         alert("Registration successful");
-        history.push("/login");
+        setTimeout(() => {
+			history.push("/login");
+		}
+		, 1000);
       } else {
         alert(`Error: ${response.error}`);
       }
@@ -106,7 +109,7 @@ const Register: React.FC = () => {
               </IonButton>
             </IonCardContent>
           </IonCard>
-          <IonRouterLink routerLink="/login">
+          <IonRouterLink routerLink="/login" routerDirection="forward">
             Already have an account? Login here.
           </IonRouterLink>
         </IonContent>

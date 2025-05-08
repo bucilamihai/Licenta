@@ -14,7 +14,6 @@ import {
 } from "@ionic/react";
 import React, { useEffect, useState } from "react";
 
-import HobbyComponent from "../../components/Hobby";
 import { Hobby } from "../../types/hobbyTypes";
 import { findAllHobbies } from "../../services/api";
 import { useSelector } from "react-redux";
@@ -23,6 +22,9 @@ import { useHistory } from "react-router-dom";
 import { saveHobbies } from "../../services/api";
 import { useDispatch } from "react-redux";
 import { setUser } from "../../slices/authSlice";
+import { clearCredentials } from "../../slices/authSlice";
+import HobbyComponent from "../../components/Hobby";
+import ProfileBadge from "../../components/ProfileBadge";
 
 const Onboarding: React.FC = () => {
   const history = useHistory();
@@ -110,12 +112,21 @@ const Onboarding: React.FC = () => {
     }
   };
 
+  const handleLogout = () => {
+		dispatch(clearCredentials());
+		setTimeout(() => {
+			history.push("/login");
+		}
+		, 1000);
+  };
+
   return (
     <IonPage>
       <IonContent>
         <IonHeader>
           <IonToolbar>
             <IonTitle>Onboarding</IonTitle>
+            <ProfileBadge name={user?.firstName + " " + user?.lastName} onLogout={handleLogout} />
           </IonToolbar>
         </IonHeader>
         <IonContent>
