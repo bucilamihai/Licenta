@@ -1,7 +1,6 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 import { UserRegistration, User } from "../types/userTypes";
 import { UserLogin } from "../types/userTypes";
-import { useSelector } from "react-redux";
 
 const api = axios.create({
   baseURL: "http://localhost:8080",
@@ -58,9 +57,27 @@ export const findAllHobbies = async (token: string) => {
   }
 };
 
-export const saveHobbies = async (user: User, token: String) => {
+export const saveHobbies = async (user: User, token: string) => {
   try {
-    const response = await api.post("users/hobbies", user, {
+    const response = await api.post("/users/hobbies", user, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return { ok: true, data: response.data };
+  } catch (error) {
+    if (axios.isAxiosError(error)) {
+      const messageError = error.response?.data?.error || "An error occurred";
+      return { ok: false, error: messageError };
+    } else {
+      return { ok: false, error: "An unexpected error occurred" };
+    }
+  }
+};
+
+export const getSimilarUsers = async (user: User, token: string) => {
+  try {
+    const response = await api.post("/users/similar", user, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

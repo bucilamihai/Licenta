@@ -48,4 +48,28 @@ public class UserService {
         user.setHobbies(userHobbies);
         return UserMapper.toDTO(userRepository.save(user));
     }
+
+    public List<UserDTO> getSimilarUsers(UserDTO userDTO) throws ValidationException {
+        if (userDTO == null) {
+            throw new ValidationException("User cannot be null!");
+        }
+        if (userDTO.getHobbies() == null || userDTO.getHobbies().isEmpty()) {
+            throw new ValidationException("Hobbies list cannot be null or empty!");
+        }
+        User user = userRepository.findByEmail(userDTO.getEmail());
+        if (user == null) {
+            throw new ValidationException("There's no user with this email!");
+        }
+        List<Hobby> allHobbies = hobbyRepository.findAll();
+        List<Hobby> userHobbies = new ArrayList<>();
+        for (HobbyDTO hobbyDTO : userDTO.getHobbies()) {
+            Hobby hobby = allHobbies.stream()
+                    .filter(h -> h.getName().equals(hobbyDTO.getName()))
+                    .findFirst()
+                    .orElseThrow(() -> new ValidationException("Hobby " + hobbyDTO.getName() + " not found!"));
+            userHobbies.add(hobby);
+        }
+        List<User> similarUsers = userRepository.findAll();
+        return UserMapper.toDTOList(similarUsers);
+    }
 }
