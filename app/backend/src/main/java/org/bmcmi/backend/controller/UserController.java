@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import jakarta.validation.Valid;
 
@@ -40,4 +41,23 @@ public class UserController {
             );
         }
     }
+
+    @PostMapping("/similar")
+    public ResponseEntity<?> getSimilarUsers(
+        @Valid @RequestBody UserDTO userDTO 
+    ) {
+        try {
+            return ResponseEntity.status(HttpStatus.OK).body(userService.getSimilarUsers(userDTO));
+        }
+        catch (ValidationException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(
+                Map.of("error", e.getMessage())
+            );
+        }
+        catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(
+                Map.of("error", "An unexpected error occurred: " + e.getMessage())
+            );
+        }
+    }   
 }
