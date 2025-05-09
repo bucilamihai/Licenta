@@ -5,31 +5,32 @@ import { Hobby, HobbyTypes } from "../types/hobbyTypes";
 interface HobbyComponentProps {
   name: string;
   types: HobbyTypes[];
+  checked: boolean;
   onChange: (name: string, checked: boolean) => void;
 }
 
 const HobbyComponent: React.FC<HobbyComponentProps> = ({
   name,
   types,
+  checked,
   onChange,
 }) => {
-  const [checked, setChecked] = React.useState(false);
-
   const handleChange = (name: string, checked: boolean) => {
-    setChecked(checked);
     onChange(name, checked);
   };
 
   return (
     <>
-      <IonCheckbox
-        slot="start"
-        checked={checked}
-        onIonChange={(e) => handleChange(name, e.detail.checked)}
-      />
-      <h1>{name}</h1>
+      <IonItem>
+        <IonCheckbox
+          slot="start"
+          checked={checked}
+          onIonChange={(e) => handleChange(name, e.detail.checked)}
+        />
+        <IonText>{name}</IonText>
+      </IonItem>
       {types.map((type, index) => (
-        <p key={index}>{type.name}</p>
+        <IonText key={index}>{type.name + " "}</IonText>
       ))}
     </>
   );
