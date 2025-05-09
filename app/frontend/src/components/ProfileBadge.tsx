@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import {
   IonItem,
   IonLabel,
   IonAvatar,
   IonSelect,
   IonSelectOption,
-} from '@ionic/react';
+} from "@ionic/react";
 
 interface ProfileBadgeProps {
   name: string;
@@ -14,7 +14,7 @@ interface ProfileBadgeProps {
 
 const ProfileBadge: React.FC<ProfileBadgeProps> = ({ name, onLogout }) => {
   const handleChange = (e: CustomEvent) => {
-    if (e.detail.value === 'logout') {
+    if (e.detail.value === "logout") {
       onLogout();
     }
   };
@@ -25,11 +25,7 @@ const ProfileBadge: React.FC<ProfileBadgeProps> = ({ name, onLogout }) => {
         <img src="https://www.gravatar.com/avatar?d=mp" alt="Profile" />
       </IonAvatar>
       <IonLabel>{name}</IonLabel>
-      <IonSelect
-        placeholder=""
-        interface="popover"
-        onIonChange={handleChange}
-      >
+      <IonSelect placeholder="" interface="popover" onIonChange={handleChange}>
         <IonSelectOption value="logout">Logout</IonSelectOption>
       </IonSelect>
     </IonItem>

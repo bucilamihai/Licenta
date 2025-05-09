@@ -113,48 +113,51 @@ const Onboarding: React.FC = () => {
   };
 
   const handleLogout = () => {
-		dispatch(clearCredentials());
-		setTimeout(() => {
-			history.push("/login");
-		}
-		, 1000);
+    dispatch(clearCredentials());
+    setTimeout(() => {
+      history.push("/login");
+    }, 1000);
   };
 
   return (
     <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Onboarding</IonTitle>
+          <ProfileBadge
+            name={user?.firstName + " " + user?.lastName}
+            onLogout={handleLogout}
+          />
+        </IonToolbar>
+      </IonHeader>
       <IonContent>
-        <IonHeader>
-          <IonToolbar>
-            <IonTitle>Onboarding</IonTitle>
-            <ProfileBadge name={user?.firstName + " " + user?.lastName} onLogout={handleLogout} />
-          </IonToolbar>
-        </IonHeader>
-        <IonContent>
-          <IonCard>
-            <IonCardHeader>
-              <IonCardTitle>
-                Complete your profile by selecting your hobbies
-              </IonCardTitle>
-            </IonCardHeader>
-            <IonSearchbar
-              debounce={500}
-              onIonInput={(event) => handleSearch(event)}
-            ></IonSearchbar>
-            <IonCardContent>
-              <IonList>
-                {filteredHobbies.map((value, index) => (
-                  <HobbyComponent
-                    key={index}
-                    name={value.name}
-                    types={value.types}
-                    onChange={handleSelectHobby}
-                  />
-                ))}
-              </IonList>
-              <IonButton onClick={handleSaveHobbies}>Save</IonButton>
-            </IonCardContent>
-          </IonCard>
-        </IonContent>
+        <IonCard>
+          <IonCardHeader>
+            <IonCardTitle>
+              Complete your profile by selecting your hobbies
+            </IonCardTitle>
+          </IonCardHeader>
+          <IonSearchbar
+            debounce={500}
+            onIonInput={(event) => handleSearch(event)}
+          ></IonSearchbar>
+          <IonCardContent>
+            <IonList>
+              {filteredHobbies.map((value, index) => (
+                <HobbyComponent
+                  key={index}
+                  name={value.name}
+                  types={value.types}
+                  checked={selectedHobbies.some(
+                    (hobby) => hobby.name === value.name,
+                  )}
+                  onChange={handleSelectHobby}
+                />
+              ))}
+            </IonList>
+            <IonButton onClick={handleSaveHobbies}>Save</IonButton>
+          </IonCardContent>
+        </IonCard>
       </IonContent>
     </IonPage>
   );
