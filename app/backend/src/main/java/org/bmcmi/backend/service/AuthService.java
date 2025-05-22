@@ -13,9 +13,6 @@ import org.bmcmi.backend.security.Jwt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import jakarta.annotation.PostConstruct;
-
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Service

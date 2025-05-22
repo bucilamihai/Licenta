@@ -18,3 +18,7 @@ export interface User {
   email: string;
   hobbies: Hobby[];
 }
+
+export interface UserWithSimilarity extends User {
+    similarityScore: number;
+}

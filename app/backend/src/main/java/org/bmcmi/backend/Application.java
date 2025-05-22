@@ -3,8 +3,9 @@ package org.bmcmi.backend;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ResourceLoader;
-
+import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -27,4 +28,9 @@ public class Application {
 		// 	System.out.println("Resource not found!");
 		// }
 	}
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 }
