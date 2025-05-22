@@ -32,7 +32,7 @@ const User: React.FC<UserProps> = ({ firstName, lastName, email, hobbies, simila
           </p>
           <p>
             <strong>Similarity:</strong> {similarityScore}
-          </p>`
+          </p>
         </IonText>
       </IonCardContent>
     </IonCard>
