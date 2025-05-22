@@ -20,5 +20,5 @@ export interface User {
 }
 
 export interface UserWithSimilarity extends User {
-    similarityScore: number;
+  similarityScore: number;
 }

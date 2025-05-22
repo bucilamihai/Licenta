@@ -16,7 +16,13 @@ interface UserProps {
   similarityScore: number;
 }
 
-const User: React.FC<UserProps> = ({ firstName, lastName, email, hobbies, similarityScore }) => {
+const User: React.FC<UserProps> = ({
+  firstName,
+  lastName,
+  email,
+  hobbies,
+  similarityScore,
+}) => {
   return (
     <IonCard>
       <IonCardHeader>
