@@ -15,7 +15,7 @@ import { RootState } from "../../store";
 import { clearCredentials } from "../../slices/authSlice";
 import ProfileBadge from "../../components/ProfileBadge";
 import User from "../../components/User";
-import { User as UserType } from "../../types/userTypes";
+import { UserWithSimilarity } from "../../types/userTypes";
 import { getSimilarUsers } from "../../services/api";
 
 const Home: React.FC = () => {
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
   const user = useSelector((state: RootState) => state.auth.user);
   const token = useSelector((state: RootState) => state.auth.token);
 
-  const [users, setUsers] = useState<UserType[]>([]);
+  const [users, setUsers] = useState<UserWithSimilarity[]>([]);
   const [loading, setLoading] = useState(false);
 
   if (!user || !token) {
@@ -79,6 +79,8 @@ const Home: React.FC = () => {
               firstName={user.firstName}
               lastName={user.lastName}
               email={user.email}
+              hobbies={user.hobbies.map((hobby) => hobby.name)}
+              similarityScore={user.similarityScore}
             />
           ))}
         </div>
