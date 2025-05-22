@@ -40,7 +40,7 @@
         "clear": false
       },
       "options": {
-        "cwd": "${workspaceFolder}/app/ai-model"
+        "cwd": "${workspaceFolder}/app/recommendation-system"
       }
     }
   ]
