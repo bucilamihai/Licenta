@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  30 MAY 2025 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  30 MAY 2025 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -466,7 +466,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Capitolul 5.
 ) (thesis.bbl [13
 
-]) [14
+]
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
+[]\OT1/ppl/m/n/12 A. Ugu-r-can, ``Ho-b-bies da-ta-set,'' []$https : / / huggingface . co / datasets /
+ []
+
+) [14
 
 ] (thesis.aux)
  ***********
@@ -477,17 +482,17 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: C514CBCB99345C2DE6E61521CDAF6B93;4934.
  ) 
 Here is how much of TeX's memory you used:
- 10824 strings out of 474486
- 175863 string characters out of 5743755
+ 10830 strings out of 474486
+ 175948 string characters out of 5743755
  1947542 words of memory out of 5000000
- 32873 multiletter control sequences out of 15000+600000
+ 32876 multiletter control sequences out of 15000+600000
  581066 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,18n,93p,640b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,93p,640b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (19 pages, 152458 bytes).
+Output written on thesis.pdf (19 pages, 156723 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
  233 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -34,4 +34,19 @@ F.~Isinkaye, Y.~Folajimi, and B.~Ojokoh, ``Recommendation systems: Principles,
   \url{https://www.sciencedirect.com/science/article/pii/S1110866515000341}
 \BIBentrySTDinterwordspacing
 
+\bibitem{kaggle_Raj}
+A.~Raj, ``A comprehensive collection of hobbies,''
+  \url{https://www.kaggle.com/datasets/mrhell/list-of-hobbies}, 2022, accessed:
+  2025-01-25.
+
+\bibitem{kaggle_dawid}
+Dawid9632, ``Hobbies \& interests with categories,''
+  \url{https://www.kaggle.com/datasets/dawid9632/hobbies-interests-with-categories},
+  2022, accessed: 2025-01-25.
+
+\bibitem{hf_Ugurcan}
+A.~Ugurcan, ``Hobbies dataset,''
+  \url{https://huggingface.co/datasets/alperugurcan/Hobbies}, 2024, accessed:
+  2025-01-25.
+
 \end{thebibliography}
