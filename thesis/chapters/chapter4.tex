@@ -68,7 +68,7 @@ Baza de date folosită este PostgreSQL, consacrată pentru fiabilitate și perfo
 \label{sec:ch4sec2}
 
 
-\subsection{Înregistarea utilizatorului}
+\subsection{Înregistrarea utilizatorului}
 \label{subsec:ch4sec2sub1}
 Această funcționalitate permite unui user nou să își creeze cont în aplicație. Pagina conține un formular cu câmpurile: nume, prenume, email sau parolă.
 La acționarea butonului Register, aplicația validează datele scrise de utilizator, iar în cazul în care
@@ -89,9 +89,25 @@ Pe partea de server, datele se verifică din nou, iar dacă acestea sunt corecte
 \label{subsec:ch4sec2sub3}
 După ce utilizatorul este autentificat, aplicația verifică dacă acesta are hobby-uri. Dacă nu sunt identificate hobby-uri pentru user-ul logat, programul prezintă
 ecranul de alegere a hobby-urilor. Acesta conține un buton pentru salvare, o bară de căutare și listă de componente ce afișează numele și tipul fiecărui hobby, alături de un checkbox.
-Lista hobby-urilor este primită de la server prin intermediul unui apel HTTP de tip GET către endpoint-ul \texttt{/hobbies}. 
+Lista hobby-urilor este primită de la server prin intermediul unui apel HTTP de tip GET către endpoint-ul \texttt{/users/hobbies}. 
 Utilizatorul poate filtra lista după numele hobby-urilor folosind bara de căutare. 
 După ce user-ul selectează hobby-urile dorite și apasă butonul Save, se trimite o cerere HTTP de tip POST pentru a salva hobby-urile selectate.
+
+\subsection{Căutarea utilizatorilor cu hobby-uri similare}
+\label{subsec:ch4sec2sub4}
+Dacă s-au găsit hobby-uri pentru utilizatorul autentificat, atunci aplicația afișează pagina de căutare a utilizatorilor cu hobby-uri asemănătoare.
+Aceasta prezintă un buton pentru căutare cu nume sugestiv. 
+La apăsarea acestuia se trimite o cerere HTTP către endpoint-ul \texttt{/users/similar}.
+Backend-ul creează o listă cu ID-urile tutoror utilizatorilor și hobby-urile acestora, din care se elimină utilizatorul logat.
+Această listă și utilizatorul logat se transmit sistemului de recomandare, printr-o metodă HTTP către endpoint-ul \texttt{/recommend}.
+Sistemul de recomandare calculează similaritatea hobby-urilor dintre utilizatorul logat și ceilalți utilizatori și returnează ca răspuns lista de ID-uri ale utilizatorilor recomandați, memorând pentru fiecare un scor al potrivirii.
+Partea de server primește de la sistemul de recomandare lista sortată descrescător după acel scor. 
+Pe baza fiecărui ID din listă, programul caută informațiile legate de utilizator (nume, e-mail și hobby-urile), pe care le asociază cu scorul primit.
+Lista completă este transmisă interfeței utilizator pentru afișare.
+Utilizatorului logat i se vor prezenta utilizatorii recomandați, vizualizând pentru fiecare numele, e-mailul, lista hobby-urilor și scorul similarității.
+
+
+
 
 \section{Testare}
 \label{sec:ch4sec3}
@@ -102,9 +118,18 @@ După ce user-ul selectează hobby-urile dorite și apasă butonul Save, se trim
 La prima interacțiune cu aplicația, utilizatorul are acces la două ecrane, la cel de logare și la cel de înregistrare. 
 În funcție de calitatea user-ului (nou sau înregistrat) poate alege să se înregistreze sau să se autentifice.
 \par
-Pentru a se loga, utilizatorul trebuie să introducă email-ul și parola cu care s-a înregistrat în prealabil. După ce a introdus aceste câmpuri
+Pentru a se loga, utilizatorul trebuie să introducă email-ul și parola cu care s-a înregistrat în prealabil. 
+La apăsarea butonului de autentificare, sistemul verifică datele și redirecționează utilizatorul către pagina principală sau notifică cu privire la erorile apărute. 
+\par
+Pentru înregistrare, utilizatorul trebuie să completeze formularul cu numele, adresa de e-mail și parola.
+La acționarea butonului de înregistrare, sistemul validează informațiile furnizate și creează contul utilizatorului sau afișează mesaje corespunzătoare în cazul unei erori.
+După o înregistrare cu succes, user-ul este redirecționat către pagina de logare.
 \par
 În cazul în care utilizatorul logat nu are adăugate hobby-uri, un ecran dedicat acestei acțiuni va fi afișat imediat după logare.
-Aici user-ul poate alege din lista de hobby-uri existente, prin intermediul unui Checkbox. 
+Aici user-ul poate alege din lista de hobby-uri existente, prin intermediul unui checkbox. 
 De asemenea, hobby-urile pot fi filtrate după nume, folosind bara de căutare.
 După selectare, aceastea pot fi salvate prin apăsarea butonului Save.
+\par
+Dacă utilizatorul logat are hobby-uri selectate, se prezintă pagina de căutare a utilizatorilor cu hobby-uri asemănătoare.
+Pentru căutare, user-ul apasă butonul dedicat de pe ecran și se afișează lista utilizatorilor recomandați.
+Această listă este ordonată descrescător după scorul potrivirii.
