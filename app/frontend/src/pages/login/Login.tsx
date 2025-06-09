@@ -18,14 +18,19 @@ import { login } from "../../services/api";
 import { UserLogin } from "../../types/userTypes";
 import { setCredentials } from "../../slices/authSlice";
 import { useDispatch } from "react-redux";
+import CustomAlert from "../../components/custom-alert/CustomAlert";
+import { useAlert } from "../../hooks/useAlert";
+import "./Login.css";
 
 const Login: React.FC = () => {
   const dispatch = useDispatch();
   const router = useIonRouter();
 
+  const { alert, showAlert, hideAlert } = useAlert();
+
   const handleLogin = () => {
     if (!email || !password) {
-      alert("Please fill in all fields!");
+      showAlert("Please fill in all fields!", "warning");
       return;
     }
     const user: UserLogin = {
@@ -34,8 +39,7 @@ const Login: React.FC = () => {
     };
     login(user).then((response) => {
       if (response.ok) {
-        alert("Login successful");
-        console.log(response.data);
+        showAlert("Login successful!", "success");
         dispatch(
           setCredentials({
             user: {
@@ -53,7 +57,7 @@ const Login: React.FC = () => {
           router.push("/onboarding");
         }
       } else {
-        alert(`Error: ${response.error}`);
+        showAlert(response.error || "Login failed!", "error");
       }
     });
   };
@@ -63,36 +67,48 @@ const Login: React.FC = () => {
 
   return (
     <IonPage>
+      <CustomAlert
+        show={alert.show}
+        message={alert.message}
+        type={alert.type}
+        onClose={hideAlert}
+      />
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Login</IonTitle>
+        <IonToolbar className="login-toolbar">
+          <IonTitle className="login-title">Login</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <IonCard>
-          <IonCardContent>
-            <IonItem>
+      <IonContent className="login-content">
+        <IonCard className="login-card">
+          <IonCardContent className="login-card-content">
+            <IonItem className="login-item">
               <IonInput
+                className="login-input"
                 type="email"
                 placeholder="Email"
                 value={email}
                 onIonChange={(e) => setEmail(e.detail.value!)}
-              ></IonInput>
+              />
             </IonItem>
-            <IonItem>
+            <IonItem className="login-item">
               <IonInput
+                className="login-input"
                 type="password"
                 placeholder="Password"
                 value={password}
                 onIonChange={(e) => setPassword(e.detail.value!)}
-              ></IonInput>
+              />
             </IonItem>
-            <IonButton onClick={handleLogin}>
-              <IonLabel>Login</IonLabel>
+            <IonButton className="login-button" onClick={handleLogin}>
+              <IonLabel className="login-label">Login</IonLabel>
             </IonButton>
           </IonCardContent>
         </IonCard>
-        <IonRouterLink routerLink="/register" routerDirection="forward">
+        <IonRouterLink
+          className="login-link"
+          routerLink="/register"
+          routerDirection="forward"
+        >
           Don't have an account? Register here.
         </IonRouterLink>
       </IonContent>
