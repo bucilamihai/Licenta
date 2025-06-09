@@ -6,8 +6,8 @@
 \label{sec:ch4sec1}
 
 Aplicația este alcătuită din 3 componente: interfața utilizator (frontend), partea de server (backend) și sistemul de recomandare. 
-Partea de frontend este dezvoltată în Ionic React, tehnologie ce îmbină librăria React, scrisă în limbajul de programare JavaScript, 
-utilizată pentru a construi interfețe utilizator și Ionic, un instrument ce ajută la dezvoltarea aplicațiilor cross-platform. 
+Partea de frontend este dezvoltată în Ionic React\cite{ionicreactdocs}, tehnologie ce îmbină librăria React\cite{reactdocs}, scrisă în limbajul de programare JavaScript, 
+utilizată pentru a construi interfețe utilizator și Ionic\cite{ionicdocs}, un instrument ce ajută la dezvoltarea aplicațiilor cross-platform. 
 Folosind Ionic, aplicația poate fi instalată pe mai multe platforme --- web, mobile (Android, iOS), desktop --- utilizând același cod sursă. 
 Această abordare eficientizează dezvoltarea și întreținerea aplicațiilor, permițând o experiență de utilizare uniformă, indiferent de dispozitiv folosit. 
 
@@ -28,7 +28,7 @@ Aplicația folosește biblioteca Axios, o soluție populară și eficientă pent
 
 \subsection{Backend}
 \label{subsec:ch4sec1sub2}
-Partea de server este scrisă în Java utilizând Spring Boot, un instrument care ajută la simplificarea procesului de dezvoltare al aplicațiilor.
+Partea de server este scrisă în Java utilizând Spring Boot\cite{springbootdocs}, un instrument care ajută la simplificarea procesului de dezvoltare al aplicațiilor.
 Acest framework permite crearea rapidă de API-uri REST, o integrare facilă cu baza de date și o organizare logică a codului în componente. Alegerea
 acestei tehnologii a fost motivată de ecosistemul extins pe care îl oferă, configurarea redusă și structura modulară. 
 
@@ -54,7 +54,7 @@ Sunt definite clar relațiile între obiecte: un hobby are mai multe tipuri, un 
 
 \subsubsection*{Baza de date}
 Conectarea la baza de date se face cu ajutorul fișierului de configurare \texttt{application.properties}, unde sunt specificate datele de acces precum URL, utilizator și parolă. 
-Baza de date folosită este PostgreSQL, consacrată pentru fiabilitate și performanță. Pentru maparea obiectelor s-a utilizat Java Persistence API împreună cu framework-ul Hibernate, permițând manipularea entităților Java ca tabele din baza de date.
+Baza de date folosită este PostgreSQL\cite{postgresqldocs}, consacrată pentru fiabilitate și performanță. Pentru maparea obiectelor s-a utilizat Java Persistence API împreună cu framework-ul Hibernate\cite{hibernatedocs}, permițând manipularea entităților Java ca tabele din baza de date.
 
 \subsubsection*{Comunicare cu sistemul de recomandare}
 
