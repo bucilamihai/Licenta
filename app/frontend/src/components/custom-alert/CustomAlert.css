@@ -1,6 +1,6 @@
 .custom-alert {
   position: fixed;
-  top: 20px;
+  top: 3.5rem;
   left: 50%;
   transform: translateX(-50%);
   max-width: 400px;

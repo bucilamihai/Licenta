@@ -75,7 +75,7 @@ const Login: React.FC = () => {
       />
       <IonHeader>
         <IonToolbar className="login-toolbar">
-          <IonTitle className="login-title">Login</IonTitle>
+          <IonTitle className="login-title">Welcome back!</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="login-content">
