@@ -72,16 +72,17 @@ const Home: React.FC = () => {
         {loading && <p>Loading users...</p>}
 
         {!loading && users.length > 0 && (
-          <div className="ion-margin-top">
+          <div className="users-grid ion-margin-top">
             {users.map((user, index) => (
-              <User
-                key={index}
-                firstName={user.firstName}
-                lastName={user.lastName}
-                email={user.email}
-                hobbies={user.hobbies}
-                similarityScore={user.similarityScore}
-              />
+              <div key={index} className="user-item">
+                <User
+                  firstName={user.firstName}
+                  lastName={user.lastName}
+                  email={user.email}
+                  hobbies={user.hobbies}
+                  similarityScore={user.similarityScore}
+                />
+              </div>
             ))}
           </div>
         )}

@@ -1,0 +1,15 @@
+ion-content {
+  --background: #ebecfa !important;
+}
+
+ion-page {
+  background: #2c3e50 !important;
+}
+
+.ion-page {
+  background: #1a1a1a !important;
+}
+
+body {
+  background: #1a1a1a !important;
+}

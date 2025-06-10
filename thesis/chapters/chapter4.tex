@@ -2,6 +2,9 @@
 \chapter{Aplicație software}
 \label{chap:ch4}
 
+\par
+Paragraf introductiv
+
 \section{Arhitectura aplicației}
 \label{sec:ch4sec1}
 
@@ -39,7 +42,7 @@ Așadar, codul sursă este împărțit în mai multe directoare (pachete) care s
     \item controller: include clase care gestionează cererile HTTP venite de la frontend. Acestea definesc rutele API și interacționează direct cu serviciile.
     \item service: conține implementările operațiilor specifice fiecărei funcționalități (înregistrare utilizator, adăugare hobby etc.). Acest strat realizează legătura între controller și repository. 
     \item repository: definește interfețe care extind \texttt{JpaRepository}. Acestea se concentrează asupra operațiilor CRUD (Create, Read, Update, Delete) cu efect direct asupra bazei de date.
-    \item domain: conține entitățile din domeniul aplicației. Acestea sunt adnotate cu specificații precum \texttt{@Entity}, \texttt{@Table} etc. pentru a le mapa în tabele din baza de date.
+    \item domain: conține entitățile din domeniul aplicației. Acestea sunt adnotate cu specificații precum \texttt{@Entity}, \texttt{@Table} etc. pentru a le asocia tabelelor din baza de date.
 \end{itemize}  
 Pe lângă aceste pachete clasice, proiectul include și alte componente utile:
 \begin{itemize} 
@@ -49,12 +52,27 @@ Pe lângă aceste pachete clasice, proiectul include și alte componente utile:
     \item security: gestionează autentificarea și autorizarea. Oferă implementare pentru JWT (Json Web Token).
 \end{itemize}
 \subsubsection*{Model de date}
-Entitățile de bază ale aplicației sunt User, Hobby și HobbyType. Fiecare dintre acestea sunt reprezentate printr-o clasă Java, mapată la o tabelă din baza de date.
-Sunt definite clar relațiile între obiecte: un hobby are mai multe tipuri, un utilizator are mai multe hobby-uri etc.
+Entitățile de bază ale aplicației sunt User, Hobby și HobbyType. Fiecare dintre acestea sunt reprezentate printr-o clasă Java, asociată unei tabele din baza de date.
+În figura \ref{FigClassDiagram} sunt definite clar relațiile între obiecte.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.45]{./figures/class-diagram.png}
+	\caption{Diagrama de clase}
+	\label{FigClassDiagram}
+\end{figure}
 
 \subsubsection*{Baza de date}
 Conectarea la baza de date se face cu ajutorul fișierului de configurare \texttt{application.properties}, unde sunt specificate datele de acces precum URL, utilizator și parolă. 
-Baza de date folosită este PostgreSQL\cite{postgresqldocs}, consacrată pentru fiabilitate și performanță. Pentru maparea obiectelor s-a utilizat Java Persistence API împreună cu framework-ul Hibernate\cite{hibernatedocs}, permițând manipularea entităților Java ca tabele din baza de date.
+Baza de date folosită este PostgreSQL\cite{postgresqldocs}, consacrată pentru fiabilitate și performanță. 
+Pentru asocierea obiectelor Java cu tabelele bazei de date s-a utilizat Java Persistence API împreună cu framework-ul Hibernate\cite{hibernatedocs}, permițând manipularea entităților Java ca tabele din baza de date, așa cum se poate vedea în figura \ref{FigDbDiagram}.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.65]{./figures/db-diagram.png}
+	\caption{Diagrama bazei de date}
+	\label{FigDbDiagram}
+\end{figure}
 
 \subsubsection*{Comunicare cu sistemul de recomandare}
 
@@ -113,29 +131,65 @@ Lista completă este transmisă interfeței utilizator pentru afișare.
 Utilizatorului logat i se vor prezenta utilizatorii recomandați, vizualizând pentru fiecare numele, e-mailul, lista hobby-urilor și scorul similarității.
 
 
-
-
-\section{Testare}
-\label{sec:ch4sec3}
-
 \section{Manual de utilizare}
-\label{sec:ch4sec4}
+\label{sec:ch4sec3}
 
 La prima interacțiune cu aplicația, utilizatorul are acces la două ecrane, la cel de logare și la cel de înregistrare. 
 În funcție de calitatea user-ului (nou sau înregistrat) poate alege să se înregistreze sau să se autentifice.
 \par
-Pentru a se loga, utilizatorul trebuie să introducă email-ul și parola cu care s-a înregistrat în prealabil. 
+Pentru a se loga, utilizatorul trebuie să introducă email-ul și parola cu care s-a înregistrat în prealabil, așa cum se poate vedea în figura \ref{FigLoginPage}. 
 La apăsarea butonului de autentificare, sistemul verifică datele și redirecționează utilizatorul către pagina principală sau notifică cu privire la erorile apărute. 
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.33]{./figures/login-page.png}
+	\caption{Pagina de autentificare}
+	\label{FigLoginPage}
+\end{figure}
+
 \par
-Pentru înregistrare, utilizatorul trebuie să completeze formularul cu numele, adresa de e-mail și parola.
+Figura \ref{FigRegisterPage} ilustrează pagina de înregistrare, unde utilizatorul trebuie să completeze formularul cu numele, adresa de e-mail și parola.
 La acționarea butonului de înregistrare, sistemul validează informațiile furnizate și creează contul utilizatorului sau afișează mesaje corespunzătoare în cazul unei erori.
 După o înregistrare cu succes, user-ul este redirecționat către pagina de logare.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.32]{./figures/register-page.png}
+	\caption{Pagina de înregistrare}
+	\label{FigRegisterPage}
+\end{figure}
+
 \par
-În cazul în care utilizatorul logat nu are adăugate hobby-uri, un ecran dedicat acestei acțiuni va fi afișat imediat după logare.
+În cazul în care utilizatorul logat nu are adăugate hobby-uri, un ecran dedicat acestei acțiuni va fi afișat imediat după logare, așa cum se poate observa în figura \ref{FigOnboardingPage}.
 Aici user-ul poate alege din lista de hobby-uri existente, prin intermediul unui checkbox. 
 De asemenea, hobby-urile pot fi filtrate după nume, folosind bara de căutare.
 După selectare, aceastea pot fi salvate prin apăsarea butonului Save.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.33]{./figures/onboarding-page.png}
+	\caption{Pagina afișată utilizatorilor fără hobby-uri selectate}
+	\label{FigOnboardingPage}
+\end{figure}
+
 \par
-Dacă utilizatorul logat are hobby-uri selectate, se prezintă pagina de căutare a utilizatorilor cu hobby-uri asemănătoare.
+Dacă utilizatorul logat are hobby-uri selectate, se prezintă pagina de căutare a utilizatorilor cu hobby-uri asemănătoare, conform figurii \ref{FigHomePage}.
 Pentru căutare, user-ul apasă butonul dedicat de pe ecran și se afișează lista utilizatorilor recomandați.
 Această listă este ordonată descrescător după scorul potrivirii.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.33]{./figures/home-page.png}
+	\caption{Pagina de căutare a utilizatorilor cu interese comune}
+	\label{FigHomePage}
+\end{figure}
+
+\par
+De asemenea, utilizatorul se poate deconecta din aplicație. La apăsarea butonului ilustrat în figura \ref{FigLogoutButton}, user-ul va fi redirecționat către pagina de autentificare.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.33]{./figures/logout-component.png}
+	\caption{Deconectarea utilizatorului}
+	\label{FigLogoutButton}
+\end{figure}
