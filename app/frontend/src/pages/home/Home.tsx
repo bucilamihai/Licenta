@@ -13,10 +13,11 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../store";
 import { clearCredentials } from "../../slices/authSlice";
-import ProfileBadge from "../../components/ProfileBadge";
-import User from "../../components/User";
+import ProfileBadge from "../../components/profile-badge/ProfileBadge";
+import User from "../../components/user/User";
 import { UserWithSimilarity } from "../../types/userTypes";
 import { getSimilarUsers } from "../../services/api";
+import "./Home.css";
 
 const Home: React.FC = () => {
   const router = useIonRouter();
@@ -56,35 +57,35 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Home</IonTitle>
+        <IonToolbar className="home-toolbar">
+          <IonTitle className="home-title">Home</IonTitle>
           <ProfileBadge
             name={user?.firstName + " " + user?.lastName}
             onLogout={handleLogout}
           />
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <IonButton onClick={handleUserSearch}>
+      <IonContent className="home-content">
+        <IonButton className="home-button" onClick={handleUserSearch}>
           <IonText>Search similar users based on hobbies</IonText>
         </IonButton>
-      </IonContent>
-      {loading && <p>Loading users...</p>}
+        {loading && <p>Loading users...</p>}
 
-      {!loading && users.length > 0 && (
-        <div className="ion-margin-top">
-          {users.map((user, index) => (
-            <User
-              key={index}
-              firstName={user.firstName}
-              lastName={user.lastName}
-              email={user.email}
-              hobbies={user.hobbies.map((hobby) => hobby.name)}
-              similarityScore={user.similarityScore}
-            />
-          ))}
-        </div>
-      )}
+        {!loading && users.length > 0 && (
+          <div className="ion-margin-top">
+            {users.map((user, index) => (
+              <User
+                key={index}
+                firstName={user.firstName}
+                lastName={user.lastName}
+                email={user.email}
+                hobbies={user.hobbies}
+                similarityScore={user.similarityScore}
+              />
+            ))}
+          </div>
+        )}
+      </IonContent>
     </IonPage>
   );
 };

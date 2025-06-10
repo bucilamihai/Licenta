@@ -16,6 +16,9 @@ import {
 import React, { useState } from "react";
 import { register } from "../../services/api";
 import { UserRegistration } from "../../types/userTypes";
+import CustomAlert from "../../components/custom-alert/CustomAlert";
+import { useAlert } from "../../hooks/useAlert";
+import "./Register.css";
 
 const Register: React.FC = () => {
   const router = useIonRouter();
@@ -25,13 +28,15 @@ const Register: React.FC = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const { alert, showAlert, hideAlert } = useAlert();
+
   const handleRegister = () => {
     if (!firstName || !lastName || !email || !password) {
-      alert("Please fill in all fields!");
+      showAlert("Please fill in all fields!", "warning");
       return;
     }
     if (password !== confirmPassword) {
-      alert("Passwords do not match!");
+      showAlert("Passwords do not match!", "warning");
       return;
     }
     const user: UserRegistration = {
@@ -42,72 +47,87 @@ const Register: React.FC = () => {
     };
     register(user).then((response) => {
       if (response.ok) {
-        alert("Registration successful");
+        showAlert("Registration successful", "success");
         setTimeout(() => {
           router.push("/login");
         }, 1000);
       } else {
-        alert(`Error: ${response.error}`);
+        showAlert(response.error || "Registration failed", "error");
       }
     });
   };
 
   return (
     <IonPage>
+      <CustomAlert
+        show={alert.show}
+        message={alert.message}
+        type={alert.type}
+        onClose={hideAlert}
+      />
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Register</IonTitle>
+        <IonToolbar className="register-toolbar">
+          <IonTitle className="register-title">Nice to meet you!</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <IonCard>
-          <IonCardContent>
-            <IonItem>
+      <IonContent className="register-content">
+        <IonCard className="register-card">
+          <IonCardContent className="register-card-content">
+            <IonItem className="register-item">
               <IonInput
+                className="register-input"
                 type="text"
                 placeholder="First name"
                 value={firstName}
                 onIonChange={(e) => setFirstName(e.detail.value!)}
               ></IonInput>
             </IonItem>
-            <IonItem>
+            <IonItem className="register-item">
               <IonInput
+                className="register-input"
                 type="text"
                 placeholder="Last name"
                 value={lastName}
                 onIonChange={(e) => setLastName(e.detail.value!)}
               ></IonInput>
             </IonItem>
-            <IonItem>
+            <IonItem className="register-item">
               <IonInput
+                className="register-input"
                 type="email"
                 placeholder="Email"
                 value={email}
                 onIonChange={(e) => setEmail(e.detail.value!)}
               ></IonInput>
             </IonItem>
-            <IonItem>
+            <IonItem className="register-item">
               <IonInput
+                className="register-input"
                 type="password"
                 placeholder="Password"
                 value={password}
                 onIonChange={(e) => setPassword(e.detail.value!)}
               ></IonInput>
             </IonItem>
-            <IonItem>
+            <IonItem className="register-item">
               <IonInput
+                className="register-input"
                 type="password"
                 placeholder="Confirm Password"
                 value={confirmPassword}
                 onIonChange={(e) => setConfirmPassword(e.detail.value!)}
               ></IonInput>
             </IonItem>
-            <IonButton onClick={handleRegister}>
-              <IonLabel>Register</IonLabel>
+            <IonButton className="register-button" onClick={handleRegister}>
+              <IonLabel className="register-label">Register</IonLabel>
             </IonButton>
           </IonCardContent>
         </IonCard>
-        <IonRouterLink routerLink="/login" routerDirection="back">
+        <IonRouterLink
+          className="register-link"
+          routerLink="/login"
+          routerDirection="back"
+        >
           Already have an account? Login here.
         </IonRouterLink>
       </IonContent>

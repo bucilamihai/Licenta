@@ -8,8 +8,6 @@ import {
   IonButton,
   IonCard,
   IonCardContent,
-  IonCardHeader,
-  IonCardTitle,
   IonSearchbar,
 } from "@ionic/react";
 import React, { useEffect, useState } from "react";
@@ -23,14 +21,19 @@ import { saveHobbies } from "../../services/api";
 import { useDispatch } from "react-redux";
 import { setUser } from "../../slices/authSlice";
 import { clearCredentials } from "../../slices/authSlice";
-import HobbyComponent from "../../components/Hobby";
-import ProfileBadge from "../../components/ProfileBadge";
+import HobbyComponent from "../../components/hobby/Hobby";
+import ProfileBadge from "../../components/profile-badge/ProfileBadge";
+import CustomAlert from "../../components/custom-alert/CustomAlert";
+import { useAlert } from "../../hooks/useAlert";
+import "./Onboarding.css";
 
 const Onboarding: React.FC = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const user = useSelector((state: RootState) => state.auth.user);
   const token = useSelector((state: RootState) => state.auth.token);
+
+  const { alert, showAlert, hideAlert } = useAlert();
 
   if (!user || !token) {
     history.push("/login");
@@ -47,7 +50,7 @@ const Onboarding: React.FC = () => {
         setHobbies(response.data);
         setFilteredHobbies(response.data);
       } else {
-        alert(`Error: ${response.error}`);
+        showAlert;
       }
     });
   }, []);
@@ -74,7 +77,7 @@ const Onboarding: React.FC = () => {
 
   const handleSaveHobbies = () => {
     if (selectedHobbies.length === 0) {
-      alert("Please select at least one hobby");
+      showAlert("Please select at least one hobby", "warning");
       return;
     }
     const userWithHobbies = {
@@ -83,11 +86,11 @@ const Onboarding: React.FC = () => {
     };
     saveHobbies(userWithHobbies, token).then((response) => {
       if (response.ok) {
-        alert("Hobbies saved successfully");
+        showAlert("Hobbies saved successfully!", "success");
         dispatch(setUser(userWithHobbies));
         history.push("/home");
       } else {
-        alert(`Error: ${response.error}`);
+        showAlert(response.error || "Failed to save hobbies", "error");
       }
     });
   };
@@ -121,28 +124,29 @@ const Onboarding: React.FC = () => {
 
   return (
     <IonPage>
+      <CustomAlert
+        show={alert.show}
+        message={alert.message}
+        type={alert.type}
+        onClose={hideAlert}
+      />
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Onboarding</IonTitle>
+        <IonToolbar className="onboarding-toolbar">
+          <IonTitle className="onboarding-title">Choose your hobbies</IonTitle>
           <ProfileBadge
             name={user?.firstName + " " + user?.lastName}
             onLogout={handleLogout}
           />
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <IonCard>
-          <IonCardHeader>
-            <IonCardTitle>
-              Complete your profile by selecting your hobbies
-            </IonCardTitle>
-          </IonCardHeader>
+      <IonContent className="onboarding-content">
+        <IonCard className="onboarding-card">
           <IonSearchbar
             debounce={500}
             onIonInput={(event) => handleSearch(event)}
           ></IonSearchbar>
-          <IonCardContent>
-            <IonList>
+          <IonCardContent className="onboarding-card-content">
+            <IonList className="onboarding-scrollable-list">
               {filteredHobbies.map((value, index) => (
                 <HobbyComponent
                   key={index}
@@ -155,7 +159,12 @@ const Onboarding: React.FC = () => {
                 />
               ))}
             </IonList>
-            <IonButton onClick={handleSaveHobbies}>Save</IonButton>
+            <IonButton
+              className="onboarding-button"
+              onClick={handleSaveHobbies}
+            >
+              Save
+            </IonButton>
           </IonCardContent>
         </IonCard>
       </IonContent>

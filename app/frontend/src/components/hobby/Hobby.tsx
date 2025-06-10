@@ -1,6 +1,7 @@
 import { IonText, IonItem, IonCheckbox, IonContent } from "@ionic/react";
 import React from "react";
-import { Hobby, HobbyTypes } from "../types/hobbyTypes";
+import { HobbyTypes } from "../../types/hobbyTypes";
+import "./Hobby.css";
 
 interface HobbyComponentProps {
   name: string;
@@ -21,17 +22,24 @@ const HobbyComponent: React.FC<HobbyComponentProps> = ({
 
   return (
     <>
-      <IonItem>
+      <IonItem className={`checkbox-item ${checked ? "checked" : ""}`}>
         <IonCheckbox
           slot="start"
           checked={checked}
           onIonChange={(e) => handleChange(name, e.detail.checked)}
+          className="custom-checkbox"
         />
-        <IonText>{name}</IonText>
+        <IonText className="checkbox-text">{name}</IonText>
       </IonItem>
-      {types.map((type, index) => (
-        <IonText key={index}>{type.name + " "}</IonText>
-      ))}
+      {types.length > 0 && (
+        <div className="types-container">
+          {types.map((type, index) => (
+            <IonText key={index} className="type-tag">
+              {type.name}
+            </IonText>
+          ))}
+        </div>
+      )}
     </>
   );
 };
