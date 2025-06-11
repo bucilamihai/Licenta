@@ -21,6 +21,45 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{smith2017two}
+B.~Smith and G.~Linden, ``Two decades of recommender systems at amazon. com,''
+  \emph{Ieee internet computing}, vol.~21, no.~3, pp. 12--18, 2017.
+
+\bibitem{ahmed2022amazon}
+M.~Z. Ahmed, A.~Singh, A.~Paul, S.~Ghosh, and A.~K. Chaudhuri, ``Amazon product
+  recommendation system,'' \emph{International Journal of Advanced Research in
+  Computer and Communication Engineering}, vol.~11, no.~3, 2022.
+
+\bibitem{chiny2022netflix}
+M.~Chiny, M.~Chihab, O.~Bencharef, and Y.~Chihab, ``Netflix recommendation
+  system based on tf-idf and cosine similarity algorithms,'' \emph{no. Bml},
+  pp. 15--20, 2022.
+
+\bibitem{gomez2015netflix}
+C.~A. Gomez-Uribe and N.~Hunt, ``The netflix recommender system: Algorithms,
+  business value, and innovation,'' \emph{ACM Transactions on Management
+  Information Systems (TMIS)}, vol.~6, no.~4, pp. 1--19, 2015.
+
+\bibitem{baatarjav2008group}
+E.-A. Baatarjav, S.~Phithakkitnukoon, and R.~Dantu, ``Group recommendation
+  system for facebook,'' in \emph{On the Move to Meaningful Internet Systems:
+  OTM 2008 Workshops: OTM Confederated International Workshops and Posters,
+  ADI, AWeSoMe, COMBEK, EI2N, IWSSA, MONET, OnToContent+ QSI, ORM, PerSys,
+  RDDS, SEMELS, and SWWS 2008, Monterrey, Mexico, November 9-14, 2008.
+  Proceedings}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2008, pp.
+  211--219.
+
+\bibitem{heimbach2015value}
+I.~Heimbach, J.~Gottschlich, and O.~Hinz, ``The value of user’s facebook
+  profile data for product recommendation generation,'' \emph{Electronic
+  Markets}, vol.~25, no.~2, pp. 125--138, 2015.
+
+\bibitem{nguyen2014exploring}
+T.~T. Nguyen, P.-M. Hui, F.~M. Harper, L.~Terveen, and J.~A. Konstan,
+  ``Exploring the filter bubble: the effect of using recommender systems on
+  content diversity,'' in \emph{Proceedings of the 23rd international
+  conference on World wide web}, 2014, pp. 677--686.
+
 \bibitem{kumar2018recommendation}
 P.~Kumar and R.~S. Thakur, ``Recommendation system techniques and related
   issues: a survey,'' \emph{International Journal of Information Technology},
