@@ -89,3 +89,40 @@
     transform: translateY(0);
   }
 }
+
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.users-flex .user-item {
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 280px;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .users-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .users-flex .user-item {
+    flex: 1 1 100%;
+  }
+}
+
+.user-item {
+  margin: 0 !important;
+  padding: 1rem;
+}
+
+.user-card {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
