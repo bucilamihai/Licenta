@@ -74,4 +74,9 @@ A.~Ugurcan, ``{Hobbies Dataset},''
   \url{https://huggingface.co/datasets/alperugurcan/Hobbies}, 2024, accesat la:
   2025-01-25.
 
+\bibitem{flaskdocs}
+{Pallets}, ``{Flask documentation},''
+  \url{https://flask.palletsprojects.com/en/stable/}, 2024, accesat la:
+  2025-03-03.
+
 \end{thebibliography}

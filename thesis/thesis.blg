@@ -21,45 +21,45 @@ Warning--entry type for "hf_Ugurcan" isn't style-file defined
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 11 entries,
+You've used 12 entries,
             4087 wiz_defined-function locations,
-            881 strings with 8795 characters,
-and the built_in function-call counts, 5516 in all, are:
-= -- 482
-> -- 73
+            886 strings with 8906 characters,
+and the built_in function-call counts, 5917 in all, are:
+= -- 518
+> -- 77
 < -- 20
-+ -- 40
-- -- 14
-* -- 226
-:= -- 980
-add.period$ -- 22
-call.type$ -- 11
-change.case$ -- 20
++ -- 42
+- -- 15
+* -- 239
+:= -- 1055
+add.period$ -- 24
+call.type$ -- 12
+change.case$ -- 22
 chr.to.int$ -- 45
-cite$ -- 11
-duplicate$ -- 428
-empty$ -- 467
-format.name$ -- 16
-if$ -- 1232
+cite$ -- 12
+duplicate$ -- 462
+empty$ -- 505
+format.name$ -- 17
+if$ -- 1322
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 90
-newline$ -- 58
-num.names$ -- 11
-pop$ -- 213
+int.to.str$ -- 12
+missing$ -- 98
+newline$ -- 61
+num.names$ -- 12
+pop$ -- 233
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 438
+skip$ -- 471
 stack$ -- 0
-substring$ -- 134
-swap$ -- 292
+substring$ -- 137
+swap$ -- 312
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 11
+type$ -- 12
 warning$ -- 0
-while$ -- 18
-width$ -- 13
-write$ -- 127
+while$ -- 19
+width$ -- 14
+write$ -- 136
 (There were 3 warnings)
