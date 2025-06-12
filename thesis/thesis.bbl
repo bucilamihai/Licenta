@@ -21,14 +21,14 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{smith2017two}
-B.~Smith and G.~Linden, ``Two decades of recommender systems at amazon. com,''
-  \emph{Ieee internet computing}, vol.~21, no.~3, pp. 12--18, 2017.
-
 \bibitem{ahmed2022amazon}
 M.~Z. Ahmed, A.~Singh, A.~Paul, S.~Ghosh, and A.~K. Chaudhuri, ``Amazon product
   recommendation system,'' \emph{International Journal of Advanced Research in
   Computer and Communication Engineering}, vol.~11, no.~3, 2022.
+
+\bibitem{smith2017two}
+B.~Smith and G.~Linden, ``Two decades of recommender systems at amazon. com,''
+  \emph{Ieee internet computing}, vol.~21, no.~3, pp. 12--18, 2017.
 
 \bibitem{chiny2022netflix}
 M.~Chiny, M.~Chihab, O.~Bencharef, and Y.~Chihab, ``Netflix recommendation
