@@ -1,29 +1,31 @@
 \babel@toc {romanian}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducere}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivație}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Obiective}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Structura lucrării}{1}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Soluții similare în domeniul sistemelor de recomandare}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Platforme de vânzări}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Rețele sociale}{3}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Fundamente teoretice în sisteme de recomandare}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Filtrare bazată pe conținut}{5}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Principiu de funcționare}{5}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Filtrare colaborativă}{6}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Provocări și limitări ale metodelor de recomandare}{6}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Problema ”Cold start”}{6}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Sinonimie}{7}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Confidențialitate și securitate}{7}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Aplicație software}{8}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Arhitectura aplicației}{8}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Frontend}{8}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Backend}{9}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Sistemul de recomandare}{11}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Funcționalități}{12}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Înregistrarea utilizatorului}{12}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Autentificarea utilizatorul}{12}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Alegerea hobby-urilor}{13}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Căutarea utilizatorilor cu hobby-uri similare}{13}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Manual de utilizare}{14}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Concluzii}{17}{chapter.5}%
-\contentsline {chapter}{Bibliografie}{18}{chapter*.10}%
+\contentsline {section}{\numberline {1.1}Obiective}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Motivație}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Structura lucrării}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Utilizarea instrumentelor de inteligență artificială generative}{2}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Soluții similare în domeniul sistemelor de recomandare}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Platforme de vânzări și streaming}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Rețele sociale}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Abordări existente în conectarea utilizatorilor bazată pe interese}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Fundamente teoretice în sisteme de recomandare}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Filtrare bazată pe conținut}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Principiu de funcționare}{7}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Filtrare colaborativă}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Provocări și limitări ale metodelor de recomandare}{7}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Problema „Cold start”}{7}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Sinonimie și polisemie}{8}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Confidențialitate și securitate}{8}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Aplicație software}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Arhitectura aplicației}{9}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Frontend}{9}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Backend}{10}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Sistemul de recomandare}{12}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Funcționalități}{13}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Înregistrarea utilizatorului}{13}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Autentificarea utilizatorul}{13}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Alegerea hobby-urilor}{14}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Căutarea utilizatorilor cu hobby-uri similare}{14}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Manual de utilizare}{15}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Concluzii}{18}{chapter.5}%
+\contentsline {chapter}{Bibliografie}{19}{chapter*.10}%

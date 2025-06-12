@@ -4,7 +4,7 @@
 
 \par
 Capitolul de față descrie aplicația software realizată, prezentând structura sa generală, principalele componente și modul în care acestea comunică pentru a oferi funcționalitățile propuse.
-Sunt oferite detalii despre arhitectură și sunt explicate în detaliu principalele funcționalități.
+Sunt oferite detalii despre arhitectură și sunt explicate principalele funcționalități. 
 Capitolul se încheie cu un scurt manual de utilizare, conceput să ghideze utilizatorul în folosirea aplicației. 
 
 \section{Arhitectura aplicației}
@@ -85,14 +85,14 @@ Deoarece majoritatea rutelor din aplicație sunt restricționate, utilizatorul a
 \subsection{Sistemul de recomandare}
 \label{subsec:ch4sec1sub3}
 \subsubsection*{Setul de date}
-Pentru a popula baza de date cu o listă de hobby-uri cât mai bogată și realistă, s-au fuzionat trei seturi de date disponibile pe platformele Kaggle\cite{kaggle_Raj}, \cite{kaggle_dawid} și HuggingFace \cite{hf_Ugurcan}.
+Pentru a popula baza de date cu o listă de hobby-uri cât mai bogată și realistă, s-au fuzionat trei seturi de date disponibile pe platformele Kaggle\cite{kaggle_Raj, kaggle_dawid} și HuggingFace \cite{hf_Ugurcan}.
 După îmbinarea acestora, a fost nevoie de o prelucrare atentă a setului de date pentru a standardiza formatul.
 Numele hobby-urilor au fost normalizate, iar în cazul în care au apărut duplicate, acestea au fost eliminate, însă tipurile lor au fost comasate.
 Tipurile hobby-urilor au fost la rândul lor prelucrate, deoarece erau exprimate inconsistent, separate fie prin virgulă, fie prin conjuncția ”and”, iar duplicatele au fost excluse.
 În urma procesării, s-a obținut un set de aproximativ 730 de hobby-uri care a fost introdus în baza de date pentru ca utilizatorii să poată selecta hobby-urile dintr-o listă structurată.
 
 \subsubsection*{Comunicare cu serverul Java}
-Recomandările se realizează printr-o comunicare între serverului Java și sistemul de recomandare, care este implementat separat, scris în Python, folosind framework-ul Flask \cite{flaskdocs}.
+Recomandările se realizează printr-o comunicare între serverul Java și sistemul de recomandare, care este implementat separat, scris în Python, folosind framework-ul Flask \cite{flaskdocs}.
 Acest serviciu extern este responsabil cu procesarea datelor și calculul gradului de asemănare.
 Atunci când utilizatorul accesează pagina de căutare a recomandărilor, aplicația trimite către serverul Python informații despre hobby-urile acestuia, precum și despre restul utilizatorilor existenți.
 Sistemul analizează datele și returnează o listă de utilizatori cu interese comune, ordonați în funcție gradul de similaritate.
