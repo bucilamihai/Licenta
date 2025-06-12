@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  12 JUN 2025 21:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  12 JUN 2025 21:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -639,7 +639,7 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2A343D5F8942DB611DBDE08B92EC92AD;5801.
+(rerunfilecheck)             Checksum: 0D05DE7807CA7E4979056778791A44CA;5811.
  ) 
 Here is how much of TeX's memory you used:
  13228 strings out of 474486
@@ -650,7 +650,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  90i,17n,93p,815b,1317s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (26 pages, 730101 bytes).
+Output written on thesis.pdf (26 pages, 730112 bytes).
 PDF statistics:
  443 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)

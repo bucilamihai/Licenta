@@ -138,7 +138,7 @@ Pe backend, datele se revalidează pentru a asigura securitatea și integritatea
 Contul utilizatorul se salvează în baza de date doar dacă nu există deja unul cu aceeași adresă de email, altfel se aruncă o excepție corespunzătoare.
 Serverul trimite răspuns, după caz, fie datele user-ului creat, fie un mesaj de eroare.
 
-\subsection{Autentificarea utilizatorul}
+\subsection{Autentificarea utilizatorului}
 \label{subsec:ch4sec2sub2}
 Pentru a accesa restul funcționalităților, utilizatorul trebuie să se autentifice. Pagina dedicată logării cuprinde un formular cu două câmpuri: adresa de email și parolă.
 În urma apăsării butonului Login, aplicația validează local datele introduse. În lipsa erorilor, se inițiază o cerere HTTP POST către endpoint-ul \texttt{/auth/login}.
