@@ -14,6 +14,35 @@
 \renewcommand{\headrulewidth}{0.2pt}
 \renewcommand{\footrulewidth}{0.2pt}
 
+\usepackage{listings}
+\usepackage{xcolor}
+\renewcommand{\lstlistingname}{Secvența de cod}
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{green!60!black}\itshape,
+    stringstyle=\color{red},
+    numberstyle=\tiny\color{gray},
+    numbers=left,
+    numbersep=8pt,
+    stepnumber=1,
+    backgroundcolor=\color{gray!5},
+    frame=single,
+    frameround=tttt,
+    rulecolor=\color{gray!30},
+    breaklines=true,
+    breakatwhitespace=false,
+    tabsize=4,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    captionpos=b,
+    aboveskip=\medskipamount,
+    belowskip=\medskipamount
+}
+\lstset{style=pythonstyle}
+
 \begin{document}
 
 \specialization{INFORMATICĂ ÎN LIMBA ROMÂNĂ}	
