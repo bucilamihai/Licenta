@@ -78,6 +78,22 @@ F.~Isinkaye, Y.~Folajimi, and B.~Ojokoh, ``Recommendation systems: Principles,
   \url{https://www.sciencedirect.com/science/article/pii/S1110866515000341}
 \BIBentrySTDinterwordspacing
 
+\bibitem{sondur2016similarity}
+M.~S.~D. Sondur, M.~A.~P. Chigadani, and S.~Nayak, ``Similarity measures for
+  recommender systems: a comparative study,'' \emph{Journal for Research},
+  vol.~2, no.~3, 2016.
+
+\bibitem{bag2019efficient}
+S.~Bag, S.~K. Kumar, and M.~K. Tiwari, ``An efficient recommendation generation
+  using relevant jaccard similarity,'' \emph{Information Sciences}, vol. 483,
+  pp. 53--64, 2019.
+
+\bibitem{al2018similarity}
+L.~Al~Hassanieh, C.~Abou~Jaoudeh, J.~B. Abdo, and J.~Demerjian, ``Similarity
+  measures for collaborative filtering recommender systems,'' in \emph{2018
+  IEEE Middle East and North Africa Communications Conference
+  (MENACOMM)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2018, pp. 1--5.
+
 \bibitem{lika2014facing}
 B.~Lika, K.~Kolomvatsos, and S.~Hadjiefthymiades, ``Facing the cold start
   problem in recommender systems,'' \emph{Expert systems with applications},
