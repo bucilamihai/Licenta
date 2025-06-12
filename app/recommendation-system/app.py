@@ -2,6 +2,13 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
+def jaccard_similarity(set1, set2):
+    if not set1 or not set2:
+        return 0.0
+    intersection = len(set1.intersection(set2))
+    union = len(set1.union(set2))
+    return intersection / union
+
 @app.route('/recommend', methods=['POST'])
 def recommend():
     data = request.get_json()
@@ -22,15 +29,14 @@ def recommend():
             hobby["name"].lower()
             for hobby in user.get("hobbies", [])
         }
-        score = len(targetHobbyNames.intersection(userHobbyNames))
-        max_len = max(len(targetHobbyNames), 1)
-        similarity_score = score / max_len # Normalize score to [0, 1]
+        similarity_score = jaccard_similarity(targetHobbyNames, userHobbyNames)
         recommendations.append({
             "userId": user.get("userId"),
             "score": similarity_score
         })
 
     recommendations.sort(key=lambda x: x["score"], reverse=True)
+    recommendations = [rec for rec in recommendations if rec["score"] > 0.25]
     return jsonify(recommendations), 200
 
 if __name__ == '__main__':
