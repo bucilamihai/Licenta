@@ -78,6 +78,32 @@ F.~Isinkaye, Y.~Folajimi, and B.~Ojokoh, ``Recommendation systems: Principles,
   \url{https://www.sciencedirect.com/science/article/pii/S1110866515000341}
 \BIBentrySTDinterwordspacing
 
+\bibitem{lika2014facing}
+B.~Lika, K.~Kolomvatsos, and S.~Hadjiefthymiades, ``Facing the cold start
+  problem in recommender systems,'' \emph{Expert systems with applications},
+  vol.~41, no.~4, pp. 2065--2073, 2014.
+
+\bibitem{mansur2017review}
+F.~Mansur, V.~Patel, and M.~Patel, ``A review on recommender systems,'' in
+  \emph{2017 International Conference on Innovations in Information, Embedded
+  and Communication Systems (ICIIECS)}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2017, pp. 1--6.
+
+\bibitem{lops2011content}
+P.~Lops, M.~De~Gemmis, and G.~Semeraro, ``Content-based recommender systems:
+  State of the art and trends,'' \emph{Recommender systems handbook}, pp.
+  73--105, 2011.
+
+\bibitem{huang2019privacy}
+W.~Huang, B.~Liu, and H.~Tang, ``Privacy protection for recommendation system:
+  a survey,'' in \emph{Journal of Physics: Conference Series}, vol. 1325,
+  no.~1.\hskip 1em plus 0.5em minus 0.4em\relax IOP Publishing, 2019, p.
+  012087.
+
+\bibitem{badsha2016practical}
+S.~Badsha, X.~Yi, and I.~Khalil, ``A practical privacy-preserving recommender
+  system,'' \emph{Data Science and Engineering}, vol.~1, pp. 161--177, 2016.
+
 \bibitem{ionicreactdocs}
 D.~Co., ``{Ionic React documentation},''
   \url{https://ionicframework.com/docs/react}, 2024, accesat la: 2025-02-21.

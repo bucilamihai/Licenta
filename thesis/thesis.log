@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  11 JUN 2025 21:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  12 JUN 2025 11:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -384,13 +384,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 Capitolul 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 19.
 [5
 
-]) (chapters/chapter4.tex
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 23.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.29388pt, for example:
@@ -399,6 +400,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.29388pt}.
 
 [6]
+Overfull \hbox (4.6938pt too wide) in paragraph at lines 52--56
+[]\OT1/ppl/m/n/12 In ca-drul sis-te-me-lor de re-co-man-dare, si-no-ni-mia apare atunci c[]and doi ter-meni diferi[]i
+ []
+
+
+Overfull \hbox (1.09381pt too wide) in paragraph at lines 52--56
+\OT1/ppl/m/n/12 des-criu acela[]i con-cept (de exem-plu, []mo-vie" []i []film", []fo-o-tball" []i []soc-cer"). Ace[]ti
+ []
+
+) (chapters/chapter4.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.29388pt, for example:
@@ -426,7 +437,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-<./figures/class-diagram.png, id=244, 983.675pt x 238.8925pt>
+<./figures/class-diagram.png, id=254, 983.675pt x 238.8925pt>
 File: ./figures/class-diagram.png Graphic file (type png)
 <use ./figures/class-diagram.png>
 Package pdftex.def Info: ./figures/class-diagram.png  used on input line 62.
@@ -436,7 +447,7 @@ Underfull \hbox (badness 4479) in paragraph at lines 68--71
 \OT1/ppl/m/n/12 Conectarea la baza de date se face cu aju-to-rul fi[]ierului de con-fi-gu-rare
  []
 
-<./figures/db-diagram.png, id=249, 688.82344pt x 386.19281pt>
+<./figures/db-diagram.png, id=259, 688.82344pt x 386.19281pt>
 File: ./figures/db-diagram.png Graphic file (type png)
 <use ./figures/db-diagram.png>
 Package pdftex.def Info: ./figures/db-diagram.png  used on input line 74.
@@ -462,7 +473,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-<./figures/usecase-diagram.png, id=278, 526.96875pt x 375.65344pt>
+<./figures/usecase-diagram.png, id=288, 526.96875pt x 375.65344pt>
 File: ./figures/usecase-diagram.png Graphic file (type png)
 <use ./figures/usecase-diagram.png>
 Package pdftex.def Info: ./figures/usecase-diagram.png  used on input line 111.
@@ -484,12 +495,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-<./figures/login-page.png, id=290, 1154.06157pt x 659.46375pt>
+<./figures/login-page.png, id=300, 1154.06157pt x 659.46375pt>
 File: ./figures/login-page.png Graphic file (type png)
 <use ./figures/login-page.png>
 Package pdftex.def Info: ./figures/login-page.png  used on input line 166.
 (pdftex.def)             Requested size: 311.60078pt x 178.05759pt.
-<./figures/register-page.png, id=292, 1154.81438pt x 654.19406pt>
+<./figures/register-page.png, id=302, 1154.81438pt x 654.19406pt>
 File: ./figures/register-page.png Graphic file (type png)
 <use ./figures/register-page.png>
 Package pdftex.def Info: ./figures/register-page.png  used on input line 178.
@@ -503,17 +514,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14 <./figures/login-page.png> <./figures/register-page.png>]
-<./figures/onboarding-page.png, id=303, 1154.81438pt x 654.94687pt>
+<./figures/onboarding-page.png, id=313, 1154.81438pt x 654.94687pt>
 File: ./figures/onboarding-page.png Graphic file (type png)
 <use ./figures/onboarding-page.png>
 Package pdftex.def Info: ./figures/onboarding-page.png  used on input line 191.
 (pdftex.def)             Requested size: 381.08992pt x 216.13313pt.
-<./figures/home-page.png, id=305, 1157.82562pt x 656.4525pt>
+<./figures/home-page.png, id=315, 1157.82562pt x 656.4525pt>
 File: ./figures/home-page.png Graphic file (type png)
 <use ./figures/home-page.png>
 Package pdftex.def Info: ./figures/home-page.png  used on input line 203.
 (pdftex.def)             Requested size: 382.08363pt x 216.62999pt.
-<./figures/logout-component.png, id=307, 1159.33125pt x 106.89937pt>
+<./figures/logout-component.png, id=317, 1159.33125pt x 106.89937pt>
 File: ./figures/logout-component.png Graphic file (type png)
 <use ./figures/logout-component.png>
 Package pdftex.def Info: ./figures/logout-component.png  used on input line 213.
@@ -541,17 +552,24 @@ Capitolul 5.
 ] [18
 
 ]
-Underfull \hbox (badness 1082) in paragraph at lines 82--84
+Underfull \hbox (badness 1082) in paragraph at lines 108--110
 []\OT1/ppl/m/n/12 D. Co., ``Io-nic Re-act do-cu-men-ta-tion,'' []$https : / / ionicframework . com / docs /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 []\OT1/ppl/m/n/12 Broadcom, ``Spring Boot do-cu-men-ta-tion,'' []$https : / / docs . spring . io /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--120
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
 []\OT1/ppl/m/n/12 A. Ugu-r-can, ``Ho-b-bies Da-ta-set,'' []$https : / / huggingface . co / datasets /
  []
 
@@ -563,26 +581,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19] (thesis.aux)
+[20] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3CC9DF37A245D72BC615A988901BFFE9;5259.
+(rerunfilecheck)             Checksum: FF0E69EC6A40FF84A747A93CBE1C0C54;5333.
  ) 
 Here is how much of TeX's memory you used:
- 10940 strings out of 474486
- 178674 string characters out of 5743755
+ 10951 strings out of 474486
+ 178876 string characters out of 5743755
  1947542 words of memory out of 5000000
- 32958 multiletter control sequences out of 15000+600000
+ 32963 multiletter control sequences out of 15000+600000
  581066 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,17n,93p,815b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,93p,815b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (24 pages, 700019 bytes).
+Output written on thesis.pdf (25 pages, 707302 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
+ 413 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
