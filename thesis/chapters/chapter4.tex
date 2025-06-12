@@ -84,12 +84,28 @@ Deoarece majoritatea rutelor din aplicație sunt restricționate, utilizatorul a
 
 \subsection{Sistemul de recomandare}
 \label{subsec:ch4sec1sub3}
+Pentru a determina gradul de similaritate între utilizatori pe baza hobby-urilor comune, sistemul folosește coeficientul de similaritate Jaccard.
+Această metodă compară seturile de hobby-uri ale fiecărui utilizator și calculează raportul dintre elementele comune și totalitatea elementelor distincte din cele două seturi.
+Rezultatul este un număr real între 0 și 1. Această metodă este simplă și intuitivă, fiind adecvată pentru compararea mulțimilor neordonate de termeni.
+Implementarea funcției care calculeaza similaritatea Jaccard este prezentată în secvența de cod \ref{CodeJaccard}.
+
+\begin{lstlisting}[caption={Algoritmul de calcul al similarității Jaccard}, label={CodeJaccard}]
+def jaccard_similarity(set1, set2):
+    if not set1 or not set2:
+        return 0.0
+    intersection = len(set1.intersection(set2))
+    union = len(set1.union(set2))
+    return intersection / union
+\end{lstlisting}    
+
 \subsubsection*{Setul de date}
 Pentru a popula baza de date cu o listă de hobby-uri cât mai bogată și realistă, s-au fuzionat trei seturi de date disponibile pe platformele Kaggle\cite{kaggle_Raj, kaggle_dawid} și HuggingFace \cite{hf_Ugurcan}.
 După îmbinarea acestora, a fost nevoie de o prelucrare atentă a setului de date pentru a standardiza formatul.
 Numele hobby-urilor au fost normalizate, iar în cazul în care au apărut duplicate, acestea au fost eliminate, însă tipurile lor au fost comasate.
 Tipurile hobby-urilor au fost la rândul lor prelucrate, deoarece erau exprimate inconsistent, separate fie prin virgulă, fie prin conjuncția ”and”, iar duplicatele au fost excluse.
 În urma procesării, s-a obținut un set de aproximativ 730 de hobby-uri care a fost introdus în baza de date pentru ca utilizatorii să poată selecta hobby-urile dintr-o listă structurată.
+
+\subsubsection*{}
 
 \subsubsection*{Comunicare cu serverul Java}
 Recomandările se realizează printr-o comunicare între serverul Java și sistemul de recomandare, care este implementat separat, scris în Python, folosind framework-ul Flask \cite{flaskdocs}.
@@ -175,7 +191,7 @@ După o înregistrare cu succes, user-ul este redirecționat către pagina de lo
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.27]{./figures/register-page.png}
+    \includegraphics[scale=0.32]{./figures/register-page.png}
 	\caption{Pagina de înregistrare}
 	\label{FigRegisterPage}
 \end{figure}
@@ -188,7 +204,7 @@ După selectare, aceastea pot fi salvate prin apăsarea butonului Save.
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.33]{./figures/onboarding-page.png}
+    \includegraphics[scale=0.32]{./figures/onboarding-page.png}
 	\caption{Pagina afișată utilizatorilor fără hobby-uri selectate}
 	\label{FigOnboardingPage}
 \end{figure}
@@ -210,7 +226,7 @@ De asemenea, utilizatorul se poate deconecta din aplicație. La apăsarea butonu
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.30]{./figures/logout-component.png}
+    \includegraphics[scale=0.33]{./figures/logout-component.png}
 	\caption{Deconectarea utilizatorului}
 	\label{FigLogoutButton}
 \end{figure}
