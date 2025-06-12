@@ -21,6 +21,7 @@ Una dintre cele mai notabile este lipsa diversității — sistemul poate rămâ
 În plus, eficiența sistemului depinde de calitatea datelor și de granularitatea atributelor folosite pentru descrierea obiectelor.
 
 \subsection{Principiu de funcționare}
+\label{subsec:ch3sec1sub1}
 Metoda se bazează pe construirea unui profil pentru fiecare utilizator, care reflectă preferințele sale în funcție de conținutul anterior accesat sau evaluat. 
 Acest profil este comparat cu descrierile altor elemente disponibile, iar sistemul recomandă acele elemente care prezintă cele mai mari similarități.
 De regulă, se folosesc tehnici de procesare a limbajului natural, metode probabilistice sau modele de învățare automată.
@@ -28,6 +29,24 @@ Una dintre particularitățile filtrării bazate pe conținut este faptul că nu
 Acest lucru oferă o flexibilitate ridicată, în special atunci când predilecțiile se schimbă. Pe de altă parte, această abordare presupune existența unor descrieri detaliate ale elementelor din sistem, ceea ce poate deveni o provocare atunci când aceste informații lipsesc sau sunt dificil de structurat\cite{ISINKAYE2015261}.
 \section{Filtrare colaborativă}
 \label{sec:ch3sec2}
+Filtrarea colaborativă este o metodă eficientă de recomandare, care se bazează pe preferințele utilizatorilor pentru a oferi sugestii relevante.
+În contrast cu filtrarea bazată pe conținut, filtrarea colaborativă utilizează date colectate din interacțiunile utilizatorilor cu scopul de a identifica puncte comune între aceștia.
+Principiul presupune că persoanele cu gusturi și comportamente asemănătoare vor aprecia și recomanda elemente similare.
+Există două modalități de abordare în acest tip de filtrare: filtrarea bazată pe utilizatori și filtrarea bazată pe itemi.
+Prima variantă generează recomandări pe baza preferințelor altor utilizatori cu profiluri similare, în timp ce a doua variantă analizează obiectele și le identifică pe acelea care au fost evaluate pozitiv de către utilizatorii asemănători\cite{schafer2007collaborative}.
+
+\subsection{Abordare tehnică}
+\label{subsec:ch3sec2sub1}
+În mod concret, filtrarea presupune construcția unei matrici utilizator-item \ref{FigUserItemMatrix}, unde rândurile reprezintă utilizatorii, iar coloanele obiectele (produse, cărți, filme etc.). 
+Valorile din matrice reprezintă evaluările sau aprecierile persoanelor față de itemi. Pentru a determina similaritatea, se folosesc diferite metrici, precum Pearson, cosinus sau Jaccard.
+Pe baza acestora, algoritmul determină utilizatorii cei mai apropiați și creează un grup de persoane similare denumit vecinătate\cite{kumar2018recommendation}.
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=1]{./figures/user-item-matrix.png}
+	\caption{Matrice utilizator-item \cite{ISINKAYE2015261}}
+	\label{FigUserItemMatrix}
+\end{figure}
+
 
 \section{Metrici de similaritate}
 \label{sec:ch3sec3}

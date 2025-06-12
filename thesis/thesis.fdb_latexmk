@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex thesis"] 1749760106.14743 "thesis.aux" "thesis.bbl" "thesis" 1749760502.35172 0
-  "./references.bib" 1749758037 8976 31c27a5cb99529394251b41d9bf7b325 ""
+["bibtex thesis"] 1749764175.00645 "thesis.aux" "thesis.bbl" "thesis" 1749764276.35503 0
+  "./references.bib" 1749763251 9301 fa7af3882b8bd00402819da3569bb339 ""
   "C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "thesis.aux" 1749760501 11722 296a132f14aaf3fdcbb05a15a468eddf "pdflatex"
+  "thesis.aux" 1749764275 12424 2ae8f064f1c1c47018789356be1324e2 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1749760500.41832 "d:/Personal Data/Facultate/Licenta/thesis/thesis.tex" "thesis.pdf" "thesis" 1749760502.35226 0
+["pdflatex"] 1749764274.38871 "d:/Personal Data/Facultate/Licenta/thesis/thesis.tex" "thesis.pdf" "thesis" 1749764276.35559 0
   "C:/Users/bmcmi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1748693009 168695 d10abacd4983afa35ed4bdc7db543b14 ""
   "C:/Users/bmcmi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1737182471 24225046 edcada5d8ba8e0b0cb5a44081d4632cf ""
   "C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -122,8 +122,8 @@
   "C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "chapters/chapter1_introduction.tex" 1749748732 3830 61ed2f2bf4d8a8f411818000061fc2a9 ""
   "chapters/chapter2.tex" 1749748732 6760 64df3188647dde49185e1b1a8c3e1531 ""
-  "chapters/chapter3.tex" 1749760502 9472 687eb6a59f9c9ec6be4a4623af9704ab ""
-  "chapters/chapter4.tex" 1749752444 17122 17b534b615ea5e58f32d879720e37aee ""
+  "chapters/chapter3.tex" 1749764273 11210 ab0a3509a797f03fafabf52fa77afac1 ""
+  "chapters/chapter4.tex" 1749761008 17101 ee1f9bd841c68053601f775f41bc7ffa ""
   "chapters/chapter5_conclusions.tex" 1749748732 2151 045879b4e5bb975fe1e362de2fe7ef51 ""
   "d:/Personal Data/Facultate/Licenta/thesis/thesis.tex" 1749752444 3621 9ff3093e009e77de8d44bf2a877d70e8 ""
   "figures/class-diagram.png" 1749627368 39636 2cf85ec67157c9bb7483130c4c7cc98e ""
@@ -134,12 +134,13 @@
   "figures/onboarding-page.png" 1749627368 199913 f4fa7cd64676cf95493d5b7df093e4d2 ""
   "figures/register-page.png" 1749627368 104010 2d0d32956b561f0744c7f3de59201f62 ""
   "figures/usecase-diagram.png" 1749627368 31802 21aa513e6aecd03851a69bc97e1ea65e ""
+  "figures/user-item-matrix.png" 1749762909 7900 aa86edc90b22d51e2a93adf99a7b58f4 ""
   "style.sty" 1749550879 3122 dcda2a2b5152758df3bbc49a4e99f1df ""
-  "thesis.aux" 1749760501 11722 296a132f14aaf3fdcbb05a15a468eddf "pdflatex"
-  "thesis.bbl" 1749760106 7198 1a4bd9147656f50cc859a72ed5ac934b "bibtex thesis"
-  "thesis.out" 1749760501 6475 de679234870d29411fcea1883bf9d7bc "pdflatex"
+  "thesis.aux" 1749764275 12424 2ae8f064f1c1c47018789356be1324e2 "pdflatex"
+  "thesis.bbl" 1749764175 7495 47f1fd8b01d384b2541d2f04e707fd5f "bibtex thesis"
+  "thesis.out" 1749764275 6623 56749a46b65b4ed580fb812bf9e30002 "pdflatex"
   "thesis.tex" 1749752444 3621 9ff3093e009e77de8d44bf2a877d70e8 ""
-  "thesis.toc" 1749760501 3080 61126eee632cc5118b86ffab4f1fb835 "pdflatex"
+  "thesis.toc" 1749764275 3168 8c49b0d22b70666602c057935e494f42 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.log"

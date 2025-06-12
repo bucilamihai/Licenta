@@ -78,6 +78,12 @@ F.~Isinkaye, Y.~Folajimi, and B.~Ojokoh, ``Recommendation systems: Principles,
   \url{https://www.sciencedirect.com/science/article/pii/S1110866515000341}
 \BIBentrySTDinterwordspacing
 
+\bibitem{schafer2007collaborative}
+J.~B. Schafer, D.~Frankowski, J.~Herlocker, and S.~Sen, ``Collaborative
+  filtering recommender systems,'' in \emph{The adaptive web: methods and
+  strategies of web personalization}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Springer, 2007, pp. 291--324.
+
 \bibitem{sondur2016similarity}
 M.~S.~D. Sondur, M.~A.~P. Chigadani, and S.~Nayak, ``Similarity measures for
   recommender systems: a comparative study,'' \emph{Journal for Research},
