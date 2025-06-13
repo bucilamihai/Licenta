@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  13 JUN 2025 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  13 JUN 2025 22:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -269,7 +269,14 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box53
-) (thesis.aux)
+) (thesis.aux
+
+LaTeX Warning: Label `subsec:ch4sec2sub1' multiply defined.
+
+
+LaTeX Warning: Label `subsec:ch4sec2sub2' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -448,7 +455,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 23.
-<./figures/user-item-matrix.png, id=250, 281.55188pt x 203.25937pt>
+<./figures/user-item-matrix.png, id=275, 281.55188pt x 203.25937pt>
 File: ./figures/user-item-matrix.png Graphic file (type png)
 <use ./figures/user-item-matrix.png>
 Package pdftex.def Info: ./figures/user-item-matrix.png  used on input line 45.
@@ -496,7 +503,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11]
 Capitolul 4.
-<./figures/architecture-diagram.png, id=305, 627.09282pt x 432.11438pt>
+<./figures/architecture-diagram.png, id=330, 627.09282pt x 432.11438pt>
 File: ./figures/architecture-diagram.png Graphic file (type png)
 <use ./figures/architecture-diagram.png>
 Package pdftex.def Info: ./figures/architecture-diagram.png  used on input line 20.
@@ -519,7 +526,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13 <./figures/architecture-diagram.png>]
-<./figures/class-diagram.png, id=326, 983.675pt x 238.8925pt>
+<./figures/class-diagram.png, id=351, 983.675pt x 238.8925pt>
 File: ./figures/class-diagram.png Graphic file (type png)
 <use ./figures/class-diagram.png>
 Package pdftex.def Info: ./figures/class-diagram.png  used on input line 74.
@@ -542,7 +549,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14 <./figures/class-diagram.png>]
-<./figures/db-diagram.png, id=338, 688.82344pt x 386.19281pt>
+<./figures/db-diagram.png, id=363, 688.82344pt x 386.19281pt>
 File: ./figures/db-diagram.png Graphic file (type png)
 <use ./figures/db-diagram.png>
 Package pdftex.def Info: ./figures/db-diagram.png  used on input line 86.
@@ -560,7 +567,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15 <./figures/db-diagram.png>]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 104.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 107.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -570,10 +577,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-<./figures/usecase-diagram.png, id=374, 526.96875pt x 375.65344pt>
+<./figures/usecase-diagram.png, id=398, 526.96875pt x 375.65344pt>
 File: ./figures/usecase-diagram.png Graphic file (type png)
 <use ./figures/usecase-diagram.png>
-Package pdftex.def Info: ./figures/usecase-diagram.png  used on input line 137.
+Package pdftex.def Info: ./figures/usecase-diagram.png  used on input line 140.
 (pdftex.def)             Requested size: 316.18369pt x 225.3938pt.
 
 
@@ -592,26 +599,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-<./figures/login-page.png, id=390, 1154.06157pt x 659.46375pt>
+<./figures/login-page.png, id=415, 1154.06157pt x 659.46375pt>
 File: ./figures/login-page.png Graphic file (type png)
 <use ./figures/login-page.png>
-Package pdftex.def Info: ./figures/login-page.png  used on input line 200.
+Package pdftex.def Info: ./figures/login-page.png  used on input line 203.
 (pdftex.def)             Requested size: 403.9276pt x 230.81577pt.
-<./figures/register-page.png, id=392, 1154.81438pt x 654.19406pt>
+<./figures/register-page.png, id=417, 1154.81438pt x 654.19406pt>
 File: ./figures/register-page.png Graphic file (type png)
 <use ./figures/register-page.png>
-Package pdftex.def Info: ./figures/register-page.png  used on input line 212.
+Package pdftex.def Info: ./figures/register-page.png  used on input line 215.
 (pdftex.def)             Requested size: 404.19109pt x 228.97134pt.
-<./figures/onboarding-page.png, id=394, 1154.81438pt x 654.94687pt>
-File: ./figures/onboarding-page.png Graphic file (type png)
-<use ./figures/onboarding-page.png>
-Package pdftex.def Info: ./figures/onboarding-page.png  used on input line 225.
-(pdftex.def)             Requested size: 404.19109pt x 229.23483pt.
-<./figures/home-page.png, id=396, 1157.82562pt x 656.4525pt>
-File: ./figures/home-page.png Graphic file (type png)
-<use ./figures/home-page.png>
-Package pdftex.def Info: ./figures/home-page.png  used on input line 237.
-(pdftex.def)             Requested size: 405.24504pt x 229.76181pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -629,12 +626,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20 <./figures/login-page.png> <./figures/register-page.png>]
-<./figures/logout-component.png, id=413, 1159.33125pt x 106.89937pt>
+<./figures/onboarding-page.png, id=432, 1154.81438pt x 654.94687pt>
+File: ./figures/onboarding-page.png Graphic file (type png)
+<use ./figures/onboarding-page.png>
+Package pdftex.def Info: ./figures/onboarding-page.png  used on input line 228.
+(pdftex.def)             Requested size: 404.19109pt x 229.23483pt.
+<./figures/home-page.png, id=434, 1157.82562pt x 656.4525pt>
+File: ./figures/home-page.png Graphic file (type png)
+<use ./figures/home-page.png>
+Package pdftex.def Info: ./figures/home-page.png  used on input line 240.
+(pdftex.def)             Requested size: 405.24504pt x 229.76181pt.
+<./figures/logout-component.png, id=436, 1159.33125pt x 106.89937pt>
 File: ./figures/logout-component.png Graphic file (type png)
 <use ./figures/logout-component.png>
-Package pdftex.def Info: ./figures/logout-component.png  used on input line 247.
+Package pdftex.def Info: ./figures/logout-component.png  used on input line 250.
 (pdftex.def)             Requested size: 405.77202pt x 37.41533pt.
-) (chapters/chapter5_conclusions.tex
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -651,10 +658,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22 <./figures/logout-component.png>]
-Capitolul 5.
-) (thesis.bbl [23
+Underfull \hbox (badness 4765) in paragraph at lines 282--286
+\OT1/ppl/m/n/12 Procesul de tes-tare ma-nual[]a a sur-prins func[]ionarea co-rect[]a a ma-jo-rit[]a[]ii
+ []
 
-] [24
+) (chapters/chapter5_conclusions.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23]
+Capitolul 5.
+) (thesis.bbl [24
+
+] [25
 
 ]
 
@@ -664,7 +684,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
+[26]
 Underfull \hbox (badness 1082) in paragraph at lines 139--141
 []\OT1/ppl/m/n/12 D. Co., ``Io-nic Re-act do-cu-men-ta-tion,'' []$https : / / ionicframework . com / docs /
  []
@@ -687,26 +707,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26] (thesis.aux)
+[27] (thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 55B8B724194264074B0E2824703F4DAD;6075.
+(rerunfilecheck)             Checksum: 2527E796D126A76768F37590019A4C84;6888.
  ) 
 Here is how much of TeX's memory you used:
- 13284 strings out of 474486
- 210991 string characters out of 5743755
- 1982542 words of memory out of 5000000
- 35240 multiletter control sequences out of 15000+600000
+ 13300 strings out of 474486
+ 211233 string characters out of 5743755
+ 1983542 words of memory out of 5000000
+ 35248 multiletter control sequences out of 15000+600000
  582523 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,17n,93p,815b,1317s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,93p,815b,1315s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (31 pages, 850833 bytes).
+Output written on thesis.pdf (32 pages, 860386 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
- 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 578 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 355 words of extra memory for PDF output out of 10000 (max. 10000000)
 
