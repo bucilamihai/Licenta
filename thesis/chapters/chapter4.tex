@@ -11,13 +11,25 @@ Capitolul se încheie cu un scurt manual de utilizare, conceput să ghideze util
 \label{sec:ch4sec1}
 
 Aplicația este alcătuită din 3 componente: interfața utilizator (frontend), partea de server (backend) și sistemul de recomandare. 
+Aceste componente au roluri bine definite și comunică între ele pentru a asigura funcționarea aplicației.
+Frontend-ul gestionează interacțiunea cu utilizatorul, backend-ul coordonează logica aplicației și accesul la date, iar sistemul de recomandare oferă sugestii pe baza datelor oferite de server.
+Arhitectura, așa cum este prezentată în figura \ref{FigArchitectureDiagram}, prezintă structura modulară ce permite separarea clară a responsabilităților.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.6]{./figures/architecture-diagram.png}
+	\caption{Diagrama de arhitectură}
+	\label{FigArchitectureDiagram}
+\end{figure}
+
+\subsection{Frontend}
+\label{subsec:ch4sec1sub1}
+
 Partea de frontend este dezvoltată în Ionic React \cite{ionicreactdocs}, tehnologie ce îmbină librăria React \cite{reactdocs}, scrisă în limbajul de programare JavaScript, 
 utilizată pentru a construi interfețe utilizator și Ionic \cite{ionicdocs}, un instrument ce ajută la dezvoltarea aplicațiilor cross-platform. 
 Folosind Ionic, aplicația poate fi instalată pe mai multe platforme --- web, mobile (Android, iOS), desktop --- utilizând același cod sursă. 
 Această abordare eficientizează dezvoltarea și întreținerea aplicațiilor, permițând o experiență de utilizare uniformă, indiferent de dispozitiv folosit. 
-
-\subsection{Frontend}
-\label{subsec:ch4sec1sub1}
+\par
 Interfața utilizator a aplicației este compusă din rute, pagini și componente. 
 Paginile corespund unor ecrane complete din aplicație, iar componentele sunt părți reutilizabile ale aplicației, precum un formular sau buton personalizat.
 Componentele primesc proprietăți și returnează elemente de interfață utilizator.
@@ -59,7 +71,7 @@ Entitățile de bază ale aplicației sunt User, Hobby și HobbyType. Fiecare di
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.40]{./figures/class-diagram.png}
+    \includegraphics[scale=0.45]{./figures/class-diagram.png}
 	\caption{Diagrama de clase}
 	\label{FigClassDiagram}
 \end{figure}
@@ -127,8 +139,10 @@ Diagrama din figura \ref{FigUseCaseDiagram} evidențiază aceste funcționalită
 	\label{FigUseCaseDiagram}
 \end{figure}
 
-\subsection{Înregistrarea utilizatorului}
+\subsection{Cerințe funcționale}
 \label{subsec:ch4sec2sub1}
+
+\subsubsection*{Înregistrarea utilizatorului}
 Această funcționalitate permite unui user nou să își creeze cont în aplicație. Pagina conține un formular cu câmpurile: nume, prenume, email sau parolă.
 La acționarea butonului Register, aplicația validează datele scrise de utilizator, iar în cazul în care
 nu există erori, trimite o cerere HTTP de tip POST către endpoint-ul \texttt{/auth/register} expus de backend. În caz contrar, programul oferă user-ului feedback imediat prin mesaje de eroare sugestive.
@@ -136,24 +150,21 @@ Pe backend, datele se revalidează pentru a asigura securitatea și integritatea
 Contul utilizatorul se salvează în baza de date doar dacă nu există deja unul cu aceeași adresă de email, altfel se aruncă o excepție corespunzătoare.
 Serverul trimite răspuns, după caz, fie datele user-ului creat, fie un mesaj de eroare.
 
-\subsection{Autentificarea utilizatorului}
-\label{subsec:ch4sec2sub2}
+\subsubsection*{Autentificarea utilizatorului}
 Pentru a accesa restul funcționalităților, utilizatorul trebuie să se autentifice. Pagina dedicată logării cuprinde un formular cu două câmpuri: adresa de email și parolă.
 În urma apăsării butonului Login, aplicația validează local datele introduse. În lipsa erorilor, se inițiază o cerere HTTP POST către endpoint-ul \texttt{/auth/login}.
 Pe partea de server, datele se verifică din nou, iar dacă acestea sunt corecte și corespund unui cont existent, se trimite un răspuns ce conține datele utilizatorului logat și un token JWT generat.
 În cazul unor date invalide (parolă incorectă, email inexistent), sistemul oferă un mesaj de eroare specific. După autentificare, token-ul JWT este stocat, iar utilizatorul este redirecționat către pagina principală.
 
 
-\subsection{Alegerea hobby-urilor}
-\label{subsec:ch4sec2sub3}
+\subsubsection*{Alegerea hobby-urilor}
 După ce utilizatorul este autentificat, aplicația verifică dacă acesta are hobby-uri. Dacă nu sunt identificate hobby-uri pentru user-ul logat, programul prezintă
 ecranul de alegere a hobby-urilor. Acesta conține un buton pentru salvare, o bară de căutare și listă de componente ce afișează numele și tipul fiecărui hobby, alături de un checkbox.
 Lista hobby-urilor este primită de la server prin intermediul unui apel HTTP de tip GET către endpoint-ul \texttt{/users/hobbies}. 
 Utilizatorul poate filtra lista după numele hobby-urilor folosind bara de căutare. 
 După ce user-ul selectează hobby-urile dorite și apasă butonul Save, se trimite o cerere HTTP de tip POST pentru a salva hobby-urile selectate.
 
-\subsection{Căutarea utilizatorilor cu hobby-uri similare}
-\label{subsec:ch4sec2sub4}
+\subsubsection*{Căutarea utilizatorilor cu hobby-uri similare}
 Dacă s-au găsit hobby-uri pentru utilizatorul autentificat, atunci aplicația afișează pagina de căutare a utilizatorilor cu hobby-uri asemănătoare.
 Aceasta prezintă un buton pentru căutare cu nume sugestiv. 
 La apăsarea acestuia se trimite o cerere HTTP către endpoint-ul \texttt{/users/similar}.
@@ -164,6 +175,15 @@ Partea de server primește de la sistemul de recomandare lista sortată descresc
 Pe baza fiecărui ID din listă, programul caută informațiile legate de utilizator (nume, e-mail și hobby-urile), pe care le asociază cu scorul primit.
 Lista completă este transmisă interfeței utilizator pentru afișare.
 Utilizatorului logat i se vor prezenta utilizatorii recomandați, vizualizând pentru fiecare numele, e-mailul, lista hobby-urilor și scorul similarității.
+
+
+\subsection{Cerințe nefuncționale}
+\label{subsec:ch4sec2sub2}
+Pe lângă funcționalitățile oferite utilizatorului, sistemul proiectat trebuie să respecte o serie de cerințe nefuncționale care asigură calitatea generală a produsului.
+Referitor la interfața utilizator, aceasta trebuie să fie intuitivă și ușor de utilizat pentru a se putea adresa unui număr mare de utilizatori.
+În plus, aplicația trebuie să fie portabilă datorită faptului că este construită cu ajutorul framework-ului Ionic.
+De asemenea, cerințele impun ca sistemul să aibă un mecanism robust de securitate în care accesul la funcționalitățile interne ale aplicației să fie restricționate și autorizate doar în prezența unor token-uri valide. 
+În cele din urmă, se dorește ca aplicația să fie scalabilă, ușor de întreținut și de actualizat, pentru a permite extinderea funcționalităților în viitor. 
 
 
 \section{Manual de utilizare}
@@ -177,7 +197,7 @@ La apăsarea butonului de autentificare, sistemul verifică datele și redirecț
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.27]{./figures/login-page.png}
+    \includegraphics[scale=0.35]{./figures/login-page.png}
 	\caption{Pagina de autentificare}
 	\label{FigLoginPage}
 \end{figure}
@@ -189,7 +209,7 @@ După o înregistrare cu succes, user-ul este redirecționat către pagina de lo
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.32]{./figures/register-page.png}
+    \includegraphics[scale=0.35]{./figures/register-page.png}
 	\caption{Pagina de înregistrare}
 	\label{FigRegisterPage}
 \end{figure}
@@ -202,7 +222,7 @@ După selectare, acestea pot fi salvate prin apăsarea butonului Save.
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.32]{./figures/onboarding-page.png}
+    \includegraphics[scale=0.35]{./figures/onboarding-page.png}
 	\caption{Pagina afișată utilizatorilor fără hobby-uri selectate}
 	\label{FigOnboardingPage}
 \end{figure}
@@ -214,7 +234,7 @@ Această listă este ordonată descrescător după scorul potrivirii.
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.33]{./figures/home-page.png}
+    \includegraphics[scale=0.35]{./figures/home-page.png}
 	\caption{Pagina de căutare a utilizatorilor cu interese comune}
 	\label{FigHomePage}
 \end{figure}
@@ -224,7 +244,7 @@ De asemenea, utilizatorul se poate deconecta din aplicație. La apăsarea butonu
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.33]{./figures/logout-component.png}
+    \includegraphics[scale=0.35]{./figures/logout-component.png}
 	\caption{Deconectarea utilizatorului}
 	\label{FigLogoutButton}
 \end{figure}
