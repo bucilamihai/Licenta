@@ -11,8 +11,8 @@ Capitolul se încheie cu un scurt manual de utilizare, conceput să ghideze util
 \label{sec:ch4sec1}
 
 Aplicația este alcătuită din 3 componente: interfața utilizator (frontend), partea de server (backend) și sistemul de recomandare. 
-Partea de frontend este dezvoltată în Ionic React\cite{ionicreactdocs}, tehnologie ce îmbină librăria React\cite{reactdocs}, scrisă în limbajul de programare JavaScript, 
-utilizată pentru a construi interfețe utilizator și Ionic\cite{ionicdocs}, un instrument ce ajută la dezvoltarea aplicațiilor cross-platform. 
+Partea de frontend este dezvoltată în Ionic React \cite{ionicreactdocs}, tehnologie ce îmbină librăria React \cite{reactdocs}, scrisă în limbajul de programare JavaScript, 
+utilizată pentru a construi interfețe utilizator și Ionic \cite{ionicdocs}, un instrument ce ajută la dezvoltarea aplicațiilor cross-platform. 
 Folosind Ionic, aplicația poate fi instalată pe mai multe platforme --- web, mobile (Android, iOS), desktop --- utilizând același cod sursă. 
 Această abordare eficientizează dezvoltarea și întreținerea aplicațiilor, permițând o experiență de utilizare uniformă, indiferent de dispozitiv folosit. 
 
@@ -33,7 +33,7 @@ Aplicația folosește biblioteca Axios, o soluție populară și eficientă pent
 
 \subsection{Backend}
 \label{subsec:ch4sec1sub2}
-Partea de server este scrisă în Java utilizând Spring Boot\cite{springbootdocs}, un instrument care ajută la simplificarea procesului de dezvoltare al aplicațiilor.
+Partea de server este scrisă în Java utilizând Spring Boot \cite{springbootdocs}, un instrument care ajută la simplificarea procesului de dezvoltare al aplicațiilor.
 Acest framework permite crearea rapidă de API-uri REST, o integrare facilă cu baza de date și o organizare logică a codului în componente. Alegerea
 acestei tehnologii a fost motivată de ecosistemul extins pe care îl oferă, configurarea redusă și structura modulară. 
 
@@ -66,8 +66,8 @@ Entitățile de bază ale aplicației sunt User, Hobby și HobbyType. Fiecare di
 
 \subsubsection*{Baza de date}
 Conectarea la baza de date se face cu ajutorul fișierului de configurare \texttt{application.properties}, unde sunt specificate datele de acces precum URL, utilizator și parolă. 
-Baza de date folosită este PostgreSQL\cite{postgresqldocs}, consacrată pentru fiabilitate și performanță. 
-Pentru asocierea obiectelor Java cu tabelele bazei de date s-a utilizat Java Persistence API împreună cu framework-ul Hibernate\cite{hibernatedocs}, permițând manipularea entităților Java ca tabele din baza de date, așa cum se poate vedea în figura \ref{FigDbDiagram}.
+Baza de date folosită este PostgreSQL \cite{postgresqldocs}, consacrată pentru fiabilitate și performanță. 
+Pentru asocierea obiectelor Java cu tabelele bazei de date s-a utilizat Java Persistence API împreună cu framework-ul Hibernate \cite{hibernatedocs}, permițând manipularea entităților Java ca tabele din baza de date, așa cum se poate vedea în figura \ref{FigDbDiagram}.
 
 \begin{figure}[htbp]
 	\centering
@@ -99,7 +99,7 @@ def jaccard_similarity(set1, set2):
 \end{lstlisting}    
 
 \subsubsection*{Setul de date}
-Pentru a popula baza de date cu o listă de hobby-uri cât mai bogată și realistă, s-au fuzionat trei seturi de date disponibile pe platformele Kaggle\cite{kaggle_Raj, kaggle_dawid} și HuggingFace \cite{hf_Ugurcan}.
+Pentru a popula baza de date cu o listă de hobby-uri cât mai bogată și realistă, s-au fuzionat trei seturi de date disponibile pe platformele Kaggle \cite{kaggle_Raj, kaggle_dawid} și HuggingFace \cite{hf_Ugurcan}.
 După îmbinarea acestora, a fost nevoie de o prelucrare atentă a setului de date pentru a standardiza formatul.
 Numele hobby-urilor au fost normalizate, iar în cazul în care au apărut duplicate, acestea au fost eliminate, însă tipurile lor au fost comasate.
 Tipurile hobby-urilor au fost la rândul lor prelucrate, deoarece erau exprimate inconsistent, separate fie prin virgulă, fie prin conjuncția ”and”, iar duplicatele au fost excluse.
