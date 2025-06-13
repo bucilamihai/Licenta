@@ -11,13 +11,25 @@ Capitolul se încheie cu un scurt manual de utilizare, conceput să ghideze util
 \label{sec:ch4sec1}
 
 Aplicația este alcătuită din 3 componente: interfața utilizator (frontend), partea de server (backend) și sistemul de recomandare. 
-Partea de frontend este dezvoltată în Ionic React\cite{ionicreactdocs}, tehnologie ce îmbină librăria React\cite{reactdocs}, scrisă în limbajul de programare JavaScript, 
-utilizată pentru a construi interfețe utilizator și Ionic\cite{ionicdocs}, un instrument ce ajută la dezvoltarea aplicațiilor cross-platform. 
-Folosind Ionic, aplicația poate fi instalată pe mai multe platforme --- web, mobile (Android, iOS), desktop --- utilizând același cod sursă. 
-Această abordare eficientizează dezvoltarea și întreținerea aplicațiilor, permițând o experiență de utilizare uniformă, indiferent de dispozitiv folosit. 
+Aceste componente au roluri bine definite și comunică între ele pentru a asigura funcționarea aplicației.
+Frontend-ul gestionează interacțiunea cu utilizatorul, backend-ul coordonează logica aplicației și accesul la date, iar sistemul de recomandare oferă sugestii pe baza datelor oferite de server.
+Arhitectura, așa cum este prezentată în figura \ref{FigArchitectureDiagram}, prezintă structura modulară ce permite separarea clară a responsabilităților.
+
+\begin{figure}[htbp]
+	\centering
+    \includegraphics[scale=0.6]{./figures/architecture-diagram.png}
+	\caption{Diagrama de arhitectură}
+	\label{FigArchitectureDiagram}
+\end{figure}
 
 \subsection{Frontend}
 \label{subsec:ch4sec1sub1}
+
+Partea de frontend este dezvoltată în Ionic React \cite{ionicreactdocs}, tehnologie ce îmbină librăria React \cite{reactdocs}, scrisă în limbajul de programare JavaScript, 
+utilizată pentru a construi interfețe utilizator și Ionic \cite{ionicdocs}, un instrument ce ajută la dezvoltarea aplicațiilor cross-platform. 
+Folosind Ionic, aplicația poate fi instalată pe mai multe platforme --- web, mobile (Android, iOS), desktop --- utilizând același cod sursă. 
+Această abordare eficientizează dezvoltarea și întreținerea aplicațiilor, permițând o experiență de utilizare uniformă, indiferent de dispozitiv folosit. 
+\par
 Interfața utilizator a aplicației este compusă din rute, pagini și componente. 
 Paginile corespund unor ecrane complete din aplicație, iar componentele sunt părți reutilizabile ale aplicației, precum un formular sau buton personalizat.
 Componentele primesc proprietăți și returnează elemente de interfață utilizator.
@@ -33,7 +45,7 @@ Aplicația folosește biblioteca Axios, o soluție populară și eficientă pent
 
 \subsection{Backend}
 \label{subsec:ch4sec1sub2}
-Partea de server este scrisă în Java utilizând Spring Boot\cite{springbootdocs}, un instrument care ajută la simplificarea procesului de dezvoltare al aplicațiilor.
+Partea de server este scrisă în Java utilizând Spring Boot \cite{springbootdocs}, un instrument care ajută la simplificarea procesului de dezvoltare al aplicațiilor.
 Acest framework permite crearea rapidă de API-uri REST, o integrare facilă cu baza de date și o organizare logică a codului în componente. Alegerea
 acestei tehnologii a fost motivată de ecosistemul extins pe care îl oferă, configurarea redusă și structura modulară. 
 
@@ -59,15 +71,15 @@ Entitățile de bază ale aplicației sunt User, Hobby și HobbyType. Fiecare di
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.40]{./figures/class-diagram.png}
+    \includegraphics[scale=0.45]{./figures/class-diagram.png}
 	\caption{Diagrama de clase}
 	\label{FigClassDiagram}
 \end{figure}
 
 \subsubsection*{Baza de date}
 Conectarea la baza de date se face cu ajutorul fișierului de configurare \texttt{application.properties}, unde sunt specificate datele de acces precum URL, utilizator și parolă. 
-Baza de date folosită este PostgreSQL\cite{postgresqldocs}, consacrată pentru fiabilitate și performanță. 
-Pentru asocierea obiectelor Java cu tabelele bazei de date s-a utilizat Java Persistence API împreună cu framework-ul Hibernate\cite{hibernatedocs}, permițând manipularea entităților Java ca tabele din baza de date, așa cum se poate vedea în figura \ref{FigDbDiagram}.
+Baza de date folosită este PostgreSQL \cite{postgresqldocs}, consacrată pentru fiabilitate și performanță. 
+Pentru asocierea obiectelor Java cu tabelele bazei de date s-a utilizat Java Persistence API împreună cu framework-ul Hibernate \cite{hibernatedocs}, permițând manipularea entităților Java ca tabele din baza de date, așa cum se poate vedea în figura \ref{FigDbDiagram}.
 
 \begin{figure}[htbp]
 	\centering
@@ -85,9 +97,12 @@ Deoarece majoritatea rutelor din aplicație sunt restricționate, utilizatorul a
 \subsection{Sistemul de recomandare}
 \label{subsec:ch4sec1sub3}
 Pentru a determina gradul de similaritate între utilizatori pe baza hobby-urilor comune, sistemul folosește coeficientul de similaritate Jaccard.
-Această metodă compară seturile de hobby-uri ale fiecărui utilizator și calculează raportul dintre elementele comune și totalitatea elementelor distincte din cele două seturi.
-Rezultatul este un număr real între 0 și 1. Această metodă este simplă și intuitivă, fiind adecvată pentru compararea mulțimilor neordonate de termeni.
+Această metodă compară seturile de hobby-uri ale fiecărui utilizator și calculează raportul dintre elementele comune și totalitatea elementelor distincte din cele două seturi, rezultând o valoare reală între 0 și 1.
+Metoda este simplă și intuitivă, fiind adecvată pentru compararea mulțimilor neordonate de termeni.
 Implementarea funcției care calculeaza similaritatea Jaccard este prezentată în secvența de cod \ref{CodeJaccard}.
+\par
+Principalele argumente care au stat la baza alegerii acestei modalități de calcul al similarității sunt eficiența sa computațională, prin faptul că nu necesită resurse mari de calcul, dar și compatibilitatea sa cu datele binare, precum cele legate de hobby-uri (un hobby poate să fie prezent sau absent).
+De asemenea, există o simetrie în relația dintre utilizatori: similaritatea dintre utilizatorul A și B este aceeași cu cea dintre utilizatorul B și A, favorizând constituirea unei rețele coerente între persoane.
 
 \begin{lstlisting}[caption={Algoritmul de calcul al similarității Jaccard}, label={CodeJaccard}]
 def jaccard_similarity(set1, set2):
@@ -99,7 +114,7 @@ def jaccard_similarity(set1, set2):
 \end{lstlisting}    
 
 \subsubsection*{Setul de date}
-Pentru a popula baza de date cu o listă de hobby-uri cât mai bogată și realistă, s-au fuzionat trei seturi de date disponibile pe platformele Kaggle\cite{kaggle_Raj, kaggle_dawid} și HuggingFace \cite{hf_Ugurcan}.
+Pentru a popula baza de date cu o listă de hobby-uri cât mai bogată și realistă, s-au fuzionat trei seturi de date disponibile pe platformele Kaggle \cite{kaggle_Raj, kaggle_dawid} și HuggingFace \cite{hf_Ugurcan}.
 După îmbinarea acestora, a fost nevoie de o prelucrare atentă a setului de date pentru a standardiza formatul.
 Numele hobby-urilor au fost normalizate, iar în cazul în care au apărut duplicate, acestea au fost eliminate, însă tipurile lor au fost comasate.
 Tipurile hobby-urilor au fost la rândul lor prelucrate, deoarece erau exprimate inconsistent, separate fie prin virgulă, fie prin conjuncția ”and”, iar duplicatele au fost excluse.
@@ -127,8 +142,10 @@ Diagrama din figura \ref{FigUseCaseDiagram} evidențiază aceste funcționalită
 	\label{FigUseCaseDiagram}
 \end{figure}
 
-\subsection{Înregistrarea utilizatorului}
+\subsection{Cerințe funcționale}
 \label{subsec:ch4sec2sub1}
+
+\subsubsection*{Înregistrarea utilizatorului}
 Această funcționalitate permite unui user nou să își creeze cont în aplicație. Pagina conține un formular cu câmpurile: nume, prenume, email sau parolă.
 La acționarea butonului Register, aplicația validează datele scrise de utilizator, iar în cazul în care
 nu există erori, trimite o cerere HTTP de tip POST către endpoint-ul \texttt{/auth/register} expus de backend. În caz contrar, programul oferă user-ului feedback imediat prin mesaje de eroare sugestive.
@@ -136,24 +153,21 @@ Pe backend, datele se revalidează pentru a asigura securitatea și integritatea
 Contul utilizatorul se salvează în baza de date doar dacă nu există deja unul cu aceeași adresă de email, altfel se aruncă o excepție corespunzătoare.
 Serverul trimite răspuns, după caz, fie datele user-ului creat, fie un mesaj de eroare.
 
-\subsection{Autentificarea utilizatorului}
-\label{subsec:ch4sec2sub2}
+\subsubsection*{Autentificarea utilizatorului}
 Pentru a accesa restul funcționalităților, utilizatorul trebuie să se autentifice. Pagina dedicată logării cuprinde un formular cu două câmpuri: adresa de email și parolă.
 În urma apăsării butonului Login, aplicația validează local datele introduse. În lipsa erorilor, se inițiază o cerere HTTP POST către endpoint-ul \texttt{/auth/login}.
 Pe partea de server, datele se verifică din nou, iar dacă acestea sunt corecte și corespund unui cont existent, se trimite un răspuns ce conține datele utilizatorului logat și un token JWT generat.
 În cazul unor date invalide (parolă incorectă, email inexistent), sistemul oferă un mesaj de eroare specific. După autentificare, token-ul JWT este stocat, iar utilizatorul este redirecționat către pagina principală.
 
 
-\subsection{Alegerea hobby-urilor}
-\label{subsec:ch4sec2sub3}
+\subsubsection*{Alegerea hobby-urilor}
 După ce utilizatorul este autentificat, aplicația verifică dacă acesta are hobby-uri. Dacă nu sunt identificate hobby-uri pentru user-ul logat, programul prezintă
 ecranul de alegere a hobby-urilor. Acesta conține un buton pentru salvare, o bară de căutare și listă de componente ce afișează numele și tipul fiecărui hobby, alături de un checkbox.
 Lista hobby-urilor este primită de la server prin intermediul unui apel HTTP de tip GET către endpoint-ul \texttt{/users/hobbies}. 
 Utilizatorul poate filtra lista după numele hobby-urilor folosind bara de căutare. 
 După ce user-ul selectează hobby-urile dorite și apasă butonul Save, se trimite o cerere HTTP de tip POST pentru a salva hobby-urile selectate.
 
-\subsection{Căutarea utilizatorilor cu hobby-uri similare}
-\label{subsec:ch4sec2sub4}
+\subsubsection*{Căutarea utilizatorilor cu hobby-uri similare}
 Dacă s-au găsit hobby-uri pentru utilizatorul autentificat, atunci aplicația afișează pagina de căutare a utilizatorilor cu hobby-uri asemănătoare.
 Aceasta prezintă un buton pentru căutare cu nume sugestiv. 
 La apăsarea acestuia se trimite o cerere HTTP către endpoint-ul \texttt{/users/similar}.
@@ -164,6 +178,15 @@ Partea de server primește de la sistemul de recomandare lista sortată descresc
 Pe baza fiecărui ID din listă, programul caută informațiile legate de utilizator (nume, e-mail și hobby-urile), pe care le asociază cu scorul primit.
 Lista completă este transmisă interfeței utilizator pentru afișare.
 Utilizatorului logat i se vor prezenta utilizatorii recomandați, vizualizând pentru fiecare numele, e-mailul, lista hobby-urilor și scorul similarității.
+
+
+\subsection{Cerințe nefuncționale}
+\label{subsec:ch4sec2sub2}
+Pe lângă funcționalitățile oferite utilizatorului, sistemul proiectat trebuie să respecte o serie de cerințe nefuncționale care asigură calitatea generală a produsului.
+Referitor la interfața utilizator, aceasta trebuie să fie intuitivă și ușor de utilizat pentru a se putea adresa unui număr mare de utilizatori.
+În plus, aplicația trebuie să fie portabilă datorită faptului că este construită cu ajutorul framework-ului Ionic.
+De asemenea, cerințele impun ca sistemul să aibă un mecanism robust de securitate în care accesul la funcționalitățile interne ale aplicației să fie restricționate și autorizate doar în prezența unor token-uri valide. 
+În cele din urmă, se dorește ca aplicația să fie scalabilă, ușor de întreținut și de actualizat, pentru a permite extinderea funcționalităților în viitor. 
 
 
 \section{Manual de utilizare}
@@ -177,7 +200,7 @@ La apăsarea butonului de autentificare, sistemul verifică datele și redirecț
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.27]{./figures/login-page.png}
+    \includegraphics[scale=0.35]{./figures/login-page.png}
 	\caption{Pagina de autentificare}
 	\label{FigLoginPage}
 \end{figure}
@@ -189,7 +212,7 @@ După o înregistrare cu succes, user-ul este redirecționat către pagina de lo
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.32]{./figures/register-page.png}
+    \includegraphics[scale=0.35]{./figures/register-page.png}
 	\caption{Pagina de înregistrare}
 	\label{FigRegisterPage}
 \end{figure}
@@ -198,11 +221,11 @@ După o înregistrare cu succes, user-ul este redirecționat către pagina de lo
 În cazul în care utilizatorul logat nu are adăugate hobby-uri, un ecran dedicat acestei acțiuni va fi afișat imediat după logare, așa cum se poate observa în figura \ref{FigOnboardingPage}.
 Aici user-ul poate alege din lista de hobby-uri existente, prin intermediul unui checkbox. 
 De asemenea, hobby-urile pot fi filtrate după nume, folosind bara de căutare.
-După selectare, aceastea pot fi salvate prin apăsarea butonului Save.
+După selectare, acestea pot fi salvate prin apăsarea butonului Save.
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.32]{./figures/onboarding-page.png}
+    \includegraphics[scale=0.35]{./figures/onboarding-page.png}
 	\caption{Pagina afișată utilizatorilor fără hobby-uri selectate}
 	\label{FigOnboardingPage}
 \end{figure}
@@ -214,7 +237,7 @@ Această listă este ordonată descrescător după scorul potrivirii.
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.33]{./figures/home-page.png}
+    \includegraphics[scale=0.35]{./figures/home-page.png}
 	\caption{Pagina de căutare a utilizatorilor cu interese comune}
 	\label{FigHomePage}
 \end{figure}
@@ -224,7 +247,46 @@ De asemenea, utilizatorul se poate deconecta din aplicație. La apăsarea butonu
 
 \begin{figure}[htbp]
 	\centering
-    \includegraphics[scale=0.33]{./figures/logout-component.png}
+    \includegraphics[scale=0.35]{./figures/logout-component.png}
 	\caption{Deconectarea utilizatorului}
 	\label{FigLogoutButton}
 \end{figure}
+
+\section{Testare și validare}
+\label{sec:ch4sec4}
+Pentru validarea funcționalităților aplicației dezvoltate, aceasta a fost testată pe platforma web, utilizând browsere precum Chrome și Brave.
+Deși framework-ul Ionic oferă posibilitatea de a rula aplicația și pe alte platforme (mobile și desktop), testarea s-a concentrat pe web.
+Procesul de testare a cuprins verificarea aplicației în întregime, cu asigurarea că toate scenariile de utilizare au fost luate în calcul. 
+
+\subsection{Metodologia de testare}
+\label{subsec:ch4sec4sub1}
+\subsubsection*{Testare manuală}
+Această abordare a implicat testarea sistematică a întregii aplicații prin interacțiunea directă cu interfața.
+Fiecare funcționalitate a fost testată individual pentru a asigură că este întocmai cu specificațiile: procesul de înregistrare și autentificare, adăugarea hobby-urilor, generarea recomandărilor și navigarea prin diferitele secțiuni ale aplicației.
+Au fost testate atât cazurile de utilizare standard cât și scenariile de eroare pentru a verifica comportamentul în situații limită.
+\subsubsection*{Testare de interfață}
+Această metodă s-a concentrat pe evaluarea caracteristicilor vizuale și a experienței utilizatorului.
+Au fost verificate elementele de design din întreaga aplicație și modul în care interfața răspunde la schimbările de dimensiune ale ecranului.
+Suplimentar, s-a verificat funcționarea corectă a elementelor interactive și consistența tranzițiilor între pagini.
+
+\subsection{Scenarii de testare}
+\label{subsec:ch4sec4sub2}
+Pentru validarea aplicației prin testare manuală, au fost create și executate mai multe scenarii de testare care acoperă toate funcționalitățile sistemului.
+Scenariile au fost împărțite în două categorii: scenarii pozitive, care testează comportamentul normal al aplicației, și scenarii negative, care verifică reacția programului la situații excepționale.
+Fiecare dintre aceste scenarii a fost executat prin navigarea manuală în aplicație.
+Printre scenariile testate se numără: înregistrarea unui utilizator nou prin completarea formularului cu date valide și invalide, autentificarea unui utilizator cu credențiale corecte și incorecte, adăugarea hobby-urilor și generarea recomandărilor pentru diferite profiluri de utilizator.
+Această modalitate de testare a avut scopul de a identifica principalele erori ale funcționalităților și problemele legate de utilizabilitate și experiența utilizatorului.
+
+\subsection{Rezultate}
+\label{subsec:ch4sec4sub3}
+Procesul de testare manuală a surprins funcționarea corectă a majorității funcționalităților.
+Aplicația gestionează corect atât cazurile de succes cât și cele de eroare.
+Datorită mesajelor clare de eroare pe care sistemul le afișează utilizatorilor, aceștia pot remedia ușor situațiile în care apar probleme.
+În linii mari, testarea a confirmat faptul că aplicația răspunde cerințelor funcționale și nefuncționale stabilite anterior.
+
+\subsection{Limitări și îmbunătățiri}
+\label{subsec:ch4sec4sub4}
+Deși procesul de verificare a validat sistemul proiectat, au fost identificate limitări ale acestor metode.
+Multitudinea de cazuri de testare și combinațiile scenariilor fac ca această practică să fie dificilă și susceptibilă la erori umane.
+În plus, pe măsură ce aplicația crește, testarea manuală devine consumatoare de timp și greu de gestionat.
+Ca modalități de îmbunătățire, se recomandă implementarea unui sistem de testare automată și includerea celorlalte platforme în scenariile de testare.
