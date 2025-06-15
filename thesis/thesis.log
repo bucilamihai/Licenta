@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  13 JUN 2025 22:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.18)  15 JUN 2025 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,12 +595,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./figures/login-page.png, id=415, 1154.06157pt x 659.46375pt>
 File: ./figures/login-page.png Graphic file (type png)
 <use ./figures/login-page.png>
-Package pdftex.def Info: ./figures/login-page.png  used on input line 203.
+Package pdftex.def Info: ./figures/login-page.png  used on input line 205.
 (pdftex.def)             Requested size: 403.9276pt x 230.81577pt.
 <./figures/register-page.png, id=417, 1154.81438pt x 654.19406pt>
 File: ./figures/register-page.png Graphic file (type png)
 <use ./figures/register-page.png>
-Package pdftex.def Info: ./figures/register-page.png  used on input line 215.
+Package pdftex.def Info: ./figures/register-page.png  used on input line 217.
 (pdftex.def)             Requested size: 404.19109pt x 228.97134pt.
 
 
@@ -622,17 +622,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <./figures/onboarding-page.png, id=432, 1154.81438pt x 654.94687pt>
 File: ./figures/onboarding-page.png Graphic file (type png)
 <use ./figures/onboarding-page.png>
-Package pdftex.def Info: ./figures/onboarding-page.png  used on input line 228.
+Package pdftex.def Info: ./figures/onboarding-page.png  used on input line 230.
 (pdftex.def)             Requested size: 404.19109pt x 229.23483pt.
 <./figures/home-page.png, id=434, 1157.82562pt x 656.4525pt>
 File: ./figures/home-page.png Graphic file (type png)
 <use ./figures/home-page.png>
-Package pdftex.def Info: ./figures/home-page.png  used on input line 240.
+Package pdftex.def Info: ./figures/home-page.png  used on input line 242.
 (pdftex.def)             Requested size: 405.24504pt x 229.76181pt.
 <./figures/logout-component.png, id=436, 1159.33125pt x 106.89937pt>
 File: ./figures/logout-component.png Graphic file (type png)
 <use ./figures/logout-component.png>
-Package pdftex.def Info: ./figures/logout-component.png  used on input line 250.
+Package pdftex.def Info: ./figures/logout-component.png  used on input line 252.
 (pdftex.def)             Requested size: 405.77202pt x 37.41533pt.
 
 
@@ -651,7 +651,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22 <./figures/logout-component.png>]
-Underfull \hbox (badness 4765) in paragraph at lines 282--286
+Underfull \hbox (badness 4765) in paragraph at lines 284--288
 \OT1/ppl/m/n/12 Procesul de tes-tare ma-nual[]a a sur-prins func[]ionarea co-rect[]a a ma-jo-rit[]a[]ii
  []
 
@@ -717,7 +717,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  90i,17n,93p,815b,1315s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/bmcmi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (32 pages, 860387 bytes).
+Output written on thesis.pdf (32 pages, 860357 bytes).
 PDF statistics:
  578 PDF objects out of 1000 (max. 8388607)
  135 named destinations out of 1000 (max. 500000)
