@@ -147,19 +147,19 @@ Diagrama din figura \ref{FigUseCaseDiagram} evidențiază aceste funcționalită
 
 \subsubsection*{Înregistrarea utilizatorului}
 Această funcționalitate permite unui user nou să își creeze cont în aplicație. 
-Pagina conține un formular cu câmpurile: nume, prenume, email și parolă.
+Pagina conține un formular cu câmpurile: nume, prenume, e-mail și parolă.
 La acționarea butonului Register, aplicația validează datele scrise de utilizator, iar în cazul în care
 nu există erori, trimite o cerere HTTP de tip POST către endpoint-ul \texttt{/auth/register} expus de backend. 
 În caz contrar, programul oferă user-ului feedback imediat prin mesaje de eroare sugestive.
 Pe backend, datele se revalidează pentru a asigura securitatea și integritatea acestora. 
-Contul utilizatorului se salvează în baza de date doar dacă nu există deja unul cu aceeași adresă de email, altfel se aruncă o excepție corespunzătoare.
+Contul utilizatorului se salvează în baza de date doar dacă nu există deja unul cu aceeași adresă de e-mail, altfel se aruncă o excepție corespunzătoare.
 Serverul trimite răspuns, după caz, fie datele user-ului creat, fie un mesaj de eroare.
 
 \subsubsection*{Autentificarea utilizatorului}
-Pentru a accesa restul funcționalităților, utilizatorul trebuie să se autentifice. Pagina dedicată logării cuprinde un formular cu două câmpuri: adresa de email și parolă.
+Pentru a accesa restul funcționalităților, utilizatorul trebuie să se autentifice. Pagina dedicată logării cuprinde un formular cu două câmpuri: adresa de e-mail și parolă.
 În urma apăsării butonului Login, aplicația validează local datele introduse. În lipsa erorilor, se inițiază o cerere HTTP POST către endpoint-ul \texttt{/auth/login}.
 Pe partea de server, datele se verifică din nou, iar dacă acestea sunt corecte și corespund unui cont existent, se trimite un răspuns ce conține datele utilizatorului logat și un token JWT generat.
-În cazul unor date invalide (parolă incorectă, email inexistent), sistemul oferă un mesaj de eroare specific. După autentificare, token-ul JWT este stocat, iar utilizatorul este redirecționat către pagina principală.
+În cazul unor date invalide (parolă incorectă, e-mail inexistent), sistemul oferă un mesaj de eroare specific. După autentificare, token-ul JWT este stocat, iar utilizatorul este redirecționat către pagina principală.
 
 
 \subsubsection*{Alegerea hobby-urilor}
@@ -179,7 +179,7 @@ Sistemul de recomandare calculează similaritatea hobby-urilor dintre utilizator
 Partea de server primește de la sistemul de recomandare lista sortată descrescător după acel scor. 
 Pe baza fiecărui ID din listă, programul caută informațiile legate de utilizator (nume, e-mail și hobby-urile), pe care le asociază cu scorul primit.
 Lista completă este transmisă interfeței utilizator pentru afișare.
-Utilizatorului logat i se vor prezenta utilizatorii recomandați, vizualizând pentru fiecare numele, e-mailul, lista hobby-urilor și scorul similarității.
+Utilizatorului logat i se vor prezenta utilizatorii recomandați, vizualizând pentru fiecare numele, e-mail-ul, lista hobby-urilor și scorul similarității.
 
 
 \subsection{Cerințe nefuncționale}
@@ -197,7 +197,7 @@ De asemenea, cerințele impun ca sistemul să aibă un mecanism robust de securi
 La prima interacțiune cu aplicația, utilizatorul are acces la două ecrane, la cel de logare și la cel de înregistrare. 
 În funcție de calitatea user-ului (nou sau înregistrat) poate alege să se înregistreze sau să se autentifice.
 \par
-Pentru a se loga, utilizatorul trebuie să introducă email-ul și parola cu care s-a înregistrat în prealabil, așa cum se poate vedea în figura \ref{FigLoginPage}. 
+Pentru a se loga, utilizatorul trebuie să introducă e-mail-ul și parola cu care s-a înregistrat în prealabil, așa cum se poate vedea în figura \ref{FigLoginPage}. 
 La apăsarea butonului de autentificare, sistemul verifică datele și redirecționează utilizatorul către pagina principală sau notifică cu privire la erorile apărute. 
 
 \begin{figure}[htbp]
