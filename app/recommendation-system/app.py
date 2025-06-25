@@ -39,5 +39,14 @@ def recommend():
     recommendations = [rec for rec in recommendations if rec["score"] > 0.25]
     return jsonify(recommendations), 200
 
+
+@app.route('/')
+def home():
+    return "Welcome to the Recommendation System!", 200
+
+@app.route('/health')
+def health():
+    return jsonify({"status": "healthy", "service": "recommendation"}), 20
+
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port=5000)
