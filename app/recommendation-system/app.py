@@ -1,7 +1,11 @@
 import os
+import logging
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def jaccard_similarity(set1, set2):
     if not set1 or not set2:
@@ -43,10 +47,12 @@ def recommend():
 
 @app.route('/')
 def home():
+    logger.info("Home route accessed")
     return "Welcome to the Recommendation System!", 200
 
 @app.route('/health')
 def health():
+    logger.info("Health check accessed")
     return jsonify({"status": "healthy", "service": "recommendation"}), 20
 
 if __name__ == '__main__':
