@@ -53,7 +53,7 @@ def home():
 @app.route('/health')
 def health():
     logger.info("Health check accessed")
-    return jsonify({"status": "healthy", "service": "recommendation"}), 20
+    return jsonify({"status": "healthy", "service": "recommendation"}), 200
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
