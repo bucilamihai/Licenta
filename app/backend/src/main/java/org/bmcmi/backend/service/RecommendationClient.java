@@ -20,7 +20,7 @@ public class RecommendationClient {
     private RestTemplate restTemplate;
 
     public List<RecommendationDTO> getRecommendedUsers(RecommendationRequestDTO recommendationRequestDTO) {
-        String url = "http://localhost:5000/recommend";
+        String url = "https://hobby-connect-recommendation.up.railway.app/recommend";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);

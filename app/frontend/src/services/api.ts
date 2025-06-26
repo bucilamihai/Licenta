@@ -3,7 +3,7 @@ import { UserRegistration, User } from "../types/userTypes";
 import { UserLogin } from "../types/userTypes";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080",
+  baseURL: "https://hobby-connect-backend.up.railway.app",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",
