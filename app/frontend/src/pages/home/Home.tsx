@@ -65,7 +65,7 @@ const Home: React.FC = () => {
           />
         </IonToolbar>
       </IonHeader>
-      <IonContent className="home-content">
+      <IonContent className="home-content" fullscreen>
         <IonButton className="home-button" onClick={handleUserSearch}>
           <IonText>Search similar users based on hobbies</IonText>
         </IonButton>
