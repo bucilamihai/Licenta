@@ -98,6 +98,8 @@
   padding: 1rem;
   max-width: 1500px;
   margin: 0 auto;
+  overflow-y: auto;
+  padding-bottom: 3rem;
 }
 
 .users-flex .user-item {
