@@ -41,7 +41,7 @@ def recommend():
         })
 
     recommendations.sort(key=lambda x: x["score"], reverse=True)
-    # recommendations = [rec for rec in recommendations if rec["score"] > 0.25]
+    recommendations = [rec for rec in recommendations if rec["score"] > 0.0]
     return jsonify(recommendations), 200
 
 
